@@ -23,19 +23,25 @@ namespace LGO.LeagueOfLegends.ClientApi.Model.Player.Internal
         [JsonConverter(typeof(InGameTimeConverter))]
         public TimeSpan RespawnTime { get; set; } = TimeSpan.Zero;
 
+        [JsonProperty("isBot")]
+        public bool IsBot { get; set; }
+
         [JsonProperty("position")]
         [JsonConverter(typeof(PositionTypeConverter))]
         public LolPositionType Position { get; set; } = LolPositionType.Undefined;
 
+        [JsonProperty("level")]
+        public int Level { get; set; }
+        
         [JsonProperty("team")]
         [JsonConverter(typeof(TeamTypeConverter))]
         public LolTeamType Team { get; set; } = LolTeamType.Undefined;
 
-        [JsonProperty("items", ItemConverterType = typeof(ConcreteConverter<MutableItem>))]
+        [JsonProperty("items", ItemConverterType = typeof(ConcreteConverter<ILolClientItem, MutableItem>))]
         public IEnumerable<ILolClientItem> Items { get; set; } = Enumerable.Empty<ILolClientItem>();
 
         [JsonProperty("scores")]
-        [JsonConverter(typeof(ConcreteConverter<MutableScore>))]
+        [JsonConverter(typeof(ConcreteConverter<ILolClientScore, MutableScore>))]
         public ILolClientScore Score { get; set; } = NullScore.Get;
     }
 }

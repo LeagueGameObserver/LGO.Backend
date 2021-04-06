@@ -12,18 +12,18 @@ namespace LGO.LeagueOfLegends.ClientApi.Model.Game.Internal
     internal class MutableGame : ILolClientGame
     {
         [JsonProperty("activePlayer")]
-        [JsonConverter(typeof(ConcreteConverter<MutableActivePlayer>))]
+        [JsonConverter(typeof(ConcreteConverter<ILolClientActivePlayer, LolClientActivePlayer>))]
         public ILolClientActivePlayer ActivePlayer { get; set; } = NullActivePlayer.Get;
 
-        [JsonProperty("allPlayers", ItemConverterType = typeof(ConcreteConverter<MutablePlayer>))]
+        [JsonProperty("allPlayers", ItemConverterType = typeof(ConcreteConverter<ILolClientPlayer, MutablePlayer>))]
         public IEnumerable<ILolClientPlayer> Players { get; set; } = Enumerable.Empty<ILolClientPlayer>();
 
         [JsonProperty("events")]
-        [JsonConverter(typeof(ConcreteConverter<MutableGameEventCollection>))]
+        [JsonConverter(typeof(ConcreteConverter<ILolClientGameEventCollection, MutableGameEventCollection>))]
         public ILolClientGameEventCollection EventCollection { get; set; } = NullGameEventCollection.Get;
 
         [JsonProperty("gameData")]
-        [JsonConverter(typeof(ConcreteConverter<MutableGameStats>))]
+        [JsonConverter(typeof(ConcreteConverter<ILolClientGameStats, MutableGameStats>))]
         public ILolClientGameStats Stats { get; set; } = NullGameStats.Get;
     }
 }

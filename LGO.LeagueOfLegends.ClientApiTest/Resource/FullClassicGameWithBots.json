@@ -1,0 +1,2066 @@
+{
+	"activePlayer": {
+		"abilities": {
+			"E": {
+				"abilityLevel": 5,
+				"displayName": "Test of Spirit",
+				"id": "IllaoiE",
+				"rawDescription": "GeneratedTip_Spell_IllaoiE_Description",
+				"rawDisplayName": "GeneratedTip_Spell_IllaoiE_DisplayName"
+			},
+			"Passive": {
+				"displayName": "Prophet of an Elder God",
+				"id": "IllaoiPassive",
+				"rawDescription": "GeneratedTip_Passive_IllaoiPassive_Description",
+				"rawDisplayName": "GeneratedTip_Passive_IllaoiPassive_DisplayName"
+			},
+			"Q": {
+				"abilityLevel": 5,
+				"displayName": "Tentacle Smash",
+				"id": "IllaoiQ",
+				"rawDescription": "GeneratedTip_Spell_IllaoiQ_Description",
+				"rawDisplayName": "GeneratedTip_Spell_IllaoiQ_DisplayName"
+			},
+			"R": {
+				"abilityLevel": 3,
+				"displayName": "Leap of Faith",
+				"id": "IllaoiR",
+				"rawDescription": "GeneratedTip_Spell_IllaoiR_Description",
+				"rawDisplayName": "GeneratedTip_Spell_IllaoiR_DisplayName"
+			},
+			"W": {
+				"abilityLevel": 4,
+				"displayName": "Harsh Lesson",
+				"id": "IllaoiW",
+				"rawDescription": "GeneratedTip_Spell_IllaoiW_Description",
+				"rawDisplayName": "GeneratedTip_Spell_IllaoiW_DisplayName"
+			}
+		},
+		"championStats": {
+			"abilityHaste": 78.0,
+			"abilityPower": 0.0,
+			"armor": 149.18017578125,
+			"armorPenetrationFlat": 0.0,
+			"armorPenetrationPercent": 1.0,
+			"attackDamage": 379.0350341796875,
+			"attackRange": 125.0,
+			"attackSpeed": 0.795403003692627,
+			"bonusArmorPenetrationPercent": 1.0,
+			"bonusMagicPenetrationPercent": 1.0,
+			"cooldownReduction": 0.0,
+			"critChance": 0.0,
+			"critDamage": 175.0,
+			"currentHealth": 2783.3037109375,
+			"healthRegenRate": 11.038000106811524,
+			"lifeSteal": 0.0,
+			"magicLethality": 0.0,
+			"magicPenetrationFlat": 0.0,
+			"magicPenetrationPercent": 1.0,
+			"magicResist": 54.749000549316409,
+			"maxHealth": 2879.400146484375,
+			"moveSpeed": 365.0,
+			"physicalLethality": 0.0,
+			"resourceMax": 928.800048828125,
+			"resourceRegenRate": 3.8580002784729006,
+			"resourceType": "MANA",
+			"resourceValue": 210.8789520263672,
+			"spellVamp": 0.0,
+			"tenacity": 0.0
+		},
+		"currentGold": 5542.404296875,
+		"fullRunes": {
+			"generalRunes": [
+				{
+					"displayName": "Conqueror",
+					"id": 8010,
+					"rawDescription": "perk_tooltip_Conqueror",
+					"rawDisplayName": "perk_displayname_Conqueror"
+				},
+				{
+					"displayName": "Triumph",
+					"id": 9111,
+					"rawDescription": "perk_tooltip_9111",
+					"rawDisplayName": "perk_displayname_9111"
+				},
+				{
+					"displayName": "Legend: Tenacity",
+					"id": 9105,
+					"rawDescription": "perk_tooltip_9105",
+					"rawDisplayName": "perk_displayname_9105"
+				},
+				{
+					"displayName": "Last Stand",
+					"id": 8299,
+					"rawDescription": "perk_tooltip_8234",
+					"rawDisplayName": "perk_displayname_8234"
+				},
+				{
+					"displayName": "Taste of Blood",
+					"id": 8139,
+					"rawDescription": "perk_tooltip_TasteOfBlood",
+					"rawDisplayName": "perk_displayname_TasteOfBlood"
+				},
+				{
+					"displayName": "Ravenous Hunter",
+					"id": 8135,
+					"rawDescription": "perk_tooltip_RavenousHunter",
+					"rawDisplayName": "perk_displayname_RavenousHunter"
+				}
+			],
+			"keystone": {
+				"displayName": "Conqueror",
+				"id": 8010,
+				"rawDescription": "perk_tooltip_Conqueror",
+				"rawDisplayName": "perk_displayname_Conqueror"
+			},
+			"primaryRuneTree": {
+				"displayName": "Precision",
+				"id": 8000,
+				"rawDescription": "perkstyle_tooltip_7201",
+				"rawDisplayName": "perkstyle_displayname_7201"
+			},
+			"secondaryRuneTree": {
+				"displayName": "Domination",
+				"id": 8100,
+				"rawDescription": "perkstyle_tooltip_7200",
+				"rawDisplayName": "perkstyle_displayname_7200"
+			},
+			"statRunes": [
+				{
+					"id": 5007,
+					"rawDescription": "perk_tooltip_StatModCooldownReductionScaling"
+				},
+				{
+					"id": 5008,
+					"rawDescription": "perk_tooltip_StatModAdaptive"
+				},
+				{
+					"id": 5002,
+					"rawDescription": "perk_tooltip_StatModArmor"
+				}
+			]
+		},
+		"level": 17,
+		"summonerName": "Human Summoner"
+	},
+	"allPlayers": [
+		{
+			"championName": "Caitlyn",
+			"isBot": true,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Doran's Blade",
+					"itemID": 1055,
+					"price": 450,
+					"rawDescription": "GeneratedTip_Item_1055_Description",
+					"rawDisplayName": "Item_1055_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Immortal Shieldbow",
+					"itemID": 6673,
+					"price": 600,
+					"rawDescription": "GeneratedTip_Item_6673_Description",
+					"rawDisplayName": "Item_6673_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Dagger",
+					"itemID": 1042,
+					"price": 300,
+					"rawDescription": "GeneratedTip_Item_1042_Description",
+					"rawDisplayName": "Item_1042_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Berserker's Greaves",
+					"itemID": 3006,
+					"price": 500,
+					"rawDescription": "GeneratedTip_Item_3006_Description",
+					"rawDisplayName": "Item_3006_Name",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Long Sword",
+					"itemID": 1036,
+					"price": 350,
+					"rawDescription": "GeneratedTip_Item_1036_Description",
+					"rawDisplayName": "Item_1036_Name",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Long Sword",
+					"itemID": 1036,
+					"price": 350,
+					"rawDescription": "GeneratedTip_Item_1036_Description",
+					"rawDisplayName": "Item_1036_Name",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stealth Ward",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+					"rawDisplayName": "Item_3340_Name",
+					"slot": 6
+				}
+			],
+			"level": 12,
+			"position": "",
+			"rawChampionName": "game_character_displayname_Caitlyn",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Press the Attack",
+					"id": 8005,
+					"rawDescription": "perk_tooltip_PressTheAttack",
+					"rawDisplayName": "perk_displayname_PressTheAttack"
+				},
+				"primaryRuneTree": {
+					"displayName": "Precision",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Sorcery",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 2,
+				"creepScore": 110,
+				"deaths": 3,
+				"kills": 2,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "Caitlyn Bot",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Ignite",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Exhaust",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerExhaust_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerExhaust_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Wukong",
+			"isBot": true,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Doran's Blade",
+					"itemID": 1055,
+					"price": 450,
+					"rawDescription": "GeneratedTip_Item_1055_Description",
+					"rawDisplayName": "Item_1055_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Phage",
+					"itemID": 3044,
+					"price": 350,
+					"rawDescription": "GeneratedTip_Item_3044_Description",
+					"rawDisplayName": "Item_3044_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Sheen",
+					"itemID": 3057,
+					"price": 700,
+					"rawDescription": "GeneratedTip_Item_3057_Description",
+					"rawDisplayName": "Item_3057_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Kindlegem",
+					"itemID": 3067,
+					"price": 400,
+					"rawDescription": "GeneratedTip_Item_3067_Description",
+					"rawDisplayName": "Item_3067_Name",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Plated Steelcaps",
+					"itemID": 3047,
+					"price": 500,
+					"rawDescription": "GeneratedTip_Item_3047_Description",
+					"rawDisplayName": "Item_3047_Name",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Dagger",
+					"itemID": 1042,
+					"price": 300,
+					"rawDescription": "GeneratedTip_Item_1042_Description",
+					"rawDisplayName": "Item_1042_Name",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stealth Ward",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+					"rawDisplayName": "Item_3340_Name",
+					"slot": 6
+				}
+			],
+			"level": 11,
+			"position": "",
+			"rawChampionName": "game_character_displayname_MonkeyKing",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Grasp of the Undying",
+					"id": 8437,
+					"rawDescription": "perk_tooltip_GraspOfTheUndying",
+					"rawDisplayName": "perk_displayname_GraspOfTheUndying"
+				},
+				"primaryRuneTree": {
+					"displayName": "Resolve",
+					"id": 8400,
+					"rawDescription": "perkstyle_tooltip_7204",
+					"rawDisplayName": "perkstyle_displayname_7204"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Sorcery",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 0,
+				"creepScore": 40,
+				"deaths": 1,
+				"kills": 1,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "Wukong Bot",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Ghost",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHaste_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHaste_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Ignite",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Illaoi",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Goredrinker",
+					"itemID": 6630,
+					"price": 300,
+					"rawDescription": "GeneratedTip_Item_6630_Description",
+					"rawDisplayName": "Item_6630_Name",
+					"slot": 0
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Corrupting Potion",
+					"itemID": 2033,
+					"price": 350,
+					"rawDescription": "GeneratedTip_Item_2033_Description",
+					"rawDisplayName": "Item_2033_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Sterak's Gage",
+					"itemID": 3053,
+					"price": 725,
+					"rawDescription": "GeneratedTip_Item_3053_Description",
+					"rawDisplayName": "Item_3053_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Boots",
+					"itemID": 1001,
+					"price": 300,
+					"rawDescription": "GeneratedTip_Item_1001_Description",
+					"rawDisplayName": "Item_1001_Name",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Ravenous Hydra",
+					"itemID": 3074,
+					"price": 100,
+					"rawDescription": "GeneratedTip_Item_3074_Description",
+					"rawDisplayName": "Item_3074_Name",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Death's Dance",
+					"itemID": 6333,
+					"price": 325,
+					"rawDescription": "GeneratedTip_Item_6333_Description",
+					"rawDisplayName": "Item_6333_Name",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stealth Ward",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+					"rawDisplayName": "Item_3340_Name",
+					"slot": 6
+				}
+			],
+			"level": 17,
+			"position": "",
+			"rawChampionName": "game_character_displayname_Illaoi",
+			"rawSkinName": "game_character_skin_displayname_Illaoi_10",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Conqueror",
+					"id": 8010,
+					"rawDescription": "perk_tooltip_Conqueror",
+					"rawDisplayName": "perk_displayname_Conqueror"
+				},
+				"primaryRuneTree": {
+					"displayName": "Precision",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Domination",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				}
+			},
+			"scores": {
+				"assists": 1,
+				"creepScore": 250,
+				"deaths": 1,
+				"kills": 29,
+				"wardScore": 0.0
+			},
+			"skinID": 10,
+			"skinName": "Cosmic Invoker Illaoi",
+			"summonerName": "Human Summoner",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Ignite",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Cho'Gath",
+			"isBot": true,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Doran's Ring",
+					"itemID": 1056,
+					"price": 400,
+					"rawDescription": "GeneratedTip_Item_1056_Description",
+					"rawDisplayName": "Item_1056_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Plated Steelcaps",
+					"itemID": 3047,
+					"price": 500,
+					"rawDescription": "GeneratedTip_Item_3047_Description",
+					"rawDisplayName": "Item_3047_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Aegis of the Legion",
+					"itemID": 3105,
+					"price": 750,
+					"rawDescription": "GeneratedTip_Item_3105_Description",
+					"rawDisplayName": "Item_3105_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Bami's Cinder",
+					"itemID": 6660,
+					"price": 300,
+					"rawDescription": "GeneratedTip_Item_6660_Description",
+					"rawDisplayName": "Item_6660_Name",
+					"slot": 4
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stealth Ward",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+					"rawDisplayName": "Item_3340_Name",
+					"slot": 6
+				}
+			],
+			"level": 11,
+			"position": "",
+			"rawChampionName": "game_character_displayname_Chogath",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Arcane Comet",
+					"id": 8229,
+					"rawDescription": "perk_tooltip_ArcaneComet",
+					"rawDisplayName": "perk_displayname_ArcaneComet"
+				},
+				"primaryRuneTree": {
+					"displayName": "Sorcery",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Domination",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				}
+			},
+			"scores": {
+				"assists": 2,
+				"creepScore": 40,
+				"deaths": 5,
+				"kills": 0,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "Cho'Gath Bot",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Ignite",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Exhaust",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerExhaust_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerExhaust_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Master Yi",
+			"isBot": true,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Noonquiver",
+					"itemID": 6670,
+					"price": 300,
+					"rawDescription": "GeneratedTip_Item_6670_Description",
+					"rawDisplayName": "Item_6670_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Berserker's Greaves",
+					"itemID": 3006,
+					"price": 500,
+					"rawDescription": "GeneratedTip_Item_3006_Description",
+					"rawDisplayName": "Item_3006_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Cloak of Agility",
+					"itemID": 1018,
+					"price": 600,
+					"rawDescription": "GeneratedTip_Item_1018_Description",
+					"rawDisplayName": "Item_1018_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Vampiric Scepter",
+					"itemID": 1053,
+					"price": 550,
+					"rawDescription": "GeneratedTip_Item_1053_Description",
+					"rawDisplayName": "Item_1053_Name",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Dagger",
+					"itemID": 1042,
+					"price": 300,
+					"rawDescription": "GeneratedTip_Item_1042_Description",
+					"rawDisplayName": "Item_1042_Name",
+					"slot": 4
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stealth Ward",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+					"rawDisplayName": "Item_3340_Name",
+					"slot": 6
+				}
+			],
+			"level": 11,
+			"position": "",
+			"rawChampionName": "game_character_displayname_MasterYi",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Press the Attack",
+					"id": 8005,
+					"rawDescription": "perk_tooltip_PressTheAttack",
+					"rawDisplayName": "perk_displayname_PressTheAttack"
+				},
+				"primaryRuneTree": {
+					"displayName": "Precision",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Sorcery",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 3,
+				"creepScore": 40,
+				"deaths": 5,
+				"kills": 1,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "Master Yi Bot",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Teleport",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerTeleport_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerTeleport_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Ghost",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHaste_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHaste_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Ashe",
+			"isBot": true,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Doran's Blade",
+					"itemID": 1055,
+					"price": 450,
+					"rawDescription": "GeneratedTip_Item_1055_Description",
+					"rawDisplayName": "Item_1055_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Berserker's Greaves",
+					"itemID": 3006,
+					"price": 500,
+					"rawDescription": "GeneratedTip_Item_3006_Description",
+					"rawDisplayName": "Item_3006_Name",
+					"slot": 1
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Galeforce",
+					"itemID": 6671,
+					"price": 625,
+					"rawDescription": "GeneratedTip_Item_6671_Description",
+					"rawDisplayName": "Item_6671_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Recurve Bow",
+					"itemID": 1043,
+					"price": 400,
+					"rawDescription": "GeneratedTip_Item_1043_Description",
+					"rawDisplayName": "Item_1043_Name",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Vampiric Scepter",
+					"itemID": 1053,
+					"price": 550,
+					"rawDescription": "GeneratedTip_Item_1053_Description",
+					"rawDisplayName": "Item_1053_Name",
+					"slot": 4
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stealth Ward",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+					"rawDisplayName": "Item_3340_Name",
+					"slot": 6
+				}
+			],
+			"level": 12,
+			"position": "",
+			"rawChampionName": "game_character_displayname_Ashe",
+			"respawnTimer": 15.012939453125,
+			"runes": {
+				"keystone": {
+					"displayName": "Press the Attack",
+					"id": 8005,
+					"rawDescription": "perk_tooltip_PressTheAttack",
+					"rawDisplayName": "perk_displayname_PressTheAttack"
+				},
+				"primaryRuneTree": {
+					"displayName": "Precision",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Sorcery",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 2,
+				"creepScore": 70,
+				"deaths": 6,
+				"kills": 6,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "Ashe Bot",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Heal",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Tristana",
+			"isBot": true,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Doran's Blade",
+					"itemID": 1055,
+					"price": 450,
+					"rawDescription": "GeneratedTip_Item_1055_Description",
+					"rawDisplayName": "Item_1055_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Berserker's Greaves",
+					"itemID": 3006,
+					"price": 500,
+					"rawDescription": "GeneratedTip_Item_3006_Description",
+					"rawDisplayName": "Item_3006_Name",
+					"slot": 1
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Galeforce",
+					"itemID": 6671,
+					"price": 625,
+					"rawDescription": "GeneratedTip_Item_6671_Description",
+					"rawDisplayName": "Item_6671_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Long Sword",
+					"itemID": 1036,
+					"price": 350,
+					"rawDescription": "GeneratedTip_Item_1036_Description",
+					"rawDisplayName": "Item_1036_Name",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Long Sword",
+					"itemID": 1036,
+					"price": 350,
+					"rawDescription": "GeneratedTip_Item_1036_Description",
+					"rawDisplayName": "Item_1036_Name",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Dagger",
+					"itemID": 1042,
+					"price": 300,
+					"rawDescription": "GeneratedTip_Item_1042_Description",
+					"rawDisplayName": "Item_1042_Name",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stealth Ward",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+					"rawDisplayName": "Item_3340_Name",
+					"slot": 6
+				}
+			],
+			"level": 12,
+			"position": "",
+			"rawChampionName": "game_character_displayname_Tristana",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Press the Attack",
+					"id": 8005,
+					"rawDescription": "perk_tooltip_PressTheAttack",
+					"rawDisplayName": "perk_displayname_PressTheAttack"
+				},
+				"primaryRuneTree": {
+					"displayName": "Precision",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Sorcery",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 1,
+				"creepScore": 90,
+				"deaths": 5,
+				"kills": 3,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "Tristana Bot",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Heal",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Kog'Maw",
+			"isBot": true,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Doran's Shield",
+					"itemID": 1054,
+					"price": 450,
+					"rawDescription": "GeneratedTip_Item_1054_Description",
+					"rawDisplayName": "Item_1054_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Kraken Slayer",
+					"itemID": 6672,
+					"price": 625,
+					"rawDescription": "GeneratedTip_Item_6672_Description",
+					"rawDisplayName": "Item_6672_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Berserker's Greaves",
+					"itemID": 3006,
+					"price": 500,
+					"rawDescription": "GeneratedTip_Item_3006_Description",
+					"rawDisplayName": "Item_3006_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Rageknife",
+					"itemID": 6677,
+					"price": 200,
+					"rawDescription": "GeneratedTip_Item_6677_Description",
+					"rawDisplayName": "Item_6677_Name",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Dagger",
+					"itemID": 1042,
+					"price": 300,
+					"rawDescription": "GeneratedTip_Item_1042_Description",
+					"rawDisplayName": "Item_1042_Name",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Long Sword",
+					"itemID": 1036,
+					"price": 350,
+					"rawDescription": "GeneratedTip_Item_1036_Description",
+					"rawDisplayName": "Item_1036_Name",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stealth Ward",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+					"rawDisplayName": "Item_3340_Name",
+					"slot": 6
+				}
+			],
+			"level": 11,
+			"position": "",
+			"rawChampionName": "game_character_displayname_KogMaw",
+			"respawnTimer": 2.8132667541503908,
+			"runes": {
+				"keystone": {
+					"displayName": "Press the Attack",
+					"id": 8005,
+					"rawDescription": "perk_tooltip_PressTheAttack",
+					"rawDisplayName": "perk_displayname_PressTheAttack"
+				},
+				"primaryRuneTree": {
+					"displayName": "Precision",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Sorcery",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 1,
+				"creepScore": 80,
+				"deaths": 11,
+				"kills": 3,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "Kog'Maw Bot",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Heal",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Jax",
+			"isBot": true,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Corrupting Potion",
+					"itemID": 2033,
+					"price": 350,
+					"rawDescription": "GeneratedTip_Item_2033_Description",
+					"rawDisplayName": "Item_2033_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Plated Steelcaps",
+					"itemID": 3047,
+					"price": 500,
+					"rawDescription": "GeneratedTip_Item_3047_Description",
+					"rawDisplayName": "Item_3047_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Hearthbound Axe",
+					"itemID": 3051,
+					"price": 450,
+					"rawDescription": "GeneratedTip_Item_3051_Description",
+					"rawDisplayName": "Item_3051_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Phage",
+					"itemID": 3044,
+					"price": 350,
+					"rawDescription": "GeneratedTip_Item_3044_Description",
+					"rawDisplayName": "Item_3044_Name",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Vampiric Scepter",
+					"itemID": 1053,
+					"price": 550,
+					"rawDescription": "GeneratedTip_Item_1053_Description",
+					"rawDisplayName": "Item_1053_Name",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Kindlegem",
+					"itemID": 3067,
+					"price": 400,
+					"rawDescription": "GeneratedTip_Item_3067_Description",
+					"rawDisplayName": "Item_3067_Name",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stealth Ward",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+					"rawDisplayName": "Item_3340_Name",
+					"slot": 6
+				}
+			],
+			"level": 12,
+			"position": "",
+			"rawChampionName": "game_character_displayname_Jax",
+			"respawnTimer": 18.214323043823243,
+			"runes": {
+				"keystone": {
+					"displayName": "Press the Attack",
+					"id": 8005,
+					"rawDescription": "perk_tooltip_PressTheAttack",
+					"rawDisplayName": "perk_displayname_PressTheAttack"
+				},
+				"primaryRuneTree": {
+					"displayName": "Precision",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Sorcery",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 4,
+				"creepScore": 50,
+				"deaths": 6,
+				"kills": 3,
+				"wardScore": 1.3162199258804322
+			},
+			"skinID": 0,
+			"summonerName": "Jax Bot",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Ignite",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Rammus",
+			"isBot": true,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Bramble Vest",
+					"itemID": 3076,
+					"price": 200,
+					"rawDescription": "GeneratedTip_Item_3076_Description",
+					"rawDisplayName": "Item_3076_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Plated Steelcaps",
+					"itemID": 3047,
+					"price": 500,
+					"rawDescription": "GeneratedTip_Item_3047_Description",
+					"rawDisplayName": "Item_3047_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Cloth Armor",
+					"itemID": 1029,
+					"price": 300,
+					"rawDescription": "GeneratedTip_Item_1029_Description",
+					"rawDisplayName": "Item_1029_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Bami's Cinder",
+					"itemID": 6660,
+					"price": 300,
+					"rawDescription": "GeneratedTip_Item_6660_Description",
+					"rawDisplayName": "Item_6660_Name",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Null-Magic Mantle",
+					"itemID": 1033,
+					"price": 450,
+					"rawDescription": "GeneratedTip_Item_1033_Description",
+					"rawDisplayName": "Item_1033_Name",
+					"slot": 4
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stealth Ward",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+					"rawDisplayName": "Item_3340_Name",
+					"slot": 6
+				}
+			],
+			"level": 11,
+			"position": "",
+			"rawChampionName": "game_character_displayname_Rammus",
+			"respawnTimer": 5.081022262573242,
+			"runes": {
+				"keystone": {
+					"displayName": "Grasp of the Undying",
+					"id": 8437,
+					"rawDescription": "perk_tooltip_GraspOfTheUndying",
+					"rawDisplayName": "perk_displayname_GraspOfTheUndying"
+				},
+				"primaryRuneTree": {
+					"displayName": "Resolve",
+					"id": 8400,
+					"rawDescription": "perkstyle_tooltip_7204",
+					"rawDisplayName": "perkstyle_displayname_7204"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Sorcery",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 4,
+				"creepScore": 20,
+				"deaths": 5,
+				"kills": 0,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "Rammus Bot",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Teleport",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerTeleport_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerTeleport_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		}
+	],
+	"events": {
+		"Events": [
+			{
+				"EventID": 0,
+				"EventName": "GameStart",
+				"EventTime": 0.016983499750494958
+			},
+			{
+				"EventID": 1,
+				"EventName": "MinionsSpawning",
+				"EventTime": 65.01327514648438
+			},
+			{
+				"Assisters": [
+					"Ashe Bot"
+				],
+				"EventID": 2,
+				"EventName": "ChampionKill",
+				"EventTime": 131.73861694335938,
+				"KillerName": "Jax Bot",
+				"VictimName": "Cho'Gath Bot"
+			},
+			{
+				"EventID": 3,
+				"EventName": "FirstBlood",
+				"EventTime": 131.73861694335938,
+				"Recipient": "Jax Bot"
+			},
+			{
+				"Assisters": [],
+				"EventID": 4,
+				"EventName": "ChampionKill",
+				"EventTime": 171.18099975585938,
+				"KillerName": "Human Summoner",
+				"VictimName": "Kog'Maw Bot"
+			},
+			{
+				"Assisters": [],
+				"EventID": 5,
+				"EventName": "ChampionKill",
+				"EventTime": 374.8892822265625,
+				"KillerName": "Human Summoner",
+				"VictimName": "Kog'Maw Bot"
+			},
+			{
+				"Assisters": [],
+				"EventID": 6,
+				"EventName": "ChampionKill",
+				"EventTime": 378.6434326171875,
+				"KillerName": "Jax Bot",
+				"VictimName": "Cho'Gath Bot"
+			},
+			{
+				"Assisters": [],
+				"EventID": 7,
+				"EventName": "ChampionKill",
+				"EventTime": 426.2886962890625,
+				"KillerName": "Human Summoner",
+				"VictimName": "Kog'Maw Bot"
+			},
+			{
+				"Assisters": [],
+				"EventID": 8,
+				"EventName": "ChampionKill",
+				"EventTime": 475.8363342285156,
+				"KillerName": "Human Summoner",
+				"VictimName": "Kog'Maw Bot"
+			},
+			{
+				"Assisters": [
+					"Jax Bot"
+				],
+				"EventID": 9,
+				"EventName": "ChampionKill",
+				"EventTime": 478.3719787597656,
+				"KillerName": "Ashe Bot",
+				"VictimName": "Master Yi Bot"
+			},
+			{
+				"Assisters": [
+					"Master Yi Bot"
+				],
+				"EventID": 10,
+				"EventName": "ChampionKill",
+				"EventTime": 525.6753540039063,
+				"KillerName": "Human Summoner",
+				"VictimName": "Ashe Bot"
+			},
+			{
+				"Assisters": [
+					"Master Yi Bot"
+				],
+				"EventID": 11,
+				"EventName": "ChampionKill",
+				"EventTime": 528.4457397460938,
+				"KillerName": "Human Summoner",
+				"VictimName": "Jax Bot"
+			},
+			{
+				"EventID": 12,
+				"EventName": "Multikill",
+				"EventTime": 528.4457397460938,
+				"KillStreak": 2,
+				"KillerName": "Human Summoner"
+			},
+			{
+				"Assisters": [
+					"Jax Bot"
+				],
+				"EventID": 13,
+				"EventName": "ChampionKill",
+				"EventTime": 576.4920043945313,
+				"KillerName": "Ashe Bot",
+				"VictimName": "Master Yi Bot"
+			},
+			{
+				"Assisters": [],
+				"EventID": 14,
+				"EventName": "ChampionKill",
+				"EventTime": 588.098876953125,
+				"KillerName": "Human Summoner",
+				"VictimName": "Kog'Maw Bot"
+			},
+			{
+				"Assisters": [
+					"Jax Bot"
+				],
+				"EventID": 15,
+				"EventName": "ChampionKill",
+				"EventTime": 627.5177612304688,
+				"KillerName": "Ashe Bot",
+				"VictimName": "Cho'Gath Bot"
+			},
+			{
+				"Assisters": [],
+				"EventID": 16,
+				"EventName": "ChampionKill",
+				"EventTime": 633.9243774414063,
+				"KillerName": "Human Summoner",
+				"VictimName": "Kog'Maw Bot"
+			},
+			{
+				"Assisters": [],
+				"EventID": 17,
+				"EventName": "TurretKilled",
+				"EventTime": 677.142333984375,
+				"KillerName": "Human Summoner",
+				"TurretKilled": "Turret_T2_C_05_A"
+			},
+			{
+				"EventID": 18,
+				"EventName": "FirstBrick",
+				"EventTime": 677.142333984375,
+				"KillerName": "Human Summoner"
+			},
+			{
+				"Assisters": [],
+				"EventID": 19,
+				"EventName": "ChampionKill",
+				"EventTime": 686.24755859375,
+				"KillerName": "Human Summoner",
+				"VictimName": "Kog'Maw Bot"
+			},
+			{
+				"Assisters": [],
+				"EventID": 20,
+				"EventName": "TurretKilled",
+				"EventTime": 860.2664184570313,
+				"KillerName": "Caitlyn Bot",
+				"TurretKilled": "Turret_T2_L_03_A"
+			},
+			{
+				"Assisters": [],
+				"EventID": 21,
+				"EventName": "ChampionKill",
+				"EventTime": 865.3055419921875,
+				"KillerName": "Ashe Bot",
+				"VictimName": "Master Yi Bot"
+			},
+			{
+				"Assisters": [],
+				"EventID": 22,
+				"EventName": "ChampionKill",
+				"EventTime": 879.4718017578125,
+				"KillerName": "Human Summoner",
+				"VictimName": "Rammus Bot"
+			},
+			{
+				"Assisters": [],
+				"EventID": 23,
+				"EventName": "ChampionKill",
+				"EventTime": 882.1046752929688,
+				"KillerName": "Human Summoner",
+				"VictimName": "Kog'Maw Bot"
+			},
+			{
+				"EventID": 24,
+				"EventName": "Multikill",
+				"EventTime": 882.1046752929688,
+				"KillStreak": 2,
+				"KillerName": "Human Summoner"
+			},
+			{
+				"Assisters": [],
+				"EventID": 25,
+				"EventName": "ChampionKill",
+				"EventTime": 883.9705200195313,
+				"KillerName": "Human Summoner",
+				"VictimName": "Jax Bot"
+			},
+			{
+				"EventID": 26,
+				"EventName": "Multikill",
+				"EventTime": 883.9705200195313,
+				"KillStreak": 3,
+				"KillerName": "Human Summoner"
+			},
+			{
+				"Assisters": [],
+				"EventID": 27,
+				"EventName": "ChampionKill",
+				"EventTime": 921.616943359375,
+				"KillerName": "Caitlyn Bot",
+				"VictimName": "Tristana Bot"
+			},
+			{
+				"Assisters": [
+					"Human Summoner",
+					"Cho'Gath Bot"
+				],
+				"EventID": 28,
+				"EventName": "TurretKilled",
+				"EventTime": 925.2981567382813,
+				"KillerName": "Master Yi Bot",
+				"TurretKilled": "Turret_T2_R_03_A"
+			},
+			{
+				"Assisters": [],
+				"DragonType": "Fire",
+				"EventID": 29,
+				"EventName": "DragonKill",
+				"EventTime": 948.3150024414063,
+				"KillerName": "Human Summoner",
+				"Stolen": "False"
+			},
+			{
+				"Assisters": [],
+				"EventID": 30,
+				"EventName": "TurretKilled",
+				"EventTime": 948.343017578125,
+				"KillerName": "Ashe Bot",
+				"TurretKilled": "Turret_T1_C_05_A"
+			},
+			{
+				"Assisters": [],
+				"EventID": 31,
+				"EventName": "ChampionKill",
+				"EventTime": 965.78369140625,
+				"KillerName": "Human Summoner",
+				"VictimName": "Kog'Maw Bot"
+			},
+			{
+				"Assisters": [],
+				"EventID": 32,
+				"EventName": "ChampionKill",
+				"EventTime": 998.6331176757813,
+				"KillerName": "Jax Bot",
+				"VictimName": "Cho'Gath Bot"
+			},
+			{
+				"Assisters": [
+					"Rammus Bot"
+				],
+				"EventID": 33,
+				"EventName": "ChampionKill",
+				"EventTime": 1005.7012939453125,
+				"KillerName": "Tristana Bot",
+				"VictimName": "Caitlyn Bot"
+			},
+			{
+				"Assisters": [],
+				"EventID": 34,
+				"EventName": "ChampionKill",
+				"EventTime": 1047.8931884765626,
+				"KillerName": "Human Summoner",
+				"VictimName": "Ashe Bot"
+			},
+			{
+				"Assisters": [
+					"Ashe Bot"
+				],
+				"EventID": 35,
+				"EventName": "ChampionKill",
+				"EventTime": 1125.8509521484376,
+				"KillerName": "Kog'Maw Bot",
+				"VictimName": "Caitlyn Bot"
+			},
+			{
+				"Assisters": [],
+				"EventID": 36,
+				"EventName": "ChampionKill",
+				"EventTime": 1139.644287109375,
+				"KillerName": "Human Summoner",
+				"VictimName": "Tristana Bot"
+			},
+			{
+				"Assisters": [],
+				"EventID": 37,
+				"EventName": "ChampionKill",
+				"EventTime": 1152.71923828125,
+				"KillerName": "Human Summoner",
+				"VictimName": "Rammus Bot"
+			},
+			{
+				"Assisters": [],
+				"EventID": 38,
+				"EventName": "TurretKilled",
+				"EventTime": 1158.94873046875,
+				"KillerName": "Human Summoner",
+				"TurretKilled": "Turret_T2_L_02_A"
+			},
+			{
+				"Assisters": [],
+				"EventID": 39,
+				"EventName": "ChampionKill",
+				"EventTime": 1184.03466796875,
+				"KillerName": "Human Summoner",
+				"VictimName": "Tristana Bot"
+			},
+			{
+				"Assisters": [],
+				"EventID": 40,
+				"EventName": "ChampionKill",
+				"EventTime": 1197.933837890625,
+				"KillerName": "Human Summoner",
+				"VictimName": "Rammus Bot"
+			},
+			{
+				"Assisters": [],
+				"EventID": 41,
+				"EventName": "TurretKilled",
+				"EventTime": 1210.7969970703126,
+				"KillerName": "Human Summoner",
+				"TurretKilled": "Turret_T2_L_01_A"
+			},
+			{
+				"Assisters": [],
+				"EventID": 42,
+				"EventName": "ChampionKill",
+				"EventTime": 1215.640869140625,
+				"KillerName": "Human Summoner",
+				"VictimName": "Jax Bot"
+			},
+			{
+				"Assisters": [
+					"Jax Bot"
+				],
+				"EventID": 43,
+				"EventName": "ChampionKill",
+				"EventTime": 1216.504638671875,
+				"KillerName": "Kog'Maw Bot",
+				"VictimName": "Human Summoner"
+			},
+			{
+				"Assisters": [],
+				"EventID": 44,
+				"EventName": "ChampionKill",
+				"EventTime": 1219.03955078125,
+				"KillerName": "Ashe Bot",
+				"VictimName": "Wukong Bot"
+			},
+			{
+				"Assisters": [],
+				"EventID": 45,
+				"EventName": "ChampionKill",
+				"EventTime": 1220.2772216796876,
+				"KillerName": "Ashe Bot",
+				"VictimName": "Master Yi Bot"
+			},
+			{
+				"EventID": 46,
+				"EventName": "Multikill",
+				"EventTime": 1220.2772216796876,
+				"KillStreak": 2,
+				"KillerName": "Ashe Bot"
+			},
+			{
+				"Assisters": [
+					"Kog'Maw Bot",
+					"Rammus Bot"
+				],
+				"EventID": 47,
+				"EventName": "ChampionKill",
+				"EventTime": 1260.989013671875,
+				"KillerName": "Tristana Bot",
+				"VictimName": "Cho'Gath Bot"
+			},
+			{
+				"Assisters": [
+					"Tristana Bot",
+					"Rammus Bot"
+				],
+				"EventID": 48,
+				"EventName": "ChampionKill",
+				"EventTime": 1277.1881103515626,
+				"KillerName": "Kog'Maw Bot",
+				"VictimName": "Caitlyn Bot"
+			},
+			{
+				"Assisters": [
+					"Human Summoner"
+				],
+				"EventID": 49,
+				"EventName": "ChampionKill",
+				"EventTime": 1298.5028076171876,
+				"KillerName": "Wukong Bot",
+				"VictimName": "Ashe Bot"
+			},
+			{
+				"Assisters": [
+					"Rammus Bot"
+				],
+				"EventID": 50,
+				"EventName": "ChampionKill",
+				"EventTime": 1300.676513671875,
+				"KillerName": "Tristana Bot",
+				"VictimName": "Master Yi Bot"
+			},
+			{
+				"Assisters": [
+					"Rammus Bot"
+				],
+				"EventID": 51,
+				"EventName": "TurretKilled",
+				"EventTime": 1311.1031494140626,
+				"KillerName": "Tristana Bot",
+				"TurretKilled": "Turret_T1_L_03_A"
+			},
+			{
+				"Assisters": [],
+				"DragonType": "Earth",
+				"EventID": 52,
+				"EventName": "DragonKill",
+				"EventTime": 1338.1148681640626,
+				"KillerName": "Human Summoner",
+				"Stolen": "False"
+			},
+			{
+				"Assisters": [],
+				"EventID": 53,
+				"EventName": "ChampionKill",
+				"EventTime": 1365.7755126953126,
+				"KillerName": "Human Summoner",
+				"VictimName": "Ashe Bot"
+			},
+			{
+				"Assisters": [],
+				"EventID": 54,
+				"EventName": "ChampionKill",
+				"EventTime": 1365.7755126953126,
+				"KillerName": "Human Summoner",
+				"VictimName": "Jax Bot"
+			},
+			{
+				"EventID": 55,
+				"EventName": "Multikill",
+				"EventTime": 1365.7755126953126,
+				"KillStreak": 2,
+				"KillerName": "Human Summoner"
+			},
+			{
+				"Assisters": [
+					"Master Yi Bot"
+				],
+				"EventID": 56,
+				"EventName": "ChampionKill",
+				"EventTime": 1366.498779296875,
+				"KillerName": "Caitlyn Bot",
+				"VictimName": "Kog'Maw Bot"
+			},
+			{
+				"Assisters": [],
+				"EventID": 57,
+				"EventName": "TurretKilled",
+				"EventTime": 1384.3154296875,
+				"KillerName": "Human Summoner",
+				"TurretKilled": "Turret_T2_C_04_A"
+			},
+			{
+				"Assisters": [
+					"Caitlyn Bot",
+					"Cho'Gath Bot"
+				],
+				"EventID": 58,
+				"EventName": "ChampionKill",
+				"EventTime": 1398.009521484375,
+				"KillerName": "Master Yi Bot",
+				"VictimName": "Tristana Bot"
+			},
+			{
+				"Assisters": [],
+				"EventID": 59,
+				"EventName": "ChampionKill",
+				"EventTime": 1408.8629150390626,
+				"KillerName": "Human Summoner",
+				"VictimName": "Rammus Bot"
+			},
+			{
+				"Assisters": [
+					"Wukong Bot"
+				],
+				"EventID": 60,
+				"EventName": "TurretKilled",
+				"EventTime": 1413.127197265625,
+				"KillerName": "Human Summoner",
+				"TurretKilled": "Turret_T2_C_03_A"
+			},
+			{
+				"Assisters": [],
+				"EventID": 61,
+				"EventName": "ChampionKill",
+				"EventTime": 1418.5133056640626,
+				"KillerName": "Human Summoner",
+				"VictimName": "Jax Bot"
+			},
+			{
+				"EventID": 62,
+				"EventName": "Multikill",
+				"EventTime": 1418.5133056640626,
+				"KillStreak": 2,
+				"KillerName": "Human Summoner"
+			},
+			{
+				"Assisters": [],
+				"EventID": 63,
+				"EventName": "ChampionKill",
+				"EventTime": 1423.5625,
+				"KillerName": "Human Summoner",
+				"VictimName": "Ashe Bot"
+			},
+			{
+				"EventID": 64,
+				"EventName": "Multikill",
+				"EventTime": 1423.5625,
+				"KillStreak": 3,
+				"KillerName": "Human Summoner"
+			},
+			{
+				"Assisters": [],
+				"EventID": 65,
+				"EventName": "InhibKilled",
+				"EventTime": 1434.92431640625,
+				"InhibKilled": "Barracks_T2_C1",
+				"KillerName": "Human Summoner"
+			},
+			{
+				"Assisters": [
+					"Caitlyn Bot",
+					"Cho'Gath Bot",
+					"Wukong Bot"
+				],
+				"EventID": 66,
+				"EventName": "InhibKilled",
+				"EventTime": 1438.7200927734376,
+				"InhibKilled": "Barracks_T2_L1",
+				"KillerName": "Master Yi Bot"
+			},
+			{
+				"Assisters": [],
+				"EventID": 67,
+				"EventName": "ChampionKill",
+				"EventTime": 1445.72900390625,
+				"KillerName": "Human Summoner",
+				"VictimName": "Tristana Bot"
+			},
+			{
+				"Assisters": [],
+				"EventID": 68,
+				"EventName": "ChampionKill",
+				"EventTime": 1460.41015625,
+				"KillerName": "Human Summoner",
+				"VictimName": "Kog'Maw Bot"
+			},
+			{
+				"Assisters": [
+					"Caitlyn Bot",
+					"Cho'Gath Bot"
+				],
+				"EventID": 69,
+				"EventName": "ChampionKill",
+				"EventTime": 1465.3494873046876,
+				"KillerName": "Human Summoner",
+				"VictimName": "Rammus Bot"
+			},
+			{
+				"EventID": 70,
+				"EventName": "Multikill",
+				"EventTime": 1465.3494873046876,
+				"KillStreak": 2,
+				"KillerName": "Human Summoner"
+			},
+			{
+				"Assisters": [],
+				"EventID": 71,
+				"EventName": "ChampionKill",
+				"EventTime": 1469.8570556640626,
+				"KillerName": "Human Summoner",
+				"VictimName": "Ashe Bot"
+			},
+			{
+				"EventID": 72,
+				"EventName": "Multikill",
+				"EventTime": 1469.8570556640626,
+				"KillStreak": 3,
+				"KillerName": "Human Summoner"
+			},
+			{
+				"Assisters": [],
+				"EventID": 73,
+				"EventName": "ChampionKill",
+				"EventTime": 1473.04150390625,
+				"KillerName": "Human Summoner",
+				"VictimName": "Jax Bot"
+			},
+			{
+				"EventID": 74,
+				"EventName": "Multikill",
+				"EventTime": 1473.04150390625,
+				"KillStreak": 4,
+				"KillerName": "Human Summoner"
+			},
+			{
+				"Acer": "Human Summoner",
+				"AcingTeam": "ORDER",
+				"EventID": 75,
+				"EventName": "Ace",
+				"EventTime": 1473.04150390625
+			},
+			{
+				"Assisters": [
+					"Master Yi Bot",
+					"Cho'Gath Bot",
+					"Wukong Bot"
+				],
+				"EventID": 76,
+				"EventName": "TurretKilled",
+				"EventTime": 1474.60498046875,
+				"KillerName": "Caitlyn Bot",
+				"TurretKilled": "Turret_T2_C_02_A"
+			},
+			{
+				"Assisters": [
+					"Human Summoner",
+					"Caitlyn Bot",
+					"Wukong Bot"
+				],
+				"EventID": 77,
+				"EventName": "TurretKilled",
+				"EventTime": 1481.6795654296876,
+				"KillerName": "Cho'Gath Bot",
+				"TurretKilled": "Turret_T2_C_01_A"
+			}
+		]
+	},
+	"gameData": {
+		"gameMode": "CLASSIC",
+		"gameTime": 1495.371337890625,
+		"mapName": "Map11",
+		"mapNumber": 11,
+		"mapTerrain": "Ocean"
+	}
+}

@@ -13,8 +13,12 @@ namespace LGO.LeagueOfLegends.ClientApi.Model.Player
         bool IsDead { get; }
 
         TimeSpan RespawnTime { get; }
+        
+        bool IsBot { get; }
 
         LolPositionType Position { get; }
+        
+        int Level { get; }
 
         LolTeamType Team { get; }
 

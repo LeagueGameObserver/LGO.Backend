@@ -14,7 +14,7 @@ namespace LGO.Backend.Core.Model.Converter
 
         public override TEnum? ReadJson(JsonReader reader, Type objectType, TEnum? existingValue, bool hasExistingValue, JsonSerializer serializer)
         {
-            return Mapping.Get(reader.ReadAsString());
+            return Mapping.Get(reader.Value as string);
         }
 
         public override void WriteJson(JsonWriter writer, TEnum? value, JsonSerializer serializer)

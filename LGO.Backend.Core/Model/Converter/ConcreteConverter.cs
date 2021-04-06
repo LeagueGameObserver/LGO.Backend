@@ -3,16 +3,18 @@ using Newtonsoft.Json;
 
 namespace LGO.Backend.Core.Model.Converter
 {
-    public class ConcreteConverter<T> : JsonConverter<T>
+    public class ConcreteConverter<TInterface, TImplementation> : JsonConverter<TInterface>
+        where TImplementation : TInterface
     {
-        public override void WriteJson(JsonWriter writer, T? value, JsonSerializer serializer)
+        public override void WriteJson(JsonWriter writer, TInterface? value, JsonSerializer serializer)
         {
             serializer.Serialize(writer, value);
         }
 
-        public override T? ReadJson(JsonReader reader, Type objectType, T? existingValue, bool hasExistingValue, JsonSerializer serializer)
+        public override TInterface? ReadJson(JsonReader reader, Type objectType, TInterface? existingValue,
+            bool hasExistingValue, JsonSerializer serializer)
         {
-            return serializer.Deserialize<T>(reader);
+            return serializer.Deserialize<TImplementation>(reader);
         }
     }
 }

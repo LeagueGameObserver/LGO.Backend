@@ -3,5 +3,7 @@
     public interface ILolClientActivePlayer
     {
         string SummonerName { get; }
+        
+        double CurrentGold { get; }
     }
 }

@@ -12,7 +12,7 @@ namespace LGO.LeagueOfLegends.ClientApi.Model.Converter
 
         public override TimeSpan ReadJson(JsonReader reader, Type objectType, TimeSpan existingValue, bool hasExistingValue, JsonSerializer serializer)
         {
-            return TimeSpan.FromSeconds(reader.ReadAsDouble() ?? 0.0d);
+            return TimeSpan.FromSeconds((double) (reader.Value ?? 0.0d));
         }
     }
 }
