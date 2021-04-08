@@ -1,0 +1,2054 @@
+{
+	"activePlayer": {
+		"abilities": {
+			"E": {
+				"abilityLevel": 5,
+				"displayName": "Lucent Singularity",
+				"id": "LuxLightStrikeKugel",
+				"rawDescription": "GeneratedTip_Spell_LuxLightStrikeKugel_Description",
+				"rawDisplayName": "GeneratedTip_Spell_LuxLightStrikeKugel_DisplayName"
+			},
+			"Passive": {
+				"displayName": "Illumination",
+				"id": "LuxIlluminationPassive",
+				"rawDescription": "GeneratedTip_Passive_LuxIlluminationPassive_Description",
+				"rawDisplayName": "GeneratedTip_Passive_LuxIlluminationPassive_DisplayName"
+			},
+			"Q": {
+				"abilityLevel": 5,
+				"displayName": "Light Binding",
+				"id": "LuxLightBinding",
+				"rawDescription": "GeneratedTip_Spell_LuxLightBinding_Description",
+				"rawDisplayName": "GeneratedTip_Spell_LuxLightBinding_DisplayName"
+			},
+			"R": {
+				"abilityLevel": 2,
+				"displayName": "Final Spark",
+				"id": "LuxMaliceCannon",
+				"rawDescription": "GeneratedTip_Spell_LuxMaliceCannon_Description",
+				"rawDisplayName": "GeneratedTip_Spell_LuxMaliceCannon_DisplayName"
+			},
+			"W": {
+				"abilityLevel": 1,
+				"displayName": "Prismatic Barrier",
+				"id": "LuxPrismaticWave",
+				"rawDescription": "GeneratedTip_Spell_LuxPrismaticWave_Description",
+				"rawDisplayName": "GeneratedTip_Spell_LuxPrismaticWave_DisplayName"
+			}
+		},
+		"championStats": {
+			"abilityHaste": 28.0,
+			"abilityPower": 350.3240966796875,
+			"armor": 72.9280014038086,
+			"armorPenetrationFlat": 0.0,
+			"armorPenetrationPercent": 1.0,
+			"attackDamage": 107.99885559082031,
+			"attackRange": 550.0,
+			"attackSpeed": 0.7374375462532044,
+			"bonusArmorPenetrationPercent": 1.0,
+			"bonusMagicPenetrationPercent": 1.0,
+			"cooldownReduction": 0.0,
+			"critChance": 0.0,
+			"critDamage": 175.0,
+			"currentHealth": 1012.9876708984375,
+			"healthRegenRate": 2.304500102996826,
+			"lifeSteal": 0.0,
+			"magicLethality": 0.0,
+			"magicPenetrationFlat": 11.0,
+			"magicPenetrationPercent": 1.0,
+			"magicResist": 37.60349655151367,
+			"maxHealth": 1590.75,
+			"moveSpeed": 487.375,
+			"physicalLethality": 0.0,
+			"resourceMax": 1337.324951171875,
+			"resourceRegenRate": 3.3520002365112306,
+			"resourceType": "MANA",
+			"resourceValue": 516.569091796875,
+			"spellVamp": 0.0,
+			"tenacity": 0.0
+		},
+		"currentGold": 3439.805908203125,
+		"fullRunes": {
+			"generalRunes": [
+				{
+					"displayName": "Dark Harvest",
+					"id": 8128,
+					"rawDescription": "perk_tooltip_DarkHarvest",
+					"rawDisplayName": "perk_displayname_DarkHarvest"
+				},
+				{
+					"displayName": "Cheap Shot",
+					"id": 8126,
+					"rawDescription": "perk_tooltip_CheapShot",
+					"rawDisplayName": "perk_displayname_CheapShot"
+				},
+				{
+					"displayName": "Eyeball Collection",
+					"id": 8138,
+					"rawDescription": "perk_tooltip_EyeballCollection",
+					"rawDisplayName": "perk_displayname_EyeballCollection"
+				},
+				{
+					"displayName": "Ultimate Hunter",
+					"id": 8106,
+					"rawDescription": "perk_tooltip_UltimateHunter",
+					"rawDisplayName": "perk_displayname_UltimateHunter"
+				},
+				{
+					"displayName": "Presence of Mind",
+					"id": 8009,
+					"rawDescription": "perk_tooltip_PresenceOfMind",
+					"rawDisplayName": "perk_displayname_PresenceOfMind"
+				},
+				{
+					"displayName": "Coup de Grace",
+					"id": 8014,
+					"rawDescription": "perk_tooltip_CoupDeGrace",
+					"rawDisplayName": "perk_displayname_CoupDeGrace"
+				}
+			],
+			"keystone": {
+				"displayName": "Dark Harvest",
+				"id": 8128,
+				"rawDescription": "perk_tooltip_DarkHarvest",
+				"rawDisplayName": "perk_displayname_DarkHarvest"
+			},
+			"primaryRuneTree": {
+				"displayName": "Domination",
+				"id": 8100,
+				"rawDescription": "perkstyle_tooltip_7200",
+				"rawDisplayName": "perkstyle_displayname_7200"
+			},
+			"secondaryRuneTree": {
+				"displayName": "Precision",
+				"id": 8000,
+				"rawDescription": "perkstyle_tooltip_7201",
+				"rawDisplayName": "perkstyle_displayname_7201"
+			},
+			"statRunes": [
+				{
+					"id": 5007,
+					"rawDescription": "perk_tooltip_StatModCooldownReductionScaling"
+				},
+				{
+					"id": 5008,
+					"rawDescription": "perk_tooltip_StatModAdaptive"
+				},
+				{
+					"id": 5002,
+					"rawDescription": "perk_tooltip_StatModArmor"
+				}
+			]
+		},
+		"level": 13,
+		"summonerName": "Active Player"
+	},
+	"allPlayers": [
+		{
+			"championName": "Vayne",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Doran's Blade",
+					"itemID": 1055,
+					"price": 450,
+					"rawDescription": "GeneratedTip_Item_1055_Description",
+					"rawDisplayName": "Item_1055_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Immortal Shieldbow",
+					"itemID": 6673,
+					"price": 600,
+					"rawDescription": "GeneratedTip_Item_6673_Description",
+					"rawDisplayName": "Item_6673_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Zeal",
+					"itemID": 3086,
+					"price": 150,
+					"rawDescription": "GeneratedTip_Item_3086_Description",
+					"rawDisplayName": "Item_3086_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Berserker's Greaves",
+					"itemID": 3006,
+					"price": 500,
+					"rawDescription": "GeneratedTip_Item_3006_Description",
+					"rawDisplayName": "Item_3006_Name",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Long Sword",
+					"itemID": 1036,
+					"price": 350,
+					"rawDescription": "GeneratedTip_Item_1036_Description",
+					"rawDisplayName": "Item_1036_Name",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Long Sword",
+					"itemID": 1036,
+					"price": 350,
+					"rawDescription": "GeneratedTip_Item_1036_Description",
+					"rawDisplayName": "Item_1036_Name",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stealth Ward",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+					"rawDisplayName": "Item_3340_Name",
+					"slot": 6
+				}
+			],
+			"level": 13,
+			"position": "TOP",
+			"rawChampionName": "game_character_displayname_Vayne",
+			"respawnTimer": 12.104557037353516,
+			"runes": {
+				"keystone": {
+					"displayName": "Press the Attack",
+					"id": 8005,
+					"rawDescription": "perk_tooltip_PressTheAttack",
+					"rawDisplayName": "perk_displayname_PressTheAttack"
+				},
+				"primaryRuneTree": {
+					"displayName": "Precision",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Domination",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				}
+			},
+			"scores": {
+				"assists": 2,
+				"creepScore": 130,
+				"deaths": 6,
+				"kills": 0,
+				"wardScore": 14.433560371398926
+			},
+			"skinID": 0,
+			"summonerName": "BlueSideTopPlayer",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Teleport",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerTeleport_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerTeleport_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Xin Zhao",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "B. F. Sword",
+					"itemID": 1038,
+					"price": 1300,
+					"rawDescription": "GeneratedTip_Item_1038_Description",
+					"rawDisplayName": "Item_1038_Name",
+					"slot": 0
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stopwatch",
+					"itemID": 2420,
+					"price": 650,
+					"rawDescription": "GeneratedTip_Item_2420_Description",
+					"rawDisplayName": "Item_2420_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Eclipse",
+					"itemID": 6692,
+					"price": 850,
+					"rawDescription": "GeneratedTip_Item_6692_Description",
+					"rawDisplayName": "Item_6692_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Plated Steelcaps",
+					"itemID": 3047,
+					"price": 500,
+					"rawDescription": "GeneratedTip_Item_3047_Description",
+					"rawDisplayName": "Item_3047_Name",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Blade of The Ruined King",
+					"itemID": 3153,
+					"price": 425,
+					"rawDescription": "GeneratedTip_Item_3153_Description",
+					"rawDisplayName": "Item_3153_Name",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Sterak's Gage",
+					"itemID": 3053,
+					"price": 725,
+					"rawDescription": "GeneratedTip_Item_3053_Description",
+					"rawDisplayName": "Item_3053_Name",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stealth Ward",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+					"rawDisplayName": "Item_3340_Name",
+					"slot": 6
+				}
+			],
+			"level": 15,
+			"position": "JUNGLE",
+			"rawChampionName": "game_character_displayname_XinZhao",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Hail of Blades",
+					"id": 9923,
+					"rawDescription": "perk_tooltip_HailOfBlades",
+					"rawDisplayName": "perk_displayname_HailOfBlades"
+				},
+				"primaryRuneTree": {
+					"displayName": "Domination",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Precision",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				}
+			},
+			"scores": {
+				"assists": 5,
+				"creepScore": 130,
+				"deaths": 1,
+				"kills": 17,
+				"wardScore": 23.363494873046876
+			},
+			"skinID": 0,
+			"summonerName": "BlueSideJunglePlayer",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Challenging Smite",
+					"rawDescription": "GeneratedTip_SummonerSpell_S5_SummonerSmiteDuel_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_S5_SummonerSmiteDuel_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Cho'Gath",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Doran's Shield",
+					"itemID": 1054,
+					"price": 450,
+					"rawDescription": "GeneratedTip_Item_1054_Description",
+					"rawDisplayName": "Item_1054_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Warmog's Armor",
+					"itemID": 3083,
+					"price": 650,
+					"rawDescription": "GeneratedTip_Item_3083_Description",
+					"rawDisplayName": "Item_3083_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Mercury's Treads",
+					"itemID": 3111,
+					"price": 350,
+					"rawDescription": "GeneratedTip_Item_3111_Description",
+					"rawDisplayName": "Item_3111_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Frostfire Gauntlet",
+					"itemID": 6662,
+					"price": 950,
+					"rawDescription": "GeneratedTip_Item_6662_Description",
+					"rawDisplayName": "Item_6662_Name",
+					"slot": 3
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stealth Ward",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+					"rawDisplayName": "Item_3340_Name",
+					"slot": 6
+				}
+			],
+			"level": 13,
+			"position": "MIDDLE",
+			"rawChampionName": "game_character_displayname_Chogath",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Grasp of the Undying",
+					"id": 8437,
+					"rawDescription": "perk_tooltip_GraspOfTheUndying",
+					"rawDisplayName": "perk_displayname_GraspOfTheUndying"
+				},
+				"primaryRuneTree": {
+					"displayName": "Resolve",
+					"id": 8400,
+					"rawDescription": "perkstyle_tooltip_7204",
+					"rawDisplayName": "perkstyle_displayname_7204"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Precision",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				}
+			},
+			"scores": {
+				"assists": 9,
+				"creepScore": 120,
+				"deaths": 5,
+				"kills": 3,
+				"wardScore": 7.903935432434082
+			},
+			"skinID": 0,
+			"summonerName": "BlueSideMiddlePlayer",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Teleport",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerTeleport_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerTeleport_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Lux",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Doran's Ring",
+					"itemID": 1056,
+					"price": 400,
+					"rawDescription": "GeneratedTip_Item_1056_Description",
+					"rawDisplayName": "Item_1056_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Mejai's Soulstealer",
+					"itemID": 3041,
+					"price": 1250,
+					"rawDescription": "GeneratedTip_Item_3041_Description",
+					"rawDisplayName": "Item_3041_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Luden's Tempest",
+					"itemID": 6655,
+					"price": 1250,
+					"rawDescription": "GeneratedTip_Item_6655_Description",
+					"rawDisplayName": "Item_6655_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Boots",
+					"itemID": 1001,
+					"price": 300,
+					"rawDescription": "GeneratedTip_Item_1001_Description",
+					"rawDisplayName": "Item_1001_Name",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Needlessly Large Rod",
+					"itemID": 1058,
+					"price": 1250,
+					"rawDescription": "GeneratedTip_Item_1058_Description",
+					"rawDisplayName": "Item_1058_Name",
+					"slot": 4
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Farsight Alteration",
+					"itemID": 3363,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3363_Description",
+					"rawDisplayName": "Item_3363_Name",
+					"slot": 6
+				}
+			],
+			"level": 13,
+			"position": "BOTTOM",
+			"rawChampionName": "game_character_displayname_Lux",
+			"rawSkinName": "game_character_skin_displayname_Lux_7",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Dark Harvest",
+					"id": 8128,
+					"rawDescription": "perk_tooltip_DarkHarvest",
+					"rawDisplayName": "perk_displayname_DarkHarvest"
+				},
+				"primaryRuneTree": {
+					"displayName": "Domination",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Precision",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				}
+			},
+			"scores": {
+				"assists": 6,
+				"creepScore": 150,
+				"deaths": 3,
+				"kills": 9,
+				"wardScore": 12.44954776763916
+			},
+			"skinID": 7,
+			"skinName": "Elementalist Lux",
+			"summonerName": "Active Player",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Heal",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Morgana",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Liandry's Anguish",
+					"itemID": 6653,
+					"price": 1200,
+					"rawDescription": "GeneratedTip_Item_6653_Description",
+					"rawDisplayName": "Item_6653_Name",
+					"slot": 0
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Shard of True Ice",
+					"itemID": 3853,
+					"price": 400,
+					"rawDescription": "GeneratedTip_Item_3853_Description",
+					"rawDisplayName": "Item_3853_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Mejai's Soulstealer",
+					"itemID": 3041,
+					"price": 1250,
+					"rawDescription": "GeneratedTip_Item_3041_Description",
+					"rawDisplayName": "Item_3041_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Boots",
+					"itemID": 1001,
+					"price": 300,
+					"rawDescription": "GeneratedTip_Item_1001_Description",
+					"rawDisplayName": "Item_1001_Name",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Tear of the Goddess",
+					"itemID": 3070,
+					"price": 400,
+					"rawDescription": "GeneratedTip_Item_3070_Description",
+					"rawDisplayName": "Item_3070_Name",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Needlessly Large Rod",
+					"itemID": 1058,
+					"price": 1250,
+					"rawDescription": "GeneratedTip_Item_1058_Description",
+					"rawDisplayName": "Item_1058_Name",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Oracle Lens",
+					"itemID": 3364,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3364_Description",
+					"rawDisplayName": "Item_3364_Name",
+					"slot": 6
+				}
+			],
+			"level": 12,
+			"position": "UTILITY",
+			"rawChampionName": "game_character_displayname_Morgana",
+			"rawSkinName": "game_character_skin_displayname_Morgana_30",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Dark Harvest",
+					"id": 8128,
+					"rawDescription": "perk_tooltip_DarkHarvest",
+					"rawDisplayName": "perk_displayname_DarkHarvest"
+				},
+				"primaryRuneTree": {
+					"displayName": "Domination",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Inspiration",
+					"id": 8300,
+					"rawDescription": "perkstyle_tooltip_7203",
+					"rawDisplayName": "perkstyle_displayname_7203"
+				}
+			},
+			"scores": {
+				"assists": 15,
+				"creepScore": 30,
+				"deaths": 5,
+				"kills": 3,
+				"wardScore": 25.950439453125
+			},
+			"skinID": 30,
+			"skinName": "Coven Morgana",
+			"summonerName": "BlueSideSupportPlayer",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Ignite",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Volibear",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Doran's Ring",
+					"itemID": 1056,
+					"price": 400,
+					"rawDescription": "GeneratedTip_Item_1056_Description",
+					"rawDisplayName": "Item_1056_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Trinity Force",
+					"itemID": 3078,
+					"price": 733,
+					"rawDescription": "GeneratedTip_Item_3078_Description",
+					"rawDisplayName": "Item_3078_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Plated Steelcaps",
+					"itemID": 3047,
+					"price": 500,
+					"rawDescription": "GeneratedTip_Item_3047_Description",
+					"rawDisplayName": "Item_3047_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Phage",
+					"itemID": 3044,
+					"price": 350,
+					"rawDescription": "GeneratedTip_Item_3044_Description",
+					"rawDisplayName": "Item_3044_Name",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Ruby Crystal",
+					"itemID": 1028,
+					"price": 400,
+					"rawDescription": "GeneratedTip_Item_1028_Description",
+					"rawDisplayName": "Item_1028_Name",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Pickaxe",
+					"itemID": 1037,
+					"price": 875,
+					"rawDescription": "GeneratedTip_Item_1037_Description",
+					"rawDisplayName": "Item_1037_Name",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stealth Ward",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+					"rawDisplayName": "Item_3340_Name",
+					"slot": 6
+				}
+			],
+			"level": 12,
+			"position": "TOP",
+			"rawChampionName": "game_character_displayname_Volibear",
+			"rawSkinName": "game_character_skin_displayname_Volibear_6",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Grasp of the Undying",
+					"id": 8437,
+					"rawDescription": "perk_tooltip_GraspOfTheUndying",
+					"rawDisplayName": "perk_displayname_GraspOfTheUndying"
+				},
+				"primaryRuneTree": {
+					"displayName": "Resolve",
+					"id": 8400,
+					"rawDescription": "perkstyle_tooltip_7204",
+					"rawDisplayName": "perkstyle_displayname_7204"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Precision",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				}
+			},
+			"scores": {
+				"assists": 1,
+				"creepScore": 90,
+				"deaths": 5,
+				"kills": 7,
+				"wardScore": 8.969636917114258
+			},
+			"skinID": 6,
+			"skinName": "The Thousand-Pierced Bear",
+			"summonerName": "RedSideTopPlayer",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Ignite",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Diana",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Sorcerer's Shoes",
+					"itemID": 3020,
+					"price": 800,
+					"rawDescription": "GeneratedTip_Item_3020_Description",
+					"rawDisplayName": "Item_3020_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Night Harvester",
+					"itemID": 4636,
+					"price": 900,
+					"rawDescription": "GeneratedTip_Item_4636_Description",
+					"rawDisplayName": "Item_4636_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Recurve Bow",
+					"itemID": 1043,
+					"price": 400,
+					"rawDescription": "GeneratedTip_Item_1043_Description",
+					"rawDisplayName": "Item_1043_Name",
+					"slot": 2
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stealth Ward",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+					"rawDisplayName": "Item_3340_Name",
+					"slot": 6
+				}
+			],
+			"level": 10,
+			"position": "JUNGLE",
+			"rawChampionName": "game_character_displayname_Diana",
+			"rawSkinName": "game_character_skin_displayname_Diana_24",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Electrocute",
+					"id": 8112,
+					"rawDescription": "perk_tooltip_Electrocute",
+					"rawDisplayName": "perk_displayname_Electrocute"
+				},
+				"primaryRuneTree": {
+					"displayName": "Domination",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Resolve",
+					"id": 8400,
+					"rawDescription": "perkstyle_tooltip_7204",
+					"rawDisplayName": "perkstyle_displayname_7204"
+				}
+			},
+			"scores": {
+				"assists": 3,
+				"creepScore": 110,
+				"deaths": 8,
+				"kills": 1,
+				"wardScore": 15.877102851867676
+			},
+			"skinID": 24,
+			"skinName": "Dragonslayer Diana",
+			"summonerName": "RedSideJunglePlayer",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Chilling Smite",
+					"rawDescription": "GeneratedTip_SummonerSpell_S5_SummonerSmitePlayerGanker_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_S5_SummonerSmitePlayerGanker_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Ahri",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Doran's Ring",
+					"itemID": 1056,
+					"price": 400,
+					"rawDescription": "GeneratedTip_Item_1056_Description",
+					"rawDisplayName": "Item_1056_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Dark Seal",
+					"itemID": 1082,
+					"price": 350,
+					"rawDescription": "GeneratedTip_Item_1082_Description",
+					"rawDisplayName": "Item_1082_Name",
+					"slot": 1
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Zhonya's Hourglass",
+					"itemID": 3157,
+					"price": 50,
+					"rawDescription": "GeneratedTip_Item_3157_Description",
+					"rawDisplayName": "Item_3157_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Ionian Boots of Lucidity",
+					"itemID": 3158,
+					"price": 600,
+					"rawDescription": "GeneratedTip_Item_3158_Description",
+					"rawDisplayName": "Item_3158_Name",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Fiendish Codex",
+					"itemID": 3108,
+					"price": 465,
+					"rawDescription": "GeneratedTip_Item_3108_Description",
+					"rawDisplayName": "Item_3108_Name",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Luden's Tempest",
+					"itemID": 6655,
+					"price": 1250,
+					"rawDescription": "GeneratedTip_Item_6655_Description",
+					"rawDisplayName": "Item_6655_Name",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Oracle Lens",
+					"itemID": 3364,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3364_Description",
+					"rawDisplayName": "Item_3364_Name",
+					"slot": 6
+				}
+			],
+			"level": 14,
+			"position": "MIDDLE",
+			"rawChampionName": "game_character_displayname_Ahri",
+			"rawSkinName": "game_character_skin_displayname_Ahri_14",
+			"respawnTimer": 23.844528198242189,
+			"runes": {
+				"keystone": {
+					"displayName": "Electrocute",
+					"id": 8112,
+					"rawDescription": "perk_tooltip_Electrocute",
+					"rawDisplayName": "perk_displayname_Electrocute"
+				},
+				"primaryRuneTree": {
+					"displayName": "Domination",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Sorcery",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 3,
+				"creepScore": 160,
+				"deaths": 6,
+				"kills": 8,
+				"wardScore": 21.512134552001954
+			},
+			"skinID": 14,
+			"skinName": "Star Guardian Ahri",
+			"summonerName": "RedSideMiddlePlayer",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Ignite",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Senna",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Kraken Slayer",
+					"itemID": 6672,
+					"price": 625,
+					"rawDescription": "GeneratedTip_Item_6672_Description",
+					"rawDisplayName": "Item_6672_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Boots of Swiftness",
+					"itemID": 3009,
+					"price": 600,
+					"rawDescription": "GeneratedTip_Item_3009_Description",
+					"rawDisplayName": "Item_3009_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Doran's Blade",
+					"itemID": 1055,
+					"price": 450,
+					"rawDescription": "GeneratedTip_Item_1055_Description",
+					"rawDisplayName": "Item_1055_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Rageknife",
+					"itemID": 6677,
+					"price": 200,
+					"rawDescription": "GeneratedTip_Item_6677_Description",
+					"rawDisplayName": "Item_6677_Name",
+					"slot": 3
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 1,
+					"displayName": "Control Ward",
+					"itemID": 2055,
+					"price": 75,
+					"rawDescription": "GeneratedTip_Item_2055_Description",
+					"rawDisplayName": "Item_2055_Name",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Dagger",
+					"itemID": 1042,
+					"price": 300,
+					"rawDescription": "GeneratedTip_Item_1042_Description",
+					"rawDisplayName": "Item_1042_Name",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Farsight Alteration",
+					"itemID": 3363,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3363_Description",
+					"rawDisplayName": "Item_3363_Name",
+					"slot": 6
+				}
+			],
+			"level": 11,
+			"position": "BOTTOM",
+			"rawChampionName": "game_character_displayname_Senna",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Glacial Augment",
+					"id": 8351,
+					"rawDescription": "perk_tooltip_GlacialAugment",
+					"rawDisplayName": "perk_displayname_GlacialAugment"
+				},
+				"primaryRuneTree": {
+					"displayName": "Inspiration",
+					"id": 8300,
+					"rawDescription": "perkstyle_tooltip_7203",
+					"rawDisplayName": "perkstyle_displayname_7203"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Precision",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				}
+			},
+			"scores": {
+				"assists": 7,
+				"creepScore": 100,
+				"deaths": 6,
+				"kills": 0,
+				"wardScore": 18.073734283447267
+			},
+			"skinID": 0,
+			"summonerName": "RedSideBottomPlayer",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Heal",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Bard",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Shard of True Ice",
+					"itemID": 3853,
+					"price": 400,
+					"rawDescription": "GeneratedTip_Item_3853_Description",
+					"rawDisplayName": "Item_3853_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Imperial Mandate",
+					"itemID": 4005,
+					"price": 750,
+					"rawDescription": "GeneratedTip_Item_4005_Description",
+					"rawDisplayName": "Item_4005_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Chain Vest",
+					"itemID": 1031,
+					"price": 500,
+					"rawDescription": "GeneratedTip_Item_1031_Description",
+					"rawDisplayName": "Item_1031_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Boots of Swiftness",
+					"itemID": 3009,
+					"price": 600,
+					"rawDescription": "GeneratedTip_Item_3009_Description",
+					"rawDisplayName": "Item_3009_Name",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Ruby Crystal",
+					"itemID": 1028,
+					"price": 400,
+					"rawDescription": "GeneratedTip_Item_1028_Description",
+					"rawDisplayName": "Item_1028_Name",
+					"slot": 4
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Oracle Lens",
+					"itemID": 3364,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3364_Description",
+					"rawDisplayName": "Item_3364_Name",
+					"slot": 6
+				}
+			],
+			"level": 10,
+			"position": "UTILITY",
+			"rawChampionName": "game_character_displayname_Bard",
+			"rawSkinName": "game_character_skin_displayname_Bard_13",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Hail of Blades",
+					"id": 9923,
+					"rawDescription": "perk_tooltip_HailOfBlades",
+					"rawDisplayName": "perk_displayname_HailOfBlades"
+				},
+				"primaryRuneTree": {
+					"displayName": "Domination",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Sorcery",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 4,
+				"creepScore": 0,
+				"deaths": 7,
+				"kills": 4,
+				"wardScore": 21.401147842407228
+			},
+			"skinID": 13,
+			"skinName": "Astronaut Bard",
+			"summonerName": "RedSideSupportPlayer",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Ignite",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		}
+	],
+	"events": {
+		"Events": [
+			{
+				"EventID": 0,
+				"EventName": "GameStart",
+				"EventTime": 0.01698870025575161
+			},
+			{
+				"Assisters": [
+					"Active Player",
+					"BlueSideSupportPlayer"
+				],
+				"EventID": 1,
+				"EventName": "ChampionKill",
+				"EventTime": 48.569461822509769,
+				"KillerName": "BlueSideJunglePlayer",
+				"VictimName": "RedSideBottomPlayer"
+			},
+			{
+				"EventID": 2,
+				"EventName": "FirstBlood",
+				"EventTime": 48.569461822509769,
+				"Recipient": "BlueSideJunglePlayer"
+			},
+			{
+				"EventID": 3,
+				"EventName": "MinionsSpawning",
+				"EventTime": 65.03578186035156
+			},
+			{
+				"Assisters": [
+					"RedSideMiddlePlayer"
+				],
+				"EventID": 4,
+				"EventName": "ChampionKill",
+				"EventTime": 116.60650634765625,
+				"KillerName": "RedSideSupportPlayer",
+				"VictimName": "BlueSideSupportPlayer"
+			},
+			{
+				"Assisters": [
+					"BlueSideSupportPlayer"
+				],
+				"EventID": 5,
+				"EventName": "ChampionKill",
+				"EventTime": 181.4227294921875,
+				"KillerName": "Active Player",
+				"VictimName": "RedSideSupportPlayer"
+			},
+			{
+				"Assisters": [
+					"BlueSideMiddlePlayer"
+				],
+				"EventID": 6,
+				"EventName": "ChampionKill",
+				"EventTime": 200.32131958007813,
+				"KillerName": "BlueSideJunglePlayer",
+				"VictimName": "RedSideMiddlePlayer"
+			},
+			{
+				"Assisters": [],
+				"EventID": 7,
+				"EventName": "ChampionKill",
+				"EventTime": 222.0983428955078,
+				"KillerName": "RedSideTopPlayer",
+				"VictimName": "BlueSideTopPlayer"
+			},
+			{
+				"Assisters": [
+					"RedSideSupportPlayer"
+				],
+				"DragonType": "Fire",
+				"EventID": 8,
+				"EventName": "DragonKill",
+				"EventTime": 349.9112243652344,
+				"KillerName": "BlueSideJunglePlayer",
+				"Stolen": "False"
+			},
+			{
+				"Assisters": [],
+				"EventID": 9,
+				"EventName": "ChampionKill",
+				"EventTime": 355.261962890625,
+				"KillerName": "BlueSideJunglePlayer",
+				"VictimName": "RedSideSupportPlayer"
+			},
+			{
+				"Assisters": [],
+				"EventID": 10,
+				"EventName": "ChampionKill",
+				"EventTime": 369.7372741699219,
+				"KillerName": "RedSideTopPlayer",
+				"VictimName": "BlueSideTopPlayer"
+			},
+			{
+				"Assisters": [
+					"RedSideSupportPlayer"
+				],
+				"EventID": 11,
+				"EventName": "ChampionKill",
+				"EventTime": 422.6996154785156,
+				"KillerName": "RedSideMiddlePlayer",
+				"VictimName": "BlueSideMiddlePlayer"
+			},
+			{
+				"Assisters": [],
+				"EventID": 12,
+				"EventName": "ChampionKill",
+				"EventTime": 461.5828552246094,
+				"KillerName": "BlueSideMiddlePlayer",
+				"VictimName": "RedSideMiddlePlayer"
+			},
+			{
+				"Assisters": [
+					"BlueSideTopPlayer"
+				],
+				"EventID": 13,
+				"EventName": "ChampionKill",
+				"EventTime": 468.70562744140627,
+				"KillerName": "BlueSideJunglePlayer",
+				"VictimName": "RedSideTopPlayer"
+			},
+			{
+				"Assisters": [],
+				"EventID": 14,
+				"EventName": "ChampionKill",
+				"EventTime": 468.9225769042969,
+				"KillerName": "RedSideTopPlayer",
+				"VictimName": "BlueSideTopPlayer"
+			},
+			{
+				"Assisters": [
+					"Active Player"
+				],
+				"EventID": 15,
+				"EventName": "ChampionKill",
+				"EventTime": 483.0915222167969,
+				"KillerName": "BlueSideSupportPlayer",
+				"VictimName": "RedSideSupportPlayer"
+			},
+			{
+				"Assisters": [
+					"RedSideBottomPlayer"
+				],
+				"EventID": 16,
+				"EventName": "ChampionKill",
+				"EventTime": 552.62060546875,
+				"KillerName": "RedSideSupportPlayer",
+				"VictimName": "BlueSideSupportPlayer"
+			},
+			{
+				"Assisters": [],
+				"EventID": 17,
+				"EventName": "ChampionKill",
+				"EventTime": 553.4300537109375,
+				"KillerName": "RedSideTopPlayer",
+				"VictimName": "BlueSideTopPlayer"
+			},
+			{
+				"Assisters": [
+					"BlueSideTopPlayer"
+				],
+				"EventID": 18,
+				"EventName": "ChampionKill",
+				"EventTime": 561.8762817382813,
+				"KillerName": "BlueSideJunglePlayer",
+				"VictimName": "RedSideTopPlayer"
+			},
+			{
+				"Assisters": [],
+				"EventID": 19,
+				"EventName": "ChampionKill",
+				"EventTime": 570.7064819335938,
+				"KillerName": "BlueSideJunglePlayer",
+				"VictimName": "RedSideJunglePlayer"
+			},
+			{
+				"EventID": 20,
+				"EventName": "Multikill",
+				"EventTime": 570.7064819335938,
+				"KillStreak": 2,
+				"KillerName": "BlueSideJunglePlayer"
+			},
+			{
+				"Assisters": [
+					"BlueSideSupportPlayer"
+				],
+				"EventID": 21,
+				"EventName": "ChampionKill",
+				"EventTime": 628.4158935546875,
+				"KillerName": "Active Player",
+				"VictimName": "RedSideBottomPlayer"
+			},
+			{
+				"Assisters": [
+					"RedSideJunglePlayer"
+				],
+				"EventID": 22,
+				"EventName": "ChampionKill",
+				"EventTime": 637.2033081054688,
+				"KillerName": "RedSideSupportPlayer",
+				"VictimName": "Active Player"
+			},
+			{
+				"Assisters": [],
+				"EventID": 23,
+				"EventName": "ChampionKill",
+				"EventTime": 650.449462890625,
+				"KillerName": "RedSideMiddlePlayer",
+				"VictimName": "BlueSideJunglePlayer"
+			},
+			{
+				"Assisters": [],
+				"EventID": 24,
+				"EventName": "ChampionKill",
+				"EventTime": 664.8003540039063,
+				"KillerName": "BlueSideSupportPlayer",
+				"VictimName": "RedSideJunglePlayer"
+			},
+			{
+				"Assisters": [],
+				"EventID": 25,
+				"EventName": "ChampionKill",
+				"EventTime": 675.308837890625,
+				"KillerName": "BlueSideMiddlePlayer",
+				"VictimName": "RedSideMiddlePlayer"
+			},
+			{
+				"Assisters": [],
+				"DragonType": "Earth",
+				"EventID": 26,
+				"EventName": "DragonKill",
+				"EventTime": 726.684326171875,
+				"KillerName": "BlueSideJunglePlayer",
+				"Stolen": "False"
+			},
+			{
+				"Assisters": [
+					"BlueSideSupportPlayer"
+				],
+				"EventID": 27,
+				"EventName": "TurretKilled",
+				"EventTime": 776.288330078125,
+				"KillerName": "Minion_T100L0S23N0143",
+				"TurretKilled": "Turret_T2_R_03_A"
+			},
+			{
+				"EventID": 28,
+				"EventName": "FirstBrick",
+				"EventTime": 776.288330078125,
+				"KillerName": "Minion_T100L0S23N0143"
+			},
+			{
+				"Assisters": [],
+				"EventID": 29,
+				"EventName": "ChampionKill",
+				"EventTime": 776.8087158203125,
+				"KillerName": "RedSideTopPlayer",
+				"VictimName": "BlueSideTopPlayer"
+			},
+			{
+				"Assisters": [
+					"BlueSideSupportPlayer"
+				],
+				"EventID": 30,
+				"EventName": "ChampionKill",
+				"EventTime": 783.3512573242188,
+				"KillerName": "BlueSideJunglePlayer",
+				"VictimName": "RedSideSupportPlayer"
+			},
+			{
+				"Assisters": [
+					"RedSideBottomPlayer"
+				],
+				"EventID": 31,
+				"EventName": "ChampionKill",
+				"EventTime": 790.194580078125,
+				"KillerName": "RedSideJunglePlayer",
+				"VictimName": "BlueSideSupportPlayer"
+			},
+			{
+				"Assisters": [
+					"Active Player",
+					"BlueSideSupportPlayer"
+				],
+				"EventID": 32,
+				"EventName": "ChampionKill",
+				"EventTime": 798.765625,
+				"KillerName": "BlueSideJunglePlayer",
+				"VictimName": "RedSideJunglePlayer"
+			},
+			{
+				"Assisters": [
+					"BlueSideJunglePlayer"
+				],
+				"EventID": 33,
+				"EventName": "ChampionKill",
+				"EventTime": 804.527587890625,
+				"KillerName": "Active Player",
+				"VictimName": "RedSideBottomPlayer"
+			},
+			{
+				"Assisters": [],
+				"EventID": 34,
+				"EventName": "ChampionKill",
+				"EventTime": 822.9336547851563,
+				"KillerName": "RedSideMiddlePlayer",
+				"VictimName": "BlueSideMiddlePlayer"
+			},
+			{
+				"Assisters": [
+					"BlueSideMiddlePlayer"
+				],
+				"EventID": 35,
+				"EventName": "ChampionKill",
+				"EventTime": 824.2742919921875,
+				"KillerName": "BlueSideJunglePlayer",
+				"VictimName": "RedSideMiddlePlayer"
+			},
+			{
+				"Assisters": [
+					"Active Player",
+					"BlueSideSupportPlayer",
+					"RedSideJunglePlayer"
+				],
+				"EventID": 36,
+				"EventName": "HeraldKill",
+				"EventTime": 885.697265625,
+				"KillerName": "BlueSideMiddlePlayer",
+				"Stolen": "False"
+			},
+			{
+				"Assisters": [
+					"Active Player",
+					"BlueSideSupportPlayer"
+				],
+				"EventID": 37,
+				"EventName": "ChampionKill",
+				"EventTime": 891.6033325195313,
+				"KillerName": "BlueSideMiddlePlayer",
+				"VictimName": "RedSideJunglePlayer"
+			},
+			{
+				"Assisters": [
+					"RedSideSupportPlayer"
+				],
+				"EventID": 38,
+				"EventName": "ChampionKill",
+				"EventTime": 895.4080810546875,
+				"KillerName": "RedSideMiddlePlayer",
+				"VictimName": "Active Player"
+			},
+			{
+				"Assisters": [
+					"BlueSideMiddlePlayer",
+					"Active Player",
+					"BlueSideSupportPlayer"
+				],
+				"EventID": 39,
+				"EventName": "ChampionKill",
+				"EventTime": 899.4935913085938,
+				"KillerName": "BlueSideJunglePlayer",
+				"VictimName": "RedSideTopPlayer"
+			},
+			{
+				"Assisters": [
+					"RedSideTopPlayer",
+					"RedSideJunglePlayer",
+					"RedSideMiddlePlayer"
+				],
+				"EventID": 40,
+				"EventName": "ChampionKill",
+				"EventTime": 901.6909790039063,
+				"KillerName": "RedSideSupportPlayer",
+				"VictimName": "BlueSideSupportPlayer"
+			},
+			{
+				"Assisters": [
+					"BlueSideMiddlePlayer",
+					"Active Player",
+					"BlueSideSupportPlayer"
+				],
+				"EventID": 41,
+				"EventName": "ChampionKill",
+				"EventTime": 908.8460083007813,
+				"KillerName": "BlueSideJunglePlayer",
+				"VictimName": "RedSideSupportPlayer"
+			},
+			{
+				"EventID": 42,
+				"EventName": "Multikill",
+				"EventTime": 908.8460083007813,
+				"KillStreak": 2,
+				"KillerName": "BlueSideJunglePlayer"
+			},
+			{
+				"Assisters": [
+					"RedSideBottomPlayer",
+					"RedSideSupportPlayer"
+				],
+				"EventID": 43,
+				"EventName": "ChampionKill",
+				"EventTime": 914.1339111328125,
+				"KillerName": "RedSideMiddlePlayer",
+				"VictimName": "BlueSideMiddlePlayer"
+			},
+			{
+				"Assisters": [],
+				"EventID": 44,
+				"EventName": "ChampionKill",
+				"EventTime": 920.561279296875,
+				"KillerName": "BlueSideJunglePlayer",
+				"VictimName": "RedSideBottomPlayer"
+			},
+			{
+				"Assisters": [],
+				"EventID": 45,
+				"EventName": "ChampionKill",
+				"EventTime": 932.4597778320313,
+				"KillerName": "BlueSideJunglePlayer",
+				"VictimName": "RedSideMiddlePlayer"
+			},
+			{
+				"Assisters": [
+					"RedSideJunglePlayer",
+					"RedSideBottomPlayer"
+				],
+				"EventID": 46,
+				"EventName": "ChampionKill",
+				"EventTime": 1000.3052368164063,
+				"KillerName": "RedSideMiddlePlayer",
+				"VictimName": "BlueSideMiddlePlayer"
+			},
+			{
+				"Assisters": [
+					"BlueSideSupportPlayer"
+				],
+				"EventID": 47,
+				"EventName": "TurretKilled",
+				"EventTime": 1014.6520385742188,
+				"KillerName": "Minion_T100L1S31N0196",
+				"TurretKilled": "Turret_T2_C_05_A"
+			},
+			{
+				"Assisters": [
+					"RedSideBottomPlayer"
+				],
+				"EventID": 48,
+				"EventName": "ChampionKill",
+				"EventTime": 1019.0198364257813,
+				"KillerName": "RedSideTopPlayer",
+				"VictimName": "BlueSideSupportPlayer"
+			},
+			{
+				"Assisters": [],
+				"EventID": 49,
+				"EventName": "TurretKilled",
+				"EventTime": 1051.9718017578126,
+				"KillerName": "BlueSideTopPlayer",
+				"TurretKilled": "Turret_T2_L_03_A"
+			},
+			{
+				"Assisters": [],
+				"EventID": 50,
+				"EventName": "ChampionKill",
+				"EventTime": 1056.12353515625,
+				"KillerName": "BlueSideJunglePlayer",
+				"VictimName": "RedSideJunglePlayer"
+			},
+			{
+				"Assisters": [
+					"BlueSideJunglePlayer",
+					"Active Player",
+					"RedSideSupportPlayer"
+				],
+				"DragonType": "Air",
+				"EventID": 51,
+				"EventName": "DragonKill",
+				"EventTime": 1081.9744873046876,
+				"KillerName": "BlueSideMiddlePlayer",
+				"Stolen": "False"
+			},
+			{
+				"Assisters": [
+					"BlueSideMiddlePlayer",
+					"BlueSideSupportPlayer"
+				],
+				"EventID": 52,
+				"EventName": "ChampionKill",
+				"EventTime": 1108.2420654296876,
+				"KillerName": "Active Player",
+				"VictimName": "RedSideSupportPlayer"
+			},
+			{
+				"Assisters": [
+					"RedSideMiddlePlayer",
+					"RedSideBottomPlayer",
+					"RedSideSupportPlayer"
+				],
+				"EventID": 53,
+				"EventName": "ChampionKill",
+				"EventTime": 1110.307373046875,
+				"KillerName": "RedSideTopPlayer",
+				"VictimName": "Active Player"
+			},
+			{
+				"Assisters": [
+					"BlueSideMiddlePlayer",
+					"BlueSideSupportPlayer"
+				],
+				"EventID": 54,
+				"EventName": "ChampionKill",
+				"EventTime": 1127.21142578125,
+				"KillerName": "BlueSideJunglePlayer",
+				"VictimName": "RedSideJunglePlayer"
+			},
+			{
+				"Assisters": [],
+				"EventID": 55,
+				"EventName": "TurretKilled",
+				"EventTime": 1135.1109619140626,
+				"KillerName": "BlueSideTopPlayer",
+				"TurretKilled": "Turret_T2_L_02_A"
+			},
+			{
+				"Assisters": [],
+				"EventID": 56,
+				"EventName": "ChampionKill",
+				"EventTime": 1144.3359375,
+				"KillerName": "BlueSideJunglePlayer",
+				"VictimName": "RedSideBottomPlayer"
+			},
+			{
+				"Assisters": [
+					"BlueSideJunglePlayer"
+				],
+				"EventID": 57,
+				"EventName": "TurretKilled",
+				"EventTime": 1146.69921875,
+				"KillerName": "BlueSideSupportPlayer",
+				"TurretKilled": "Turret_T2_C_04_A"
+			},
+			{
+				"Assisters": [],
+				"EventID": 58,
+				"EventName": "ChampionKill",
+				"EventTime": 1181.221923828125,
+				"KillerName": "RedSideMiddlePlayer",
+				"VictimName": "BlueSideMiddlePlayer"
+			},
+			{
+				"Assisters": [
+					"BlueSideJunglePlayer"
+				],
+				"EventID": 59,
+				"EventName": "ChampionKill",
+				"EventTime": 1190.1612548828126,
+				"KillerName": "BlueSideSupportPlayer",
+				"VictimName": "RedSideTopPlayer"
+			},
+			{
+				"Assisters": [
+					"BlueSideSupportPlayer"
+				],
+				"EventID": 60,
+				"EventName": "ChampionKill",
+				"EventTime": 1218.962158203125,
+				"KillerName": "Active Player",
+				"VictimName": "RedSideJunglePlayer"
+			},
+			{
+				"Assisters": [
+					"BlueSideMiddlePlayer"
+				],
+				"EventID": 61,
+				"EventName": "ChampionKill",
+				"EventTime": 1295.8380126953126,
+				"KillerName": "BlueSideJunglePlayer",
+				"VictimName": "RedSideTopPlayer"
+			},
+			{
+				"Assisters": [
+					"BlueSideJunglePlayer",
+					"BlueSideSupportPlayer"
+				],
+				"EventID": 62,
+				"EventName": "ChampionKill",
+				"EventTime": 1299.7529296875,
+				"KillerName": "Active Player",
+				"VictimName": "RedSideBottomPlayer"
+			},
+			{
+				"Assisters": [
+					"BlueSideJunglePlayer",
+					"BlueSideSupportPlayer"
+				],
+				"EventID": 63,
+				"EventName": "ChampionKill",
+				"EventTime": 1319.3079833984376,
+				"KillerName": "Active Player",
+				"VictimName": "RedSideSupportPlayer"
+			},
+			{
+				"Assisters": [
+					"Active Player",
+					"BlueSideSupportPlayer",
+					"RedSideJunglePlayer",
+					"RedSideSupportPlayer"
+				],
+				"EventID": 64,
+				"EventName": "BaronKill",
+				"EventTime": 1328.927734375,
+				"KillerName": "BlueSideJunglePlayer",
+				"Stolen": "False"
+			},
+			{
+				"Assisters": [
+					"BlueSideJunglePlayer",
+					"BlueSideMiddlePlayer",
+					"BlueSideSupportPlayer"
+				],
+				"EventID": 65,
+				"EventName": "ChampionKill",
+				"EventTime": 1329.8165283203126,
+				"KillerName": "Active Player",
+				"VictimName": "RedSideJunglePlayer"
+			},
+			{
+				"Assisters": [],
+				"EventID": 66,
+				"EventName": "TurretKilled",
+				"EventTime": 1342.6156005859376,
+				"KillerName": "BlueSideTopPlayer",
+				"TurretKilled": "Turret_T2_R_02_A"
+			},
+			{
+				"Assisters": [
+					"RedSideBottomPlayer"
+				],
+				"EventID": 67,
+				"EventName": "ChampionKill",
+				"EventTime": 1370.076904296875,
+				"KillerName": "RedSideMiddlePlayer",
+				"VictimName": "BlueSideTopPlayer"
+			},
+			{
+				"Assisters": [
+					"BlueSideMiddlePlayer",
+					"BlueSideSupportPlayer"
+				],
+				"EventID": 68,
+				"EventName": "ChampionKill",
+				"EventTime": 1376.44580078125,
+				"KillerName": "Active Player",
+				"VictimName": "RedSideMiddlePlayer"
+			},
+			{
+				"EventID": 69,
+				"EventName": "GameEnd",
+				"EventTime": 1391.9859619140626,
+				"Result": "Win"
+			}
+		]
+	},
+	"gameData": {
+		"gameMode": "CLASSIC",
+		"gameTime": 1397.9696044921876,
+		"mapName": "Map11",
+		"mapNumber": 11,
+		"mapTerrain": "Cloud"
+	}
+}
