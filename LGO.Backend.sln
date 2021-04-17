@@ -8,7 +8,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LGO.Backend.Core", "LGO.Bac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LGO.Backend.Server", "LGO.Backend.Server\LGO.Backend.Server.csproj", "{EC10A562-6C24-4569-BD2F-775EC373E80A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LGO.Backend.Api", "LGO.Backend.Api\LGO.Backend.Api.csproj", "{20DBAB0B-A240-46FD-90D4-27F2C2512E3D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LGO.Backend.Model", "LGO.Backend.Model\LGO.Backend.Model.csproj", "{20DBAB0B-A240-46FD-90D4-27F2C2512E3D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LGO.Backend", "LGO.Backend\LGO.Backend.csproj", "{10555608-BAF1-4237-89FF-F5AA6BECA5D6}"
 EndProject
