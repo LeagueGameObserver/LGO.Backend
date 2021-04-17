@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace LGO.Backend.Core.Model.Converter
 {
-    public abstract class AbstractStringEnumConverter<TEnum> : JsonConverter<TEnum> where TEnum : Enum
+    public abstract class AbstractStringEnumConverter<TEnum> : JsonConverter<TEnum>
     {
         private BidirectionalStringMapping<TEnum> Mapping { get; }
 

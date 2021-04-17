@@ -35,7 +35,7 @@
 	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ESettingsUpgrade_002EMigrateBlankLinesAroundFieldToBlankLinesAroundProperty/@EntryIndexedValue">True</s:Boolean>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7dcff970_002D15cc_002D4a11_002D968d_002D75527f4ad5c5/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="LolClientGameTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::D7E80F63-B623-4CED-BE43-76428DE89DDF::net5.0::LGO.LeagueOfLegends.ClientApiTest.Model.LolClientGameTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::D7E80F63-B623-4CED-BE43-76428DE89DDF::net5.0::LGO.LeagueOfLegends.ClientApiTest.Model.LeagueClientGameDeserializationTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	
