@@ -27,6 +27,9 @@
       <None Update="Resource\FullClassicSpectatedGame.json">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
+      <None Update="Resource\FullAramGame.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
     </ItemGroup>
 
 </Project>

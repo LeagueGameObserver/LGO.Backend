@@ -38,7 +38,7 @@ namespace LGO.LeagueOfLegends.ClientApiTest.Model
         }
 
         [Test]
-        public void TestDeserializeClassicBotGame()
+        public void TestDeserializeClassicGameWithBots()
         {
             var game = JsonConvert.DeserializeObject<MutableGame>(File.ReadAllText("Resource/FullClassicGameWithBots.json"));
 
@@ -72,6 +72,24 @@ namespace LGO.LeagueOfLegends.ClientApiTest.Model
             Assert.NotNull(game.EventCollection);
             Assert.AreEqual(9, game.EventCollection.Events.Count());
             Assert.AreEqual(LolGameResult.Win, (game.EventCollection.Events.Last() as ILolClientGameEndedEvent)?.ResultForActivePlayer);
+        }
+
+        [Test]
+        public void TestDeserializeAramGame()
+        {
+            var game = JsonConvert.DeserializeObject<MutableGame>(File.ReadAllText("Resource/FullAramGame.json"));
+
+            Assert.NotNull(game);
+            
+            Assert.NotNull(game.ActivePlayer);
+            Assert.AreEqual("RedSideSummoner3", game.ActivePlayer.SummonerName);
+            Assert.AreEqual(163.0d, game.ActivePlayer.CurrentGold, 1.0d);
+            
+            Assert.NotNull(game.Stats);
+            Assert.AreEqual(LolGameModeType.Aram, game.Stats.GameMode);
+            
+            Assert.NotNull(game.EventCollection);
+            Assert.AreEqual(143, game.EventCollection.Events.Count());
         }
     }
 }

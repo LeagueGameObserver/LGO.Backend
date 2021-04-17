@@ -9,27 +9,27 @@ using LGO.LeagueOfLegends.ClientApi.Model.Game.Internal;
 
 namespace LGO.LeagueOfLegends.ClientApi
 {
-    public sealed class LolClientApi
+    public sealed class LocalLolClientGameSource : ILolClientGameSource
     {
         private static TimeSpan RequestTimeout { get; } = TimeSpan.FromMilliseconds(500);
 
         private const string ClientCertificateThumbprint = "8259aafd8f71a809d2b154dd1cdb492981e448bd";
         private const string Host = "https://127.0.0.1:2999/liveclientdata";
 
-        private static string GameDataUrl { get; } = Host + "/allgamedata";
+        private static string GameDataUrl => Host + "/allgamedata";
 
-        private static LolClientApi? _instance;
+        private static LocalLolClientGameSource? _instance;
 
-        public static LolClientApi Get => _instance ??= new LolClientApi();
+        public static LocalLolClientGameSource Get => _instance ??= new LocalLolClientGameSource();
 
         private JsonHttpClient Client { get; }
 
-        public LolClientApi(JsonHttpClient client)
+        public LocalLolClientGameSource(JsonHttpClient client)
         {
             Client = client;
         }
 
-        public LolClientApi()
+        public LocalLolClientGameSource()
         {
             Client = new JsonHttpClient(RequestTimeout, new HttpClientHandler
                                                         {
