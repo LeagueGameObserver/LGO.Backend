@@ -16,7 +16,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\LGO.LeagueClient.LocalGameReader\LGO.LeagueClient.LocalGameReader.csproj" />
+      <ProjectReference Include="..\..\LeagueClient\LGO.LeagueClient.LocalGameReader\LGO.LeagueClient.LocalGameReader.csproj" />
+      <ProjectReference Include="..\..\LGO.Backend.Core\LGO.Backend.Core.csproj" />
     </ItemGroup>
 
     <ItemGroup>

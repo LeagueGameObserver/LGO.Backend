@@ -2,17 +2,23 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{856CDFB4-956C-45F7-AA5A-F722692D8B6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LGO.LeagueClient.LocalGameReader.Test", "LGO.LeagueClient.LocalGameReader.Test\LGO.LeagueClient.LocalGameReader.Test.csproj", "{D7E80F63-B623-4CED-BE43-76428DE89DDF}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LGO.Backend.Core", "LGO.Backend.Core\LGO.Backend.Core.csproj", "{42EFD49D-D3BB-40BB-9B26-5752BD550892}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LGO.Backend.Server", "LGO.Backend.Server\LGO.Backend.Server.csproj", "{EC10A562-6C24-4569-BD2F-775EC373E80A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LGO.Backend.Model", "LGO.Backend.Model\LGO.Backend.Model.csproj", "{20DBAB0B-A240-46FD-90D4-27F2C2512E3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LGO.LeagueClient.Model", "LGO.LeagueClient.Model\LGO.LeagueClient.Model.csproj", "{B075E6A0-188C-41FF-903B-1D2049DBDA13}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LeagueClient", "LeagueClient", "{778AEFF9-8A51-4F76-8399-30FD7430F928}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LGO.LeagueClient.LocalGameReader", "LGO.LeagueClient.LocalGameReader\LGO.LeagueClient.LocalGameReader.csproj", "{C64A0400-DAC7-45EF-B91E-CF5B42F63C20}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LGO.LeagueClient.LocalGameReader", "LeagueClient\LGO.LeagueClient.LocalGameReader\LGO.LeagueClient.LocalGameReader.csproj", "{14769579-674E-4BC5-A826-636CB6FA6094}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LGO.LeagueClient.Model", "LeagueClient\LGO.LeagueClient.Model\LGO.LeagueClient.Model.csproj", "{701DC6A1-3F8F-45D6-A711-1BCC2F85E2DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LGO.LeagueClient.LocalGameReader.Test", "Test\LGO.LeagueClient.LocalGameReader.Test\LGO.LeagueClient.LocalGameReader.Test.csproj", "{5D7F2AA1-A44E-4AAF-985F-5D748EBE6E89}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LeagueResource", "LeagueResource", "{9990216E-5DF3-4701-A63B-61019D3074F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LGO.LeagueResource.LocalResourceRepository", "LeagueResource\LGO.LeagueResource.LocalResourceRepository\LGO.LeagueResource.LocalResourceRepository.csproj", "{2D907E1A-9A8B-4D87-B74E-C32DC805D38A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LGO.LeagueResource.Model", "LeagueResource\LGO.LeagueResource.Model\LGO.LeagueResource.Model.csproj", "{AA89D30E-F27D-4DB7-8B6D-1461ABE7285F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,32 +26,40 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D7E80F63-B623-4CED-BE43-76428DE89DDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D7E80F63-B623-4CED-BE43-76428DE89DDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D7E80F63-B623-4CED-BE43-76428DE89DDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D7E80F63-B623-4CED-BE43-76428DE89DDF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{42EFD49D-D3BB-40BB-9B26-5752BD550892}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{42EFD49D-D3BB-40BB-9B26-5752BD550892}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42EFD49D-D3BB-40BB-9B26-5752BD550892}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42EFD49D-D3BB-40BB-9B26-5752BD550892}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EC10A562-6C24-4569-BD2F-775EC373E80A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EC10A562-6C24-4569-BD2F-775EC373E80A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EC10A562-6C24-4569-BD2F-775EC373E80A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EC10A562-6C24-4569-BD2F-775EC373E80A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{20DBAB0B-A240-46FD-90D4-27F2C2512E3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{20DBAB0B-A240-46FD-90D4-27F2C2512E3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20DBAB0B-A240-46FD-90D4-27F2C2512E3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20DBAB0B-A240-46FD-90D4-27F2C2512E3D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B075E6A0-188C-41FF-903B-1D2049DBDA13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B075E6A0-188C-41FF-903B-1D2049DBDA13}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B075E6A0-188C-41FF-903B-1D2049DBDA13}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B075E6A0-188C-41FF-903B-1D2049DBDA13}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C64A0400-DAC7-45EF-B91E-CF5B42F63C20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C64A0400-DAC7-45EF-B91E-CF5B42F63C20}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C64A0400-DAC7-45EF-B91E-CF5B42F63C20}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C64A0400-DAC7-45EF-B91E-CF5B42F63C20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14769579-674E-4BC5-A826-636CB6FA6094}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14769579-674E-4BC5-A826-636CB6FA6094}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14769579-674E-4BC5-A826-636CB6FA6094}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14769579-674E-4BC5-A826-636CB6FA6094}.Release|Any CPU.Build.0 = Release|Any CPU
+		{701DC6A1-3F8F-45D6-A711-1BCC2F85E2DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{701DC6A1-3F8F-45D6-A711-1BCC2F85E2DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{701DC6A1-3F8F-45D6-A711-1BCC2F85E2DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{701DC6A1-3F8F-45D6-A711-1BCC2F85E2DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D7F2AA1-A44E-4AAF-985F-5D748EBE6E89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D7F2AA1-A44E-4AAF-985F-5D748EBE6E89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D7F2AA1-A44E-4AAF-985F-5D748EBE6E89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D7F2AA1-A44E-4AAF-985F-5D748EBE6E89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D907E1A-9A8B-4D87-B74E-C32DC805D38A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D907E1A-9A8B-4D87-B74E-C32DC805D38A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D907E1A-9A8B-4D87-B74E-C32DC805D38A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D907E1A-9A8B-4D87-B74E-C32DC805D38A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA89D30E-F27D-4DB7-8B6D-1461ABE7285F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA89D30E-F27D-4DB7-8B6D-1461ABE7285F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA89D30E-F27D-4DB7-8B6D-1461ABE7285F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA89D30E-F27D-4DB7-8B6D-1461ABE7285F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{D7E80F63-B623-4CED-BE43-76428DE89DDF} = {856CDFB4-956C-45F7-AA5A-F722692D8B6D}
+		{14769579-674E-4BC5-A826-636CB6FA6094} = {778AEFF9-8A51-4F76-8399-30FD7430F928}
+		{701DC6A1-3F8F-45D6-A711-1BCC2F85E2DA} = {778AEFF9-8A51-4F76-8399-30FD7430F928}
+		{5D7F2AA1-A44E-4AAF-985F-5D748EBE6E89} = {856CDFB4-956C-45F7-AA5A-F722692D8B6D}
+		{2D907E1A-9A8B-4D87-B74E-C32DC805D38A} = {9990216E-5DF3-4701-A63B-61019D3074F4}
+		{AA89D30E-F27D-4DB7-8B6D-1461ABE7285F} = {9990216E-5DF3-4701-A63B-61019D3074F4}
 	EndGlobalSection
 EndGlobal
