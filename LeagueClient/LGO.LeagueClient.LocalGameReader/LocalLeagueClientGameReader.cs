@@ -25,7 +25,7 @@ namespace LGO.LeagueClient.LocalGameReader
 
         private static LocalLeagueClientGameReader? _instance;
 
-        public static LocalLeagueClientGameReader Get => _instance ??= new LocalLeagueClientGameReader();
+        public static LocalLeagueClientGameReader Instance => _instance ??= new LocalLeagueClientGameReader();
 
         private JsonHttpClient Client { get; }
 
