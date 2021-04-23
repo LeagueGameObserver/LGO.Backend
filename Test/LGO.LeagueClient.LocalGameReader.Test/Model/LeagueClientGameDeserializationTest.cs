@@ -2,14 +2,13 @@
 using System.IO;
 using System.Linq;
 using LGO.Backend.Core.Model.League.Enum;
-using LGO.LeagueClient.LocalGameReader;
 using LGO.LeagueClient.LocalGameReader.Model.Game;
 using LGO.LeagueClient.Model.Game;
 using LGO.LeagueClient.Model.GameEvent;
 using Newtonsoft.Json;
 using NUnit.Framework;
 
-namespace LGO.LeagueOfLegends.ClientApiTest.Model
+namespace LGO.LeagueClient.LocalGameReader.Test.Model
 {
     [TestFixture]
     public class LeagueClientGameDeserializationTest

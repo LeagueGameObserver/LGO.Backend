@@ -4,8 +4,6 @@
         <TargetFramework>net5.0</TargetFramework>
 
         <IsPackable>false</IsPackable>
-
-        <RootNamespace>LGO.LeagueOfLegends.ClientApiTest</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
