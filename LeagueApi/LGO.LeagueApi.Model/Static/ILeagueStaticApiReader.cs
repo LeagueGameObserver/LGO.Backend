@@ -20,13 +20,23 @@ namespace LGO.LeagueApi.Model.Static
         Task<ILeagueStaticChampionCollection?> ReadAllChampionsAsync(MultiComponentVersion gameVersion, LeagueLocalization localization = LeagueLocalization.EnglishUnitedStates);
 
         Task<ILeagueStaticItemCollection?> ReadAllItemsAsync(MultiComponentVersion gameVersion, LeagueLocalization localization = LeagueLocalization.EnglishUnitedStates);
-
+        
         Task<FileInfo?> DownloadChampionSplashImageAsync(string championId, FileInfo destination, int skinIndex = 0);
         
+        string GetChampionSplashImageUrl(string championId, int skinIndex = 0);
+
         Task<FileInfo?> DownloadChampionLoadingImageAsync(string championId, FileInfo destination, int skinIndex = 0);
+        
+        string GetChampionLoadingImageUrl(string championId, int skinIndex = 0);
 
         Task<FileInfo?> DownloadChampionSquareImageAsync(MultiComponentVersion gameVersion, string championId, FileInfo destination);
-
+        
+        string GetChampionSquareImageUrl(MultiComponentVersion gameVersion, string championId);
+        
         Task<FileInfo?> DownloadItemSquareImageAsync(MultiComponentVersion gameVersion, string itemId, FileInfo destination);
+        
+        string GetItemSquareImageUrl(MultiComponentVersion gameVersion, string itemId);
+
+        Task<FileInfo?> DownloadFileAsync(string url, FileInfo destination);
     }
 }

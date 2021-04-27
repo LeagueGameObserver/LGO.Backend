@@ -41,7 +41,7 @@ namespace LGO.LeagueApi.RemoteApiReader.Test.Static
         public async Task TestReadAllChampions()
         {
             var reader = new RemoteLeagueStaticApiReader();
-            var version = MultiComponentVersion.Parse("11.8.1");
+            var version = new MultiComponentVersion(11, 8, 1);
 
             var champions = await reader.ReadAllChampionsAsync(version);
             
@@ -52,13 +52,14 @@ namespace LGO.LeagueApi.RemoteApiReader.Test.Static
             Assert.IsNotNull(aurelionSol);
             Assert.AreEqual("AurelionSol", aurelionSol.Id);
             Assert.AreEqual("Aurelion Sol", aurelionSol.Name);
+            Assert.AreEqual(136, aurelionSol.Key);
         }
 
         [Test]
         public async Task ReadAllItems()
         {
             var reader = new RemoteLeagueStaticApiReader();
-            var version = MultiComponentVersion.Parse("11.8.1");
+            var version = new MultiComponentVersion(11, 8, 1);
 
             var items = await reader.ReadAllItemsAsync(version);
             
@@ -157,7 +158,7 @@ namespace LGO.LeagueApi.RemoteApiReader.Test.Static
         {
             var reader = new RemoteLeagueStaticApiReader();
             const string itemId = "1001";
-            var gameVersion = MultiComponentVersion.Parse("11.8.1");
+            var gameVersion = new MultiComponentVersion(11, 8, 1);
             var fileName = $"{ImageDirectory}/{Guid.NewGuid()}{ILeagueStaticApiReader.ItemSquareImageFileExtension}";
 
             var image = await reader.DownloadItemSquareImageAsync(gameVersion, itemId, new FileInfo(fileName));
@@ -172,7 +173,7 @@ namespace LGO.LeagueApi.RemoteApiReader.Test.Static
             var reader = new RemoteLeagueStaticApiReader();
             const string itemId = "NotALeagueItem";
             var fileName = $"{ImageDirectory}/{Guid.NewGuid()}{ILeagueStaticApiReader.ChampionSquareImageFileExtension}";
-            var gameVersion = MultiComponentVersion.Parse("11.8.1");
+            var gameVersion = new MultiComponentVersion(11, 8, 1);
 
             var image = await reader.DownloadItemSquareImageAsync(gameVersion, itemId, new FileInfo(fileName));
             

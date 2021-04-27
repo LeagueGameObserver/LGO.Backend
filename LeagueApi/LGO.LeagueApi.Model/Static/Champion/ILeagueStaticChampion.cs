@@ -2,6 +2,8 @@
 {
     public interface ILeagueStaticChampion
     {
+        int Key { get; }
+        
         string Id { get; }
         
         string Name { get; }

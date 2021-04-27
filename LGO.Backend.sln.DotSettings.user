@@ -36,17 +36,7 @@
 	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ECSharpUseContinuousIndentInsideBracesMigration/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ESettingsUpgrade_002EMigrateBlankLinesAroundFieldToBlankLinesAroundProperty/@EntryIndexedValue">True</s:Boolean>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7dcff970_002D15cc_002D4a11_002D968d_002D75527f4ad5c5/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="LolClientGameTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;Or&gt;&#xD;
-    &lt;Project Location="E:\Source\GitHub\__LeagueGameObserver\LGO.Backend\Test\LGO.LeagueClient.LocalGameReader.Test" Presentation="&amp;lt;Test&amp;gt;\&amp;lt;LGO.LeagueClient.LocalGameReader.Test&amp;gt;" /&gt;&#xD;
-    &lt;TestAncestor&gt;&#xD;
-      &lt;TestId&gt;NUnit3x::90DA1A7E-50B4-4DB3-9BB2-0A5E3B7C4465::net5.0::LGO.Backend.Core.Test.Model.VersionTest.TestParse&lt;/TestId&gt;&#xD;
-      &lt;TestId&gt;NUnit3x::90DA1A7E-50B4-4DB3-9BB2-0A5E3B7C4465::net5.0::LGO.Backend.Core.Test.Model.VersionTest.TestTryParse&lt;/TestId&gt;&#xD;
-      &lt;TestId&gt;NUnit3x::90DA1A7E-50B4-4DB3-9BB2-0A5E3B7C4465::net5.0::LGO.Backend.Core.Test.Model.VersionTest.TestEquals&lt;/TestId&gt;&#xD;
-      &lt;TestId&gt;NUnit3x::90DA1A7E-50B4-4DB3-9BB2-0A5E3B7C4465::net5.0::LGO.Backend.Core.Test.Model.VersionTest.TestCompare&lt;/TestId&gt;&#xD;
-      &lt;TestId&gt;NUnit3x::9C3CE44B-8A66-491D-9514-2EA42552BE02::net5.0::LGO.LeagueApi.RemoteApiReader.Test.RemoteLeagueStaticApiReaderTest.TestReadGameVersions&lt;/TestId&gt;&#xD;
-      &lt;TestId&gt;NUnit3x::9C3CE44B-8A66-491D-9514-2EA42552BE02::net5.0::LGO.LeagueApi.RemoteApiReader.Test.Static.RemoteLeagueStaticApiReaderTest&lt;/TestId&gt;&#xD;
-    &lt;/TestAncestor&gt;&#xD;
-  &lt;/Or&gt;&#xD;
+  &lt;Project Location="E:\Source\GitHub\__LeagueGameObserver\LGO.Backend" Presentation="&amp;lt;Test&amp;gt;" /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	
 	

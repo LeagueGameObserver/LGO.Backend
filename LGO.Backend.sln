@@ -30,6 +30,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LGO.LeagueApi.RemoteApiRead
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LGO.LeagueApi.RemoteApiReader.Test", "Test\LGO.LeagueApi.RemoteApiReader.Test\LGO.LeagueApi.RemoteApiReader.Test.csproj", "{9C3CE44B-8A66-491D-9514-2EA42552BE02}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LGO.LeagueResource.LocalResourceRepository.Test", "Test\LGO.LeagueResource.LocalResourceRepository.Test\LGO.LeagueResource.LocalResourceRepository.Test.csproj", "{0A6A8466-1541-4A36-BDC7-66380AD4B195}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -80,6 +82,10 @@ Global
 		{9C3CE44B-8A66-491D-9514-2EA42552BE02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C3CE44B-8A66-491D-9514-2EA42552BE02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C3CE44B-8A66-491D-9514-2EA42552BE02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A6A8466-1541-4A36-BDC7-66380AD4B195}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A6A8466-1541-4A36-BDC7-66380AD4B195}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A6A8466-1541-4A36-BDC7-66380AD4B195}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A6A8466-1541-4A36-BDC7-66380AD4B195}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{14769579-674E-4BC5-A826-636CB6FA6094} = {778AEFF9-8A51-4F76-8399-30FD7430F928}
@@ -91,5 +97,6 @@ Global
 		{90DA1A7E-50B4-4DB3-9BB2-0A5E3B7C4465} = {856CDFB4-956C-45F7-AA5A-F722692D8B6D}
 		{01057FB1-DCA8-48DB-A493-E411DC3E34F8} = {92BC2095-137C-4F11-94BC-02B00A96B55B}
 		{9C3CE44B-8A66-491D-9514-2EA42552BE02} = {856CDFB4-956C-45F7-AA5A-F722692D8B6D}
+		{0A6A8466-1541-4A36-BDC7-66380AD4B195} = {856CDFB4-956C-45F7-AA5A-F722692D8B6D}
 	EndGlobalSection
 EndGlobal

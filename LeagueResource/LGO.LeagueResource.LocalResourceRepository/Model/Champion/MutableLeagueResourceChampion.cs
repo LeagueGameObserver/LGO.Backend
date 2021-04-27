@@ -1,19 +1,16 @@
-﻿using LGO.Backend.Core.Model.Converter;
+﻿using System;
 using LGO.LeagueResource.Model.Champion;
-using Newtonsoft.Json;
 
 namespace LGO.LeagueResource.LocalResourceRepository.Model.Champion
 {
     internal class MutableLeagueResourceChampion : ILeagueResourceChampion
     {
-        [JsonProperty("id")]
-        public string Id { get; set; } = string.Empty;
+        public Guid Id { get; set; } = Guid.NewGuid();
 
-        [JsonProperty("name")]
+        public int Key { get; set; } = 0;
+
         public string Name { get; set; } = string.Empty;
 
-        [JsonProperty("image")]
-        [JsonConverter(typeof(ConcreteConverter<ILeagueResourceChampionImages, MutableLeagueResourceChampionImages>))]
-        public ILeagueResourceChampionImages Images { get; set; } = MutableLeagueResourceChampionImages.Null;
+        public ILeagueResourceChampionImages Images { get; set; } = NullChampionImages.Instance;
     }
 }

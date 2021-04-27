@@ -100,25 +100,45 @@ namespace LGO.LeagueApi.RemoteApiReader.Static
 
         public async Task<FileInfo?> DownloadChampionSplashImageAsync(string championId, FileInfo destination, int skinIndex = 0)
         {
-            return await DownloadFileAsync($"http://ddragon.leagueoflegends.com/cdn/img/champion/splash/{championId}_{skinIndex}.jpg", destination);
+            return await DownloadFileAsync(GetChampionSplashImageUrl(championId, skinIndex), destination);
         }
-        
+
+        public string GetChampionSplashImageUrl(string championId, int skinIndex = 0)
+        {
+            return $"http://ddragon.leagueoflegends.com/cdn/img/champion/splash/{championId}_{skinIndex}.jpg";
+        }
+
         public async Task<FileInfo?> DownloadChampionLoadingImageAsync(string championId, FileInfo destination, int skinIndex = 0)
         {
-            return await DownloadFileAsync($"http://ddragon.leagueoflegends.com/cdn/img/champion/loading/{championId}_{skinIndex}.jpg", destination);
+            return await DownloadFileAsync(GetChampionLoadingImageUrl(championId, skinIndex), destination);
+        }
+
+        public string GetChampionLoadingImageUrl(string championId, int skinIndex = 0)
+        {
+            return $"http://ddragon.leagueoflegends.com/cdn/img/champion/loading/{championId}_{skinIndex}.jpg";
         }
 
         public async Task<FileInfo?> DownloadChampionSquareImageAsync(MultiComponentVersion gameVersion, string championId, FileInfo destination)
         {
-            return await DownloadFileAsync($"http://ddragon.leagueoflegends.com/cdn/{gameVersion}/img/champion/{championId}.png", destination);
+            return await DownloadFileAsync(GetChampionSquareImageUrl(gameVersion, championId), destination);
+        }
+
+        public string GetChampionSquareImageUrl(MultiComponentVersion gameVersion, string championId)
+        {
+            return $"http://ddragon.leagueoflegends.com/cdn/{gameVersion}/img/champion/{championId}.png";
         }
 
         public async Task<FileInfo?> DownloadItemSquareImageAsync(MultiComponentVersion gameVersion, string itemId, FileInfo destination)
         {
-            return await DownloadFileAsync($"http://ddragon.leagueoflegends.com/cdn/{gameVersion}/img/item/{itemId}.png", destination);
+            return await DownloadFileAsync(GetItemSquareImageUrl(gameVersion, itemId), destination);
         }
 
-        private static async Task<FileInfo?> DownloadFileAsync(string url, FileInfo destination)
+        public string GetItemSquareImageUrl(MultiComponentVersion gameVersion, string itemId)
+        {
+            return $"http://ddragon.leagueoflegends.com/cdn/{gameVersion}/img/item/{itemId}.png";
+        }
+
+        public async Task<FileInfo?> DownloadFileAsync(string url, FileInfo destination)
         {
             if (File.Exists(destination.FullName))
             {

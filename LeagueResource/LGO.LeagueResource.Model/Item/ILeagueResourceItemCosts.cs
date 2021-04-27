@@ -7,7 +7,5 @@
         int RecipeCosts { get; }
         
         int SellWorth { get; }
-        
-        bool CanBePurchased { get; }
     }
 }

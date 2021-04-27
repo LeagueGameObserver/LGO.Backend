@@ -1,22 +1,20 @@
-﻿using LGO.Backend.Core.Model.Converter;
+﻿using System;
 using LGO.LeagueResource.Model.Item;
-using Newtonsoft.Json;
 
 namespace LGO.LeagueResource.LocalResourceRepository.Model.Item
 {
     internal class MutableLeagueResourceItem : ILeagueResourceItem
     {
-        public int Id { get; set; } = 0;
-        
-        [JsonProperty("name")]
+        public Guid Id { get; } = Guid.NewGuid();
+
+        public int Key { get; set; } = 0;
+
         public string Name { get; set; } = string.Empty;
+
+        public ILeagueResourceItemImages Images { get; set; } = NullItemImages.Instance;
         
-        [JsonProperty("gold")]
-        [JsonConverter(typeof(ConcreteConverter<ILeagueResourceItemCosts, MutableLeagueResourceItemCosts>))]
-        public ILeagueResourceItemCosts Costs { get; set; } = MutableLeagueResourceItemCosts.Null;
+        public ILeagueResourceItemCosts Costs { get; set; } = NullItemCosts.Instance;
         
-        [JsonProperty("image")]
-        [JsonConverter(typeof(ConcreteConverter<ILeagueResourceItemImages, MutableLeagueResourceItemImages>))]
-        public ILeagueResourceItemImages Images { get; set; } = MutableLeagueResourceItemImages.Null;
+        public bool IsPurchasable { get; set; } = false;
     }
 }

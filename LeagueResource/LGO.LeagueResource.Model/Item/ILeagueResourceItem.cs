@@ -1,13 +1,19 @@
-﻿namespace LGO.LeagueResource.Model.Item
+﻿using System;
+
+namespace LGO.LeagueResource.Model.Item
 {
     public interface ILeagueResourceItem
     {
-        int Id { get; }
+        Guid Id { get; }
+        
+        int Key { get; }
         
         string Name { get; }
         
+        ILeagueResourceItemImages Images { get; }
+        
         ILeagueResourceItemCosts Costs { get; }
         
-        ILeagueResourceItemImages Images { get; }
+        bool IsPurchasable { get; }
     }
 }

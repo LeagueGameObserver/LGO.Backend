@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace LGO.Backend.Core.Model
 {
@@ -53,6 +54,11 @@ namespace LGO.Backend.Core.Model
             if (Components.Length < 1)
             {
                 throw new ArgumentException($"{nameof(components)} must not be empty.");
+            }
+
+            if (Components.Any(component => component < 0))
+            {
+                throw new ArgumentOutOfRangeException($"All of the given {nameof(components)} must be greater or equal to 0.");
             }
         }
 

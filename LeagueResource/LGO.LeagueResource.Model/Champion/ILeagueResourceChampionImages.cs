@@ -2,8 +2,10 @@
 {
     public interface ILeagueResourceChampionImages
     {
-        string FullImage { get; }
+        IImageDescriptor SplashImage { get; }
         
-        string SpriteImage { get; }
+        IImageDescriptor LoadingImage { get; }
+        
+        IImageDescriptor SquareImage { get; }
     }
 }

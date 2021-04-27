@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using LGO.Backend.Core.Model;
 using LGO.LeagueResource.Model.Champion;
@@ -10,16 +11,16 @@ namespace LGO.LeagueResource.Model
     {
         MultiComponentVersion GameVersion { get; }
         
-        Task<ILeagueResourceChampion?> GetChampionAsync(int id);
-        
-        Task<ILeagueResourceChampion?> GetChampionAsync(string id);
+        Task<IEnumerable<ILeagueResourceChampion>?> ReadAllChampionsAsync();
 
-        Task<IEnumerable<ILeagueResourceChampion>> GetChampionsAsync(params int[] ids);
-        
-        Task<IEnumerable<ILeagueResourceChampion>> GetChampionsAsync(params string[] ids);
+        Task<ILeagueResourceChampion?> ReadChampionByIdAsync(Guid championId);
 
-        Task<ILeagueResourceItem?> GetItemAsync(int id);
+        Task<ILeagueResourceChampion?> ReadChampionByKeyAsync(int championKey);
 
-        Task<IEnumerable<ILeagueResourceItem>> GetItemsAsync(params int[] ids);
+        Task<IEnumerable<ILeagueResourceItem>?> ReadAllItemsAsync();
+
+        Task<ILeagueResourceItem?> ReadItemByIdAsync(Guid itemId);
+
+        Task<ILeagueResourceItem?> ReadItemByKeyAsync(int itemKey);
     }
 }

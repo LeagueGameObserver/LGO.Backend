@@ -6,12 +6,15 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\LeagueApi\LGO.LeagueApi.Model\LGO.LeagueApi.Model.csproj" />
       <ProjectReference Include="..\..\LGO.Backend.Core\LGO.Backend.Core.csproj" />
       <ProjectReference Include="..\LGO.LeagueResource.Model\LGO.LeagueResource.Model.csproj" />
     </ItemGroup>
 
     <ItemGroup>
+      <PackageReference Include="log4net" Version="2.0.12" />
       <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+      <PackageReference Include="SixLabors.ImageSharp" Version="1.0.3" />
     </ItemGroup>
 
 </Project>
