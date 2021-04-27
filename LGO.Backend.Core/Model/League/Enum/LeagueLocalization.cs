@@ -1,0 +1,35 @@
+﻿namespace LGO.Backend.Core.Model.League.Enum
+{
+    public enum LeagueLocalization
+    {
+        Undefined,
+        Czech,
+        Greek,
+        Polish,
+        Romanian,
+        Hungarian,
+        EnglishUnitedKingdom,
+        German,
+        SpanishSpain,
+        Italian,
+        French,
+        Japanese,
+        Korean,
+        SpanishMexico,
+        SpanishArgentina,
+        PortugueseBrazil,
+        EnglishUnitedStates,
+        EnglishAustralia,
+        Russian,
+        Turkish,
+        Malay,
+        EnglishPhilippines,
+        EnglishSingapore,
+        Thai,
+        Vietnamese,
+        Indonesian,
+        ChineseMalaysia,
+        ChineseChina,
+        ChineseTaiwan,
+    }
+}

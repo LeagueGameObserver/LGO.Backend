@@ -44,6 +44,7 @@
       &lt;TestId&gt;NUnit3x::90DA1A7E-50B4-4DB3-9BB2-0A5E3B7C4465::net5.0::LGO.Backend.Core.Test.Model.VersionTest.TestEquals&lt;/TestId&gt;&#xD;
       &lt;TestId&gt;NUnit3x::90DA1A7E-50B4-4DB3-9BB2-0A5E3B7C4465::net5.0::LGO.Backend.Core.Test.Model.VersionTest.TestCompare&lt;/TestId&gt;&#xD;
       &lt;TestId&gt;NUnit3x::9C3CE44B-8A66-491D-9514-2EA42552BE02::net5.0::LGO.LeagueApi.RemoteApiReader.Test.RemoteLeagueStaticApiReaderTest.TestReadGameVersions&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::9C3CE44B-8A66-491D-9514-2EA42552BE02::net5.0::LGO.LeagueApi.RemoteApiReader.Test.Static.RemoteLeagueStaticApiReaderTest&lt;/TestId&gt;&#xD;
     &lt;/TestAncestor&gt;&#xD;
   &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String>

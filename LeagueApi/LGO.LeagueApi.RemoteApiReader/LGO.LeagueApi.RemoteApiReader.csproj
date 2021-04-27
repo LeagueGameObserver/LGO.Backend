@@ -9,4 +9,8 @@
       <ProjectReference Include="..\LGO.LeagueApi.Model\LGO.LeagueApi.Model.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="log4net" Version="2.0.12" />
+    </ItemGroup>
+
 </Project>
