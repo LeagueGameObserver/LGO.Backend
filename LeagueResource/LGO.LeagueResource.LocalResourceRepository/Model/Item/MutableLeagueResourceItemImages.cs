@@ -5,6 +5,6 @@ namespace LGO.LeagueResource.LocalResourceRepository.Model.Item
 {
     internal class MutableLeagueResourceItemImages : ILeagueResourceItemImages
     {
-        public IImageDescriptor SquareImage { get; set; } = NullImageDescriptor.Instance;
+        public IImageReader SquareImage { get; set; } = NullImageReader.Instance;
     }
 }

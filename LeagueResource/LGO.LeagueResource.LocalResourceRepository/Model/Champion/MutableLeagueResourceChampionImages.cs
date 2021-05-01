@@ -5,10 +5,10 @@ namespace LGO.LeagueResource.LocalResourceRepository.Model.Champion
 {
     internal class MutableLeagueResourceChampionImages : ILeagueResourceChampionImages
     {
-        public IImageDescriptor SplashImage { get; set; } = NullImageDescriptor.Instance;
+        public IImageReader SplashImage { get; set; } = NullImageReader.Instance;
         
-        public IImageDescriptor LoadingImage { get; set; } = NullImageDescriptor.Instance;
+        public IImageReader LoadingImage { get; set; } = NullImageReader.Instance;
         
-        public IImageDescriptor SquareImage { get; set; } = NullImageDescriptor.Instance;
+        public IImageReader SquareImage { get; set; } = NullImageReader.Instance;
     }
 }

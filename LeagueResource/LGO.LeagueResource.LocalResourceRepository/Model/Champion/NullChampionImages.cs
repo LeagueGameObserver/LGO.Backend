@@ -9,11 +9,11 @@ namespace LGO.LeagueResource.LocalResourceRepository.Model.Champion
 
         public static NullChampionImages Instance => _instance ??= new NullChampionImages();
 
-        public IImageDescriptor SplashImage => NullImageDescriptor.Instance;
+        public IImageReader SplashImage => NullImageReader.Instance;
         
-        public IImageDescriptor LoadingImage => NullImageDescriptor.Instance;
+        public IImageReader LoadingImage => NullImageReader.Instance;
         
-        public IImageDescriptor SquareImage => NullImageDescriptor.Instance;
+        public IImageReader SquareImage => NullImageReader.Instance;
 
         private NullChampionImages()
         {

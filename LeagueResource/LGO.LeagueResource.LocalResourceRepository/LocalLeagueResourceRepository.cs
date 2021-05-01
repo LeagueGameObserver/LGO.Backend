@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.IO;
 using System.Threading.Tasks;
 using LGO.Backend.Core.Model;
 using LGO.LeagueResource.LocalResourceRepository.Model.Champion;
@@ -12,16 +13,18 @@ using log4net;
 
 namespace LGO.LeagueResource.LocalResourceRepository
 {
-    public class LocalLeagueResourceRepository : ILeagueResourceRepository
+    internal class LocalLeagueResourceRepository : ILeagueResourceRepository
     {
         private static ILog Log { get; } = LogManager.GetLogger(typeof(LocalLeagueResourceRepository));
 
-        public MultiComponentVersion GameVersion { get; }
+        
 
-        private ConcurrentDictionary<Guid, MutableLeagueResourceChampion> ChampionById { get; } = new();
-        private ConcurrentDictionary<int, MutableLeagueResourceChampion> ChampionByKey { get; } = new();
-        private ConcurrentDictionary<Guid, MutableLeagueResourceItem> ItemById { get; } = new();
-        private ConcurrentDictionary<int, MutableLeagueResourceItem> ItemByKey { get; } = new();
+        public MultiComponentVersion GameVersion { get; }
+        
+        internal ConcurrentDictionary<Guid, MutableLeagueResourceChampion> ChampionById { get; } = new();
+        internal ConcurrentDictionary<int, MutableLeagueResourceChampion> ChampionByKey { get; } = new();
+        internal ConcurrentDictionary<Guid, MutableLeagueResourceItem> ItemById { get; } = new();
+        internal ConcurrentDictionary<int, MutableLeagueResourceItem> ItemByKey { get; } = new();
 
         internal LocalLeagueResourceRepository(MultiComponentVersion gameVersion, IEnumerable<MutableLeagueResourceChampion> champions, IEnumerable<MutableLeagueResourceItem> items)
         {

@@ -9,7 +9,7 @@ namespace LGO.LeagueResource.LocalResourceRepository.Model.Item
 
         public static NullItemImages Instance => _instance ??= new NullItemImages();
 
-        public IImageDescriptor SquareImage => NullImageDescriptor.Instance;
+        public IImageReader SquareImage => NullImageReader.Instance;
 
         private NullItemImages()
         {

@@ -2,6 +2,6 @@
 {
     public interface ILeagueResourceItemImages
     {
-        IImageDescriptor SquareImage { get; }
+        IImageReader SquareImage { get; }
     }
 }

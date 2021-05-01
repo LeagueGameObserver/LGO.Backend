@@ -2,10 +2,10 @@
 {
     public interface ILeagueResourceChampionImages
     {
-        IImageDescriptor SplashImage { get; }
+        IImageReader SplashImage { get; }
         
-        IImageDescriptor LoadingImage { get; }
+        IImageReader LoadingImage { get; }
         
-        IImageDescriptor SquareImage { get; }
+        IImageReader SquareImage { get; }
     }
 }

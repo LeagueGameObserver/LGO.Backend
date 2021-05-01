@@ -4,15 +4,15 @@ using LGO.LeagueResource.Model;
 
 namespace LGO.LeagueResource.LocalResourceRepository.Model
 {
-    internal sealed class NullImageDescriptor : IImageDescriptor
+    internal sealed class NullImageReader : IImageReader
     {
-        private static NullImageDescriptor? _instance;
+        private static NullImageReader? _instance;
 
-        public static NullImageDescriptor Instance => _instance ??= new NullImageDescriptor();
+        public static NullImageReader Instance => _instance ??= new NullImageReader();
 
         public Guid Id => Guid.Empty;
 
-        private NullImageDescriptor()
+        private NullImageReader()
         {
         }
 

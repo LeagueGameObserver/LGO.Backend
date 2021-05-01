@@ -3,10 +3,8 @@ using System.Threading.Tasks;
 
 namespace LGO.LeagueResource.Model
 {
-    public interface IImageDescriptor
+    public interface IImageReader
     {
-        Guid Id { get; }
-        
         Task<string?> ReadContentAsBase64Async();
     }
 }
