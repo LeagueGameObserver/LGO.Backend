@@ -20,36 +20,6 @@ namespace LGO.LeagueApi.RemoteApiReader.Static
         private static ILog Log { get; } = LogManager.GetLogger(typeof(RemoteLeagueStaticApiReader));
         private static TimeSpan RequestTimeout { get; } = TimeSpan.FromSeconds(2);
 
-        private static BidirectionalStringMapping<LeagueLocalization> LocalizationTranslations { get; } = new((LeagueLocalization.Undefined, "Undefined"),
-                                                                                                              (LeagueLocalization.Czech, "cs_CZ"),
-                                                                                                              (LeagueLocalization.Greek, "el_GR"),
-                                                                                                              (LeagueLocalization.Polish, "pl_PL"),
-                                                                                                              (LeagueLocalization.Romanian, "ro_RO"),
-                                                                                                              (LeagueLocalization.Hungarian, "hu_HU"),
-                                                                                                              (LeagueLocalization.EnglishUnitedKingdom, "en_GB"),
-                                                                                                              (LeagueLocalization.German, "de_DE"),
-                                                                                                              (LeagueLocalization.SpanishSpain, "es_ES"),
-                                                                                                              (LeagueLocalization.Italian, "it_IT"),
-                                                                                                              (LeagueLocalization.French, "fr_FR"),
-                                                                                                              (LeagueLocalization.Japanese, "ja_JP"),
-                                                                                                              (LeagueLocalization.Korean, "ko_KR"),
-                                                                                                              (LeagueLocalization.SpanishMexico, "es_MX"),
-                                                                                                              (LeagueLocalization.SpanishArgentina, "es_AR"),
-                                                                                                              (LeagueLocalization.PortugueseBrazil, "pt_BR"),
-                                                                                                              (LeagueLocalization.EnglishUnitedStates, "en_US"),
-                                                                                                              (LeagueLocalization.EnglishAustralia, "en_AU"),
-                                                                                                              (LeagueLocalization.Russian, "ru_RU"),
-                                                                                                              (LeagueLocalization.Turkish, "tr_TR"),
-                                                                                                              (LeagueLocalization.Malay, "ms_MY"),
-                                                                                                              (LeagueLocalization.EnglishPhilippines, "en_PH"),
-                                                                                                              (LeagueLocalization.EnglishSingapore, "en_SG"),
-                                                                                                              (LeagueLocalization.Thai, "th_TH"),
-                                                                                                              (LeagueLocalization.Vietnamese, "vn_VN"),
-                                                                                                              (LeagueLocalization.Indonesian, "id_ID"),
-                                                                                                              (LeagueLocalization.ChineseMalaysia, "zh_MY"),
-                                                                                                              (LeagueLocalization.ChineseChina, "zh_CN"),
-                                                                                                              (LeagueLocalization.ChineseTaiwan, "zh_TW"));
-
         private static RemoteLeagueStaticApiReader? _instance;
 
         public static RemoteLeagueStaticApiReader Instance => _instance ??= new RemoteLeagueStaticApiReader();
@@ -88,13 +58,13 @@ namespace LGO.LeagueApi.RemoteApiReader.Static
 
         public async Task<ILeagueStaticChampionCollection?> ReadAllChampionsAsync(MultiComponentVersion gameVersion, LeagueLocalization localization = LeagueLocalization.EnglishUnitedStates)
         {
-            var url = $"http://ddragon.leagueoflegends.com/cdn/{gameVersion}/data/{LocalizationTranslations.Get(localization)}/champion.json";
+            var url = $"http://ddragon.leagueoflegends.com/cdn/{gameVersion}/data/{localization.ToCountryCode()}/champion.json";
             return await Client.GetAsync<MutableLeagueStaticChampionCollection>(url);
         }
 
         public async Task<ILeagueStaticItemCollection?> ReadAllItemsAsync(MultiComponentVersion gameVersion, LeagueLocalization localization = LeagueLocalization.EnglishUnitedStates)
         {
-            var url = $"http://ddragon.leagueoflegends.com/cdn/{gameVersion}/data/{LocalizationTranslations.Get(localization)}/item.json";
+            var url = $"http://ddragon.leagueoflegends.com/cdn/{gameVersion}/data/{localization.ToCountryCode()}/item.json";
             return await Client.GetAsync<MutableLeagueStaticItemCollection>(url);
         }
 

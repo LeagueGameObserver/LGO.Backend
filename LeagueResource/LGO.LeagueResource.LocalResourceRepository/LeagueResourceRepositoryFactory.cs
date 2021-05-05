@@ -19,6 +19,8 @@ namespace LGO.LeagueResource.LocalResourceRepository
     {
         private static ILog Log { get; } = LogManager.GetLogger(typeof(LeagueResourceRepositoryFactory));
 
+        private const string RootDirectory = nameof(LocalLeagueResourceRepository);
+
         public static async Task<ILeagueResourceRepository> LoadOrCreate(ILeagueStaticApiReader staticApiReader,
                                                                          MultiComponentVersion gameVersion,
                                                                          LeagueLocalization localization = LeagueLocalization.EnglishUnitedStates)
@@ -114,7 +116,7 @@ namespace LGO.LeagueResource.LocalResourceRepository
 
         internal static DirectoryInfo GetOrCreateRootDirectory(MultiComponentVersion gameVersion)
         {
-            var dirInfo = new DirectoryInfo($"./{nameof(LocalLeagueResourceRepository)}/{gameVersion}");
+            var dirInfo = new DirectoryInfo($"./{RootDirectory}/{gameVersion}");
             if (!Directory.Exists(dirInfo.FullName))
             {
                 Directory.CreateDirectory(dirInfo.FullName);
