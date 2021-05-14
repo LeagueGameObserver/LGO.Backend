@@ -6,7 +6,5 @@ namespace LGO.Backend.Core.Model.League.Structure
     {
         public LeagueTurretTierType Tier { get; set; } = LeagueTurretTierType.Undefined;
         public LeagueTeamType Team { get; set; } = LeagueTeamType.Undefined;
-        
-        public static ILeagueTurret Null => NullLeagueTurret.Get;
     }
 }

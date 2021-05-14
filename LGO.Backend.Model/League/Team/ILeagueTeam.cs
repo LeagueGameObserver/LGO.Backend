@@ -8,16 +8,16 @@ namespace LGO.Backend.Model.League.Team
     {
         Guid Id { get; }
         
-        LeagueTeamType Side { get; }
+        LeagueTeamType? Side { get; }
         
-        IEnumerable<LeagueDragonType> DragonsKilled { get; }
+        IEnumerable<LeagueDragonType>? DragonsKilled { get; }
         
-        int NumberOfRiftHeraldsKilled { get; }
+        int? NumberOfRiftHeraldsKilled { get; }
         
-        int NumberOfBaronNashorsKilled { get; }
+        int? NumberOfBaronNashorsKilled { get; }
         
-        IEnumerable<LeagueTurretTierType> TurretsDestroyed { get; }
+        IEnumerable<LeagueTurretTierType>? TurretsDestroyed { get; }
         
-        IEnumerable<LeagueInhibitorTierType> InhibitorsDestroyed { get; }
+        IEnumerable<LeagueInhibitorTierType>? InhibitorsDestroyed { get; }
     }
 }

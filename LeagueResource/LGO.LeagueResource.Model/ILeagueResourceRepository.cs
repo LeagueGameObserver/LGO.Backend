@@ -17,6 +17,8 @@ namespace LGO.LeagueResource.Model
 
         Task<ILeagueResourceChampion?> ReadChampionByKeyAsync(int championKey);
 
+        Task<ILeagueResourceChampion?> ReadChampionByNameAsync(string championName);
+
         Task<IEnumerable<ILeagueResourceItem>?> ReadAllItemsAsync();
 
         Task<ILeagueResourceItem?> ReadItemByIdAsync(Guid itemId);

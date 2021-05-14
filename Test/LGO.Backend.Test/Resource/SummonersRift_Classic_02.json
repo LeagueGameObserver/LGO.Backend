@@ -1,0 +1,1661 @@
+{
+	"activePlayer": {
+		"abilities": {
+			"E": {
+				"abilityLevel": 1,
+				"displayName": "Stand Aside",
+				"id": "DravenDoubleShot",
+				"rawDescription": "GeneratedTip_Spell_DravenDoubleShot_Description",
+				"rawDisplayName": "GeneratedTip_Spell_DravenDoubleShot_DisplayName"
+			},
+			"Passive": {
+				"displayName": "League of Draven",
+				"id": "DravenPassive",
+				"rawDescription": "GeneratedTip_Passive_DravenPassive_Description",
+				"rawDisplayName": "GeneratedTip_Passive_DravenPassive_DisplayName"
+			},
+			"Q": {
+				"abilityLevel": 5,
+				"displayName": "Spinning Axe",
+				"id": "DravenSpinning",
+				"rawDescription": "GeneratedTip_Spell_DravenSpinning_Description",
+				"rawDisplayName": "GeneratedTip_Spell_DravenSpinning_DisplayName"
+			},
+			"R": {
+				"abilityLevel": 2,
+				"displayName": "Whirling Death",
+				"id": "DravenRCast",
+				"rawDescription": "GeneratedTip_Spell_DravenRCast_Description",
+				"rawDisplayName": "GeneratedTip_Spell_DravenRCast_DisplayName"
+			},
+			"W": {
+				"abilityLevel": 5,
+				"displayName": "Blood Rush",
+				"id": "DravenFury",
+				"rawDescription": "GeneratedTip_Spell_DravenFury_Description",
+				"rawDisplayName": "GeneratedTip_Spell_DravenFury_DisplayName"
+			}
+		},
+		"championStats": {
+			"abilityHaste": 0.0,
+			"abilityPower": 0.0,
+			"armor": 75.4030990600586,
+			"armorPenetrationFlat": 0.0,
+			"armorPenetrationPercent": 1.0,
+			"attackDamage": 305.92950439453127,
+			"attackRange": 550.0,
+			"attackSpeed": 1.4908463954925538,
+			"bonusArmorPenetrationPercent": 1.0,
+			"bonusMagicPenetrationPercent": 1.0,
+			"critChance": 0.6000000238418579,
+			"critDamage": 175.0,
+			"currentHealth": 268.88922119140627,
+			"healShieldPower": 0.0,
+			"healthRegenRate": 2.2829999923706056,
+			"lifeSteal": 0.2900000214576721,
+			"magicLethality": 0.0,
+			"magicPenetrationFlat": 0.0,
+			"magicPenetrationPercent": 1.0,
+			"magicResist": 37.60349655151367,
+			"maxHealth": 1670.5,
+			"moveSpeed": 375.0,
+			"omnivamp": 0.02500000037252903,
+			"physicalLethality": 12.0,
+			"physicalVamp": 0.0,
+			"resourceMax": 787.6099853515625,
+			"resourceRegenRate": 3.0315001010894777,
+			"resourceType": "MANA",
+			"resourceValue": 611.846923828125,
+			"spellVamp": 0.0,
+			"tenacity": 0.0
+		},
+		"currentGold": 482.1028137207031,
+		"fullRunes": {
+			"generalRunes": [
+				{
+					"displayName": "Hail of Blades",
+					"id": 9923,
+					"rawDescription": "perk_tooltip_HailOfBlades",
+					"rawDisplayName": "perk_displayname_HailOfBlades"
+				},
+				{
+					"displayName": "Taste of Blood",
+					"id": 8139,
+					"rawDescription": "perk_tooltip_TasteOfBlood",
+					"rawDisplayName": "perk_displayname_TasteOfBlood"
+				},
+				{
+					"displayName": "Eyeball Collection",
+					"id": 8138,
+					"rawDescription": "perk_tooltip_EyeballCollection",
+					"rawDisplayName": "perk_displayname_EyeballCollection"
+				},
+				{
+					"displayName": "Ravenous Hunter",
+					"id": 8135,
+					"rawDescription": "perk_tooltip_RavenousHunter",
+					"rawDisplayName": "perk_displayname_RavenousHunter"
+				},
+				{
+					"displayName": "Legend: Bloodline",
+					"id": 9103,
+					"rawDescription": "perk_tooltip_9103",
+					"rawDisplayName": "perk_displayname_9103"
+				},
+				{
+					"displayName": "Cut Down",
+					"id": 8017,
+					"rawDescription": "perk_tooltip_CutDown",
+					"rawDisplayName": "perk_displayname_CutDown"
+				}
+			],
+			"keystone": {
+				"displayName": "Hail of Blades",
+				"id": 9923,
+				"rawDescription": "perk_tooltip_HailOfBlades",
+				"rawDisplayName": "perk_displayname_HailOfBlades"
+			},
+			"primaryRuneTree": {
+				"displayName": "Domination",
+				"id": 8100,
+				"rawDescription": "perkstyle_tooltip_7200",
+				"rawDisplayName": "perkstyle_displayname_7200"
+			},
+			"secondaryRuneTree": {
+				"displayName": "Precision",
+				"id": 8000,
+				"rawDescription": "perkstyle_tooltip_7201",
+				"rawDisplayName": "perkstyle_displayname_7201"
+			},
+			"statRunes": [
+				{
+					"id": 5005,
+					"rawDescription": "perk_tooltip_StatModAttackSpeed"
+				},
+				{
+					"id": 5008,
+					"rawDescription": "perk_tooltip_StatModAdaptive"
+				},
+				{
+					"id": 5002,
+					"rawDescription": "perk_tooltip_StatModArmor"
+				}
+			]
+		},
+		"level": 13,
+		"summonerName": "SummonerBlueSide1"
+	},
+	"allPlayers": [
+		{
+			"championName": "Brand",
+			"isBot": true,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Shard of True Ice",
+					"itemID": 3853,
+					"price": 400,
+					"rawDescription": "GeneratedTip_Item_3853_Description",
+					"rawDisplayName": "Item_3853_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Lost Chapter",
+					"itemID": 3802,
+					"price": 80,
+					"rawDescription": "GeneratedTip_Item_3802_Description",
+					"rawDisplayName": "Item_3802_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Fiendish Codex",
+					"itemID": 3108,
+					"price": 465,
+					"rawDescription": "GeneratedTip_Item_3108_Description",
+					"rawDisplayName": "Item_3108_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Sorcerer's Shoes",
+					"itemID": 3020,
+					"price": 800,
+					"rawDescription": "GeneratedTip_Item_3020_Description",
+					"rawDisplayName": "Item_3020_Name",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Cloth Armor",
+					"itemID": 1029,
+					"price": 300,
+					"rawDescription": "GeneratedTip_Item_1029_Description",
+					"rawDisplayName": "Item_1029_Name",
+					"slot": 4
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stealth Ward",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+					"rawDisplayName": "Item_3340_Name",
+					"slot": 6
+				}
+			],
+			"level": 7,
+			"position": "",
+			"rawChampionName": "game_character_displayname_Brand",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Arcane Comet",
+					"id": 8229,
+					"rawDescription": "perk_tooltip_ArcaneComet",
+					"rawDisplayName": "perk_displayname_ArcaneComet"
+				},
+				"primaryRuneTree": {
+					"displayName": "Sorcery",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Domination",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				}
+			},
+			"scores": {
+				"assists": 1,
+				"creepScore": 40,
+				"deaths": 3,
+				"kills": 0,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "SummonerBlueSide2",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Ignite",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Exhaust",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerExhaust_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerExhaust_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Vladimir",
+			"isBot": true,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Doran's Ring",
+					"itemID": 1056,
+					"price": 400,
+					"rawDescription": "GeneratedTip_Item_1056_Description",
+					"rawDisplayName": "Item_1056_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Hextech Alternator",
+					"itemID": 3145,
+					"price": 180,
+					"rawDescription": "GeneratedTip_Item_3145_Description",
+					"rawDisplayName": "Item_3145_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Ruby Crystal",
+					"itemID": 1028,
+					"price": 400,
+					"rawDescription": "GeneratedTip_Item_1028_Description",
+					"rawDisplayName": "Item_1028_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Boots",
+					"itemID": 1001,
+					"price": 300,
+					"rawDescription": "GeneratedTip_Item_1001_Description",
+					"rawDisplayName": "Item_1001_Name",
+					"slot": 3
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stealth Ward",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+					"rawDisplayName": "Item_3340_Name",
+					"slot": 6
+				}
+			],
+			"level": 8,
+			"position": "",
+			"rawChampionName": "game_character_displayname_Vladimir",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Arcane Comet",
+					"id": 8229,
+					"rawDescription": "perk_tooltip_ArcaneComet",
+					"rawDisplayName": "perk_displayname_ArcaneComet"
+				},
+				"primaryRuneTree": {
+					"displayName": "Sorcery",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Domination",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				}
+			},
+			"scores": {
+				"assists": 2,
+				"creepScore": 20,
+				"deaths": 3,
+				"kills": 0,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "SummonerBlueSide3",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Ignite",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Exhaust",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerExhaust_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerExhaust_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Draven",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Doran's Blade",
+					"itemID": 1055,
+					"price": 450,
+					"rawDescription": "GeneratedTip_Item_1055_Description",
+					"rawDisplayName": "Item_1055_Name",
+					"slot": 0
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Refillable Potion",
+					"itemID": 2031,
+					"price": 150,
+					"rawDescription": "GeneratedTip_Item_2031_Description",
+					"rawDisplayName": "Item_2031_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Kraken Slayer",
+					"itemID": 6672,
+					"price": 625,
+					"rawDescription": "GeneratedTip_Item_6672_Description",
+					"rawDisplayName": "Item_6672_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Berserker's Greaves",
+					"itemID": 3006,
+					"price": 500,
+					"rawDescription": "GeneratedTip_Item_3006_Description",
+					"rawDisplayName": "Item_3006_Name",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "The Collector",
+					"itemID": 6676,
+					"price": 425,
+					"rawDescription": "GeneratedTip_Item_6676_Description",
+					"rawDisplayName": "Item_6676_Name",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Bloodthirster",
+					"itemID": 3072,
+					"price": 600,
+					"rawDescription": "GeneratedTip_Item_3072_Description",
+					"rawDisplayName": "Item_3072_Name",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stealth Ward",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+					"rawDisplayName": "Item_3340_Name",
+					"slot": 6
+				}
+			],
+			"level": 13,
+			"position": "",
+			"rawChampionName": "game_character_displayname_Draven",
+			"rawSkinName": "game_character_skin_displayname_Draven_2",
+			"respawnTimer": 18.26686668395996,
+			"runes": {
+				"keystone": {
+					"displayName": "Hail of Blades",
+					"id": 9923,
+					"rawDescription": "perk_tooltip_HailOfBlades",
+					"rawDisplayName": "perk_displayname_HailOfBlades"
+				},
+				"primaryRuneTree": {
+					"displayName": "Domination",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Precision",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				}
+			},
+			"scores": {
+				"assists": 0,
+				"creepScore": 140,
+				"deaths": 1,
+				"kills": 12,
+				"wardScore": 1.688198447227478
+			},
+			"skinID": 2,
+			"skinName": "Gladiator Draven",
+			"summonerName": "SummonerBlueSide1",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Heal",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Lucian",
+			"isBot": true,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Doran's Blade",
+					"itemID": 1055,
+					"price": 450,
+					"rawDescription": "GeneratedTip_Item_1055_Description",
+					"rawDisplayName": "Item_1055_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Long Sword",
+					"itemID": 1036,
+					"price": 350,
+					"rawDescription": "GeneratedTip_Item_1036_Description",
+					"rawDisplayName": "Item_1036_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Berserker's Greaves",
+					"itemID": 3006,
+					"price": 500,
+					"rawDescription": "GeneratedTip_Item_3006_Description",
+					"rawDisplayName": "Item_3006_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Long Sword",
+					"itemID": 1036,
+					"price": 350,
+					"rawDescription": "GeneratedTip_Item_1036_Description",
+					"rawDisplayName": "Item_1036_Name",
+					"slot": 3
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stealth Ward",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+					"rawDisplayName": "Item_3340_Name",
+					"slot": 6
+				}
+			],
+			"level": 7,
+			"position": "",
+			"rawChampionName": "game_character_displayname_Lucian",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Press the Attack",
+					"id": 8005,
+					"rawDescription": "perk_tooltip_PressTheAttack",
+					"rawDisplayName": "perk_displayname_PressTheAttack"
+				},
+				"primaryRuneTree": {
+					"displayName": "Precision",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Sorcery",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 0,
+				"creepScore": 20,
+				"deaths": 2,
+				"kills": 0,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "SummonerBlueSide4",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Ignite",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Exhaust",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerExhaust_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerExhaust_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Nasus",
+			"isBot": true,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Doran's Ring",
+					"itemID": 1056,
+					"price": 400,
+					"rawDescription": "GeneratedTip_Item_1056_Description",
+					"rawDisplayName": "Item_1056_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Boots",
+					"itemID": 1001,
+					"price": 300,
+					"rawDescription": "GeneratedTip_Item_1001_Description",
+					"rawDisplayName": "Item_1001_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Phage",
+					"itemID": 3044,
+					"price": 350,
+					"rawDescription": "GeneratedTip_Item_3044_Description",
+					"rawDisplayName": "Item_3044_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Cloth Armor",
+					"itemID": 1029,
+					"price": 300,
+					"rawDescription": "GeneratedTip_Item_1029_Description",
+					"rawDisplayName": "Item_1029_Name",
+					"slot": 4
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stealth Ward",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+					"rawDisplayName": "Item_3340_Name",
+					"slot": 6
+				}
+			],
+			"level": 8,
+			"position": "",
+			"rawChampionName": "game_character_displayname_Nasus",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Grasp of the Undying",
+					"id": 8437,
+					"rawDescription": "perk_tooltip_GraspOfTheUndying",
+					"rawDisplayName": "perk_displayname_GraspOfTheUndying"
+				},
+				"primaryRuneTree": {
+					"displayName": "Resolve",
+					"id": 8400,
+					"rawDescription": "perkstyle_tooltip_7204",
+					"rawDisplayName": "perkstyle_displayname_7204"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Sorcery",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 3,
+				"creepScore": 0,
+				"deaths": 5,
+				"kills": 0,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "SummonerBlueSide5",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Teleport",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerTeleport_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerTeleport_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Ghost",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHaste_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHaste_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Soraka",
+			"isBot": true,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Targon's Buckler",
+					"itemID": 3859,
+					"price": 400,
+					"rawDescription": "GeneratedTip_Item_3859_Description",
+					"rawDisplayName": "Item_3859_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Moonstone Renewer",
+					"itemID": 6617,
+					"price": 750,
+					"rawDescription": "GeneratedTip_Item_6617_Description",
+					"rawDisplayName": "Item_6617_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Ionian Boots of Lucidity",
+					"itemID": 3158,
+					"price": 650,
+					"rawDescription": "GeneratedTip_Item_3158_Description",
+					"rawDisplayName": "Item_3158_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Amplifying Tome",
+					"itemID": 1052,
+					"price": 435,
+					"rawDescription": "GeneratedTip_Item_1052_Description",
+					"rawDisplayName": "Item_1052_Name",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Faerie Charm",
+					"itemID": 1004,
+					"price": 250,
+					"rawDescription": "GeneratedTip_Item_1004_Description",
+					"rawDisplayName": "Item_1004_Name",
+					"slot": 4
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stealth Ward",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+					"rawDisplayName": "Item_3340_Name",
+					"slot": 6
+				}
+			],
+			"level": 9,
+			"position": "",
+			"rawChampionName": "game_character_displayname_Soraka",
+			"respawnTimer": 11.083053588867188,
+			"runes": {
+				"keystone": {
+					"displayName": "Arcane Comet",
+					"id": 8229,
+					"rawDescription": "perk_tooltip_ArcaneComet",
+					"rawDisplayName": "perk_displayname_ArcaneComet"
+				},
+				"primaryRuneTree": {
+					"displayName": "Sorcery",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Domination",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				}
+			},
+			"scores": {
+				"assists": 7,
+				"creepScore": 40,
+				"deaths": 3,
+				"kills": 2,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "SummonerRedSide1",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Exhaust",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerExhaust_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerExhaust_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Ziggs",
+			"isBot": true,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Doran's Ring",
+					"itemID": 1056,
+					"price": 400,
+					"rawDescription": "GeneratedTip_Item_1056_Description",
+					"rawDisplayName": "Item_1056_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Sorcerer's Shoes",
+					"itemID": 3020,
+					"price": 800,
+					"rawDescription": "GeneratedTip_Item_3020_Description",
+					"rawDisplayName": "Item_3020_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Seeker's Armguard",
+					"itemID": 3191,
+					"price": 265,
+					"rawDescription": "GeneratedTip_Item_3191_Description",
+					"rawDisplayName": "Item_3191_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Lost Chapter",
+					"itemID": 3802,
+					"price": 80,
+					"rawDescription": "GeneratedTip_Item_3802_Description",
+					"rawDisplayName": "Item_3802_Name",
+					"slot": 3
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stealth Ward",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+					"rawDisplayName": "Item_3340_Name",
+					"slot": 6
+				}
+			],
+			"level": 9,
+			"position": "",
+			"rawChampionName": "game_character_displayname_Ziggs",
+			"respawnTimer": 8.681131362915039,
+			"runes": {
+				"keystone": {
+					"displayName": "Arcane Comet",
+					"id": 8229,
+					"rawDescription": "perk_tooltip_ArcaneComet",
+					"rawDisplayName": "perk_displayname_ArcaneComet"
+				},
+				"primaryRuneTree": {
+					"displayName": "Sorcery",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Domination",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				}
+			},
+			"scores": {
+				"assists": 2,
+				"creepScore": 60,
+				"deaths": 3,
+				"kills": 5,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "SummonerRedSide2",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Barrier",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerBarrier_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerBarrier_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Master Yi",
+			"isBot": true,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Doran's Blade",
+					"itemID": 1055,
+					"price": 450,
+					"rawDescription": "GeneratedTip_Item_1055_Description",
+					"rawDisplayName": "Item_1055_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Serrated Dirk",
+					"itemID": 3134,
+					"price": 400,
+					"rawDescription": "GeneratedTip_Item_3134_Description",
+					"rawDisplayName": "Item_3134_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Caulfield's Warhammer",
+					"itemID": 3133,
+					"price": 400,
+					"rawDescription": "GeneratedTip_Item_3133_Description",
+					"rawDisplayName": "Item_3133_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Long Sword",
+					"itemID": 1036,
+					"price": 350,
+					"rawDescription": "GeneratedTip_Item_1036_Description",
+					"rawDisplayName": "Item_1036_Name",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Dagger",
+					"itemID": 1042,
+					"price": 300,
+					"rawDescription": "GeneratedTip_Item_1042_Description",
+					"rawDisplayName": "Item_1042_Name",
+					"slot": 4
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stealth Ward",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+					"rawDisplayName": "Item_3340_Name",
+					"slot": 6
+				}
+			],
+			"level": 11,
+			"position": "",
+			"rawChampionName": "game_character_displayname_MasterYi",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Press the Attack",
+					"id": 8005,
+					"rawDescription": "perk_tooltip_PressTheAttack",
+					"rawDisplayName": "perk_displayname_PressTheAttack"
+				},
+				"primaryRuneTree": {
+					"displayName": "Precision",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Sorcery",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 1,
+				"creepScore": 60,
+				"deaths": 2,
+				"kills": 0,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "SummonerRedSide3",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Ignite",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Sivir",
+			"isBot": true,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Doran's Blade",
+					"itemID": 1055,
+					"price": 450,
+					"rawDescription": "GeneratedTip_Item_1055_Description",
+					"rawDisplayName": "Item_1055_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Ionian Boots of Lucidity",
+					"itemID": 3158,
+					"price": 650,
+					"rawDescription": "GeneratedTip_Item_3158_Description",
+					"rawDisplayName": "Item_3158_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Tear of the Goddess",
+					"itemID": 3070,
+					"price": 400,
+					"rawDescription": "GeneratedTip_Item_3070_Description",
+					"rawDisplayName": "Item_3070_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Duskblade of Draktharr",
+					"itemID": 6691,
+					"price": 1000,
+					"rawDescription": "GeneratedTip_Item_6691_Description",
+					"rawDisplayName": "Item_6691_Name",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Long Sword",
+					"itemID": 1036,
+					"price": 350,
+					"rawDescription": "GeneratedTip_Item_1036_Description",
+					"rawDisplayName": "Item_1036_Name",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Long Sword",
+					"itemID": 1036,
+					"price": 350,
+					"rawDescription": "GeneratedTip_Item_1036_Description",
+					"rawDisplayName": "Item_1036_Name",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stealth Ward",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+					"rawDisplayName": "Item_3340_Name",
+					"slot": 6
+				}
+			],
+			"level": 9,
+			"position": "",
+			"rawChampionName": "game_character_displayname_Sivir",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Press the Attack",
+					"id": 8005,
+					"rawDescription": "perk_tooltip_PressTheAttack",
+					"rawDisplayName": "perk_displayname_PressTheAttack"
+				},
+				"primaryRuneTree": {
+					"displayName": "Precision",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Sorcery",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 2,
+				"creepScore": 70,
+				"deaths": 2,
+				"kills": 5,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "SummonerRedSide4",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Heal",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Jax",
+			"isBot": true,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Doran's Blade",
+					"itemID": 1055,
+					"price": 450,
+					"rawDescription": "GeneratedTip_Item_1055_Description",
+					"rawDisplayName": "Item_1055_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Plated Steelcaps",
+					"itemID": 3047,
+					"price": 500,
+					"rawDescription": "GeneratedTip_Item_3047_Description",
+					"rawDisplayName": "Item_3047_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Recurve Bow",
+					"itemID": 1043,
+					"price": 400,
+					"rawDescription": "GeneratedTip_Item_1043_Description",
+					"rawDisplayName": "Item_1043_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Long Sword",
+					"itemID": 1036,
+					"price": 350,
+					"rawDescription": "GeneratedTip_Item_1036_Description",
+					"rawDisplayName": "Item_1036_Name",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Dagger",
+					"itemID": 1042,
+					"price": 300,
+					"rawDescription": "GeneratedTip_Item_1042_Description",
+					"rawDisplayName": "Item_1042_Name",
+					"slot": 4
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stealth Ward",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+					"rawDisplayName": "Item_3340_Name",
+					"slot": 6
+				}
+			],
+			"level": 8,
+			"position": "",
+			"rawChampionName": "game_character_displayname_Jax",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Press the Attack",
+					"id": 8005,
+					"rawDescription": "perk_tooltip_PressTheAttack",
+					"rawDisplayName": "perk_displayname_PressTheAttack"
+				},
+				"primaryRuneTree": {
+					"displayName": "Precision",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Sorcery",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 4,
+				"creepScore": 40,
+				"deaths": 2,
+				"kills": 2,
+				"wardScore": 0.6260945200920105
+			},
+			"skinID": 0,
+			"summonerName": "SummonerRedSide5",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Ignite",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		}
+	],
+	"events": {
+		"Events": [
+			{
+				"EventID": 0,
+				"EventName": "GameStart",
+				"EventTime": 0.015230899676680565
+			},
+			{
+				"EventID": 1,
+				"EventName": "MinionsSpawning",
+				"EventTime": 65.05774688720703
+			},
+			{
+				"Assisters": [],
+				"EventID": 2,
+				"EventName": "ChampionKill",
+				"EventTime": 136.99478149414063,
+				"KillerName": "SummonerBlueSide1",
+				"VictimName": "SummonerRedSide3"
+			},
+			{
+				"EventID": 3,
+				"EventName": "FirstBlood",
+				"EventTime": 136.99478149414063,
+				"Recipient": "SummonerBlueSide1"
+			},
+			{
+				"Assisters": [
+					"SummonerRedSide4"
+				],
+				"EventID": 4,
+				"EventName": "ChampionKill",
+				"EventTime": 217.26876831054688,
+				"KillerName": "SummonerRedSide1",
+				"VictimName": "SummonerBlueSide5"
+			},
+			{
+				"Assisters": [
+					"SummonerRedSide5"
+				],
+				"EventID": 5,
+				"EventName": "ChampionKill",
+				"EventTime": 240.62940979003907,
+				"KillerName": "SummonerRedSide2",
+				"VictimName": "SummonerBlueSide3"
+			},
+			{
+				"Assisters": [
+					"SummonerRedSide1"
+				],
+				"EventID": 6,
+				"EventName": "ChampionKill",
+				"EventTime": 364.9681396484375,
+				"KillerName": "SummonerRedSide4",
+				"VictimName": "SummonerBlueSide5"
+			},
+			{
+				"Assisters": [
+					"SummonerBlueSide5"
+				],
+				"EventID": 7,
+				"EventName": "ChampionKill",
+				"EventTime": 405.5747375488281,
+				"KillerName": "SummonerBlueSide1",
+				"VictimName": "SummonerRedSide1"
+			},
+			{
+				"Assisters": [
+					"SummonerRedSide2"
+				],
+				"EventID": 8,
+				"EventName": "ChampionKill",
+				"EventTime": 408.6521911621094,
+				"KillerName": "SummonerRedSide5",
+				"VictimName": "SummonerBlueSide3"
+			},
+			{
+				"Assisters": [
+					"SummonerBlueSide5"
+				],
+				"EventID": 9,
+				"EventName": "ChampionKill",
+				"EventTime": 413.0198974609375,
+				"KillerName": "SummonerBlueSide1",
+				"VictimName": "SummonerRedSide4"
+			},
+			{
+				"EventID": 10,
+				"EventName": "Multikill",
+				"EventTime": 413.0198974609375,
+				"KillStreak": 2,
+				"KillerName": "SummonerBlueSide1"
+			},
+			{
+				"Assisters": [
+					"SummonerRedSide1"
+				],
+				"EventID": 11,
+				"EventName": "ChampionKill",
+				"EventTime": 478.95050048828127,
+				"KillerName": "SummonerRedSide4",
+				"VictimName": "SummonerBlueSide5"
+			},
+			{
+				"Assisters": [
+					"SummonerRedSide5"
+				],
+				"EventID": 12,
+				"EventName": "ChampionKill",
+				"EventTime": 589.6450805664063,
+				"KillerName": "SummonerRedSide2",
+				"VictimName": "SummonerBlueSide2"
+			},
+			{
+				"Assisters": [
+					"SummonerRedSide1"
+				],
+				"EventID": 13,
+				"EventName": "ChampionKill",
+				"EventTime": 651.6061401367188,
+				"KillerName": "SummonerRedSide4",
+				"VictimName": "SummonerBlueSide5"
+			},
+			{
+				"Assisters": [
+					"SummonerRedSide1",
+					"SummonerRedSide5"
+				],
+				"EventID": 14,
+				"EventName": "ChampionKill",
+				"EventTime": 657.1458129882813,
+				"KillerName": "SummonerRedSide2",
+				"VictimName": "SummonerBlueSide2"
+			},
+			{
+				"Assisters": [],
+				"EventID": 15,
+				"EventName": "ChampionKill",
+				"EventTime": 675.6432495117188,
+				"KillerName": "SummonerBlueSide1",
+				"VictimName": "SummonerRedSide2"
+			},
+			{
+				"Assisters": [],
+				"EventID": 16,
+				"EventName": "ChampionKill",
+				"EventTime": 680.5445556640625,
+				"KillerName": "SummonerBlueSide1",
+				"VictimName": "SummonerRedSide5"
+			},
+			{
+				"EventID": 17,
+				"EventName": "Multikill",
+				"EventTime": 680.5445556640625,
+				"KillStreak": 2,
+				"KillerName": "SummonerBlueSide1"
+			},
+			{
+				"Assisters": [
+					"SummonerRedSide1"
+				],
+				"EventID": 18,
+				"EventName": "ChampionKill",
+				"EventTime": 717.8417358398438,
+				"KillerName": "SummonerRedSide4",
+				"VictimName": "SummonerBlueSide5"
+			},
+			{
+				"Assisters": [
+					"SummonerRedSide5"
+				],
+				"EventID": 19,
+				"EventName": "ChampionKill",
+				"EventTime": 729.9757080078125,
+				"KillerName": "SummonerRedSide2",
+				"VictimName": "SummonerBlueSide2"
+			},
+			{
+				"Assisters": [
+					"SummonerBlueSide2",
+					"SummonerBlueSide3"
+				],
+				"EventID": 20,
+				"EventName": "ChampionKill",
+				"EventTime": 743.898681640625,
+				"KillerName": "SummonerBlueSide1",
+				"VictimName": "SummonerRedSide5"
+			},
+			{
+				"Assisters": [],
+				"EventID": 21,
+				"EventName": "ChampionKill",
+				"EventTime": 752.2609252929688,
+				"KillerName": "SummonerBlueSide1",
+				"VictimName": "SummonerRedSide2"
+			},
+			{
+				"EventID": 22,
+				"EventName": "Multikill",
+				"EventTime": 752.2609252929688,
+				"KillStreak": 2,
+				"KillerName": "SummonerBlueSide1"
+			},
+			{
+				"Assisters": [
+					"SummonerRedSide4"
+				],
+				"EventID": 23,
+				"EventName": "ChampionKill",
+				"EventTime": 793.6166381835938,
+				"KillerName": "SummonerRedSide1",
+				"VictimName": "SummonerBlueSide4"
+			},
+			{
+				"Assisters": [],
+				"EventID": 24,
+				"EventName": "ChampionKill",
+				"EventTime": 809.764892578125,
+				"KillerName": "SummonerBlueSide1",
+				"VictimName": "SummonerRedSide3"
+			},
+			{
+				"Assisters": [],
+				"EventID": 25,
+				"EventName": "ChampionKill",
+				"EventTime": 814.8357543945313,
+				"KillerName": "SummonerRedSide2",
+				"VictimName": "SummonerBlueSide3"
+			},
+			{
+				"Assisters": [],
+				"EventID": 26,
+				"EventName": "TurretKilled",
+				"EventTime": 828.3634033203125,
+				"KillerName": "SummonerBlueSide1",
+				"TurretKilled": "Turret_T2_C_05_A"
+			},
+			{
+				"EventID": 27,
+				"EventName": "FirstBrick",
+				"EventTime": 828.3634033203125,
+				"KillerName": "SummonerBlueSide1"
+			},
+			{
+				"Assisters": [
+					"SummonerRedSide1"
+				],
+				"EventID": 28,
+				"EventName": "ChampionKill",
+				"EventTime": 862.2032470703125,
+				"KillerName": "SummonerRedSide4",
+				"VictimName": "SummonerBlueSide4"
+			},
+			{
+				"Assisters": [
+					"SummonerBlueSide5"
+				],
+				"EventID": 29,
+				"EventName": "ChampionKill",
+				"EventTime": 874.042236328125,
+				"KillerName": "SummonerBlueSide1",
+				"VictimName": "SummonerRedSide1"
+			},
+			{
+				"Assisters": [],
+				"EventID": 30,
+				"EventName": "ChampionKill",
+				"EventTime": 879.1968383789063,
+				"KillerName": "SummonerBlueSide1",
+				"VictimName": "SummonerRedSide4"
+			},
+			{
+				"EventID": 31,
+				"EventName": "Multikill",
+				"EventTime": 879.1968383789063,
+				"KillStreak": 2,
+				"KillerName": "SummonerBlueSide1"
+			},
+			{
+				"Assisters": [],
+				"EventID": 32,
+				"EventName": "TurretKilled",
+				"EventTime": 892.8090209960938,
+				"KillerName": "Minion_T200L1S27N0168",
+				"TurretKilled": "Turret_T1_C_05_A"
+			},
+			{
+				"Assisters": [],
+				"DragonType": "Earth",
+				"EventID": 33,
+				"EventName": "DragonKill",
+				"EventTime": 906.86474609375,
+				"KillerName": "SummonerBlueSide1",
+				"Stolen": "False"
+			},
+			{
+				"Assisters": [
+					"SummonerBlueSide3"
+				],
+				"EventID": 34,
+				"EventName": "ChampionKill",
+				"EventTime": 930.7081298828125,
+				"KillerName": "SummonerBlueSide1",
+				"VictimName": "SummonerRedSide2"
+			},
+			{
+				"Assisters": [
+					"SummonerRedSide1",
+					"SummonerRedSide2",
+					"SummonerRedSide3"
+				],
+				"EventID": 35,
+				"EventName": "ChampionKill",
+				"EventTime": 932.75048828125,
+				"KillerName": "SummonerRedSide5",
+				"VictimName": "SummonerBlueSide1"
+			},
+			{
+				"Assisters": [],
+				"EventID": 36,
+				"EventName": "ChampionKill",
+				"EventTime": 933.099853515625,
+				"KillerName": "SummonerBlueSide1",
+				"VictimName": "SummonerRedSide1"
+			},
+			{
+				"EventID": 37,
+				"EventName": "Multikill",
+				"EventTime": 933.099853515625,
+				"KillStreak": 2,
+				"KillerName": "SummonerBlueSide1"
+			}
+		]
+	},
+	"gameData": {
+		"gameMode": "CLASSIC",
+		"gameTime": 952.1574096679688,
+		"mapName": "Map11",
+		"mapNumber": 11,
+		"mapTerrain": "Default"
+	}
+}

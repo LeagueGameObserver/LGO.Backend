@@ -8,6 +8,8 @@ namespace LGO.Backend.Model.Retrieval
         
         bool IncludeName { get; }
         
+        bool IncludeAmount { get; }
+        
         bool IncludePrice { get; }
         
         bool IncludeImage { get; }

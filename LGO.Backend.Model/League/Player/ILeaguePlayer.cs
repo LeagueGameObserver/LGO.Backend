@@ -8,12 +8,12 @@ namespace LGO.Backend.Model.League.Player
     {
         Guid Id { get; }
         
-        string SummonerName { get; }
+        string? SummonerName { get; }
         
-        LeagueTeamType Team { get; }
+        LeagueTeamType? Team { get; }
         
-        ILeagueChampion Champion { get; }
+        ILeagueChampion? Champion { get; }
         
-        IEnumerable<ILeagueItem> Items { get; }
+        IEnumerable<ILeagueItem>? Items { get; }
     }
 }

@@ -6,7 +6,5 @@ namespace LGO.Backend.Core.Model.League.Structure
     {
         public LeagueInhibitorTierType Tier { get; set; } = LeagueInhibitorTierType.Undefined;
         public LeagueTeamType Team { get; set; } = LeagueTeamType.Undefined;
-        
-        public static ILeagueInhibitor Null => NullLeagueInhibitor.Get;
     }
 }

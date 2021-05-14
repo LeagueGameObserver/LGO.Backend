@@ -8,8 +8,8 @@ namespace LGO.Backend.Model.League.Timer
     {
         LeagueTeamType Team { get; }
         
-        bool IsActive { get; }
+        bool? IsActive { get; }
         
-        IEnumerable<ILeaguePowerPlayMatchUp> MatchUps { get; }
+        IEnumerable<ILeaguePowerPlayMatchUp>? MatchUps { get; }
     }
 }

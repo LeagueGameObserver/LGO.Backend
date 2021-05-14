@@ -1,8 +1,10 @@
 ﻿using System;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Security;
 using System.Security.Cryptography.X509Certificates;
+using System.Text;
 using System.Threading.Tasks;
 using LGO.Backend.Core.Http;
 using LGO.LeagueClient.LocalGameReader.Converter;
@@ -11,6 +13,7 @@ using LGO.LeagueClient.LocalGameReader.Model.GameEvent;
 using LGO.LeagueClient.Model;
 using LGO.LeagueClient.Model.Game;
 using LGO.LeagueClient.Model.GameEvent;
+using Newtonsoft.Json;
 
 namespace LGO.LeagueClient.LocalGameReader
 {
@@ -62,13 +65,19 @@ namespace LGO.LeagueClient.LocalGameReader
             return ParseTurrets(await Client.GetAsync<MutableLeagueClientGame>(GameDataUrl));
         }
 
-        internal static ILeagueClientGame? ParseTurrets(ILeagueClientGame? game)
+        public static async Task<ILeagueClientGame?> ReadFromFile(FileInfo file)
+        {
+            var fileContent = await File.ReadAllTextAsync(file.FullName, Encoding.UTF8);
+            return ParseTurrets(JsonConvert.DeserializeObject<MutableLeagueClientGame>(fileContent));
+        }
+
+        private static ILeagueClientGame? ParseTurrets(ILeagueClientGame? game)
         {
             if (game == null)
             {
                 return null;
             }
-            
+
             foreach (var turretDestroyedEvent in game.EventCollection.Events.Where(e => e is MutableLeagueClientTurretDestroyedEvent).Cast<MutableLeagueClientTurretDestroyedEvent>())
             {
                 turretDestroyedEvent.Turret = TurretConverter.CreateTurret(turretDestroyedEvent.TurretLeagueClientString, game.Stats.Map);

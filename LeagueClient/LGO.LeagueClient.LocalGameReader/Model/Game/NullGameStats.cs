@@ -8,7 +8,7 @@ namespace LGO.LeagueClient.LocalGameReader.Model.Game
     {
         public TimeSpan InGameTime => TimeSpan.Zero;
         public LeagueGameModeType GameMode => LeagueGameModeType.Undefined;
-        public LeagueMap Map => LeagueMap.Undefined;
+        public LeagueMapType Map => LeagueMapType.Undefined;
 
         private static NullGameStats? _instance;
 

@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="NUnit" Version="3.12.0" />
+        <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\LeagueApi\LGO.LeagueApi.RemoteApiReader\LGO.LeagueApi.RemoteApiReader.csproj" />
+      <ProjectReference Include="..\..\LeagueClient\LGO.LeagueClient.LocalGameReader\LGO.LeagueClient.LocalGameReader.csproj" />
+      <ProjectReference Include="..\..\LeagueClient\LGO.LeagueClient.Model\LGO.LeagueClient.Model.csproj" />
+      <ProjectReference Include="..\..\LeagueResource\LGO.LeagueResource.LocalResourceRepository\LGO.LeagueResource.LocalResourceRepository.csproj" />
+      <ProjectReference Include="..\..\LGO.Backend\LGO.Backend.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="Resource\SummonersRift_Classic_00.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Resource\SummonersRift_Classic_01.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Resource\SummonersRift_Classic_02.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+</Project>

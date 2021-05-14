@@ -8,8 +8,8 @@ namespace LGO.Backend.Model.League.Timer
         
         double RemainingTimeInSeconds { get; }
         
-        double InGameStartTimeInSeconds { get; }
+        double? InGameStartTimeInSeconds { get; }
         
-        double InGameEndTimeInSeconds { get; }
+        double? InGameEndTimeInSeconds { get; }
     }
 }

@@ -9,6 +9,6 @@ namespace LGO.LeagueClient.LocalGameReader.Model.GameEvent
     {
         [JsonProperty("InhibRespawned")]
         [JsonConverter(typeof(InhibitorConverter))]
-        public ILeagueInhibitor Inhibitor { get; set; } = MutableLeagueInhibitor.Null;
+        public ILeagueInhibitor Inhibitor { get; set; } = NullLeagueInhibitor.Instance;
     }
 }

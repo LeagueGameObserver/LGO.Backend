@@ -9,6 +9,6 @@ namespace LGO.LeagueClient.Model.Game
         
         LeagueGameModeType GameMode { get; }
         
-        LeagueMap Map { get; }
+        LeagueMapType Map { get; }
     }
 }

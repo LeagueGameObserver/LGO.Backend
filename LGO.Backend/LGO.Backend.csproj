@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\LeagueApi\LGO.LeagueApi.Model\LGO.LeagueApi.Model.csproj" />
+      <ProjectReference Include="..\LeagueApi\LGO.LeagueApi.RemoteApiReader\LGO.LeagueApi.RemoteApiReader.csproj" />
+      <ProjectReference Include="..\LeagueClient\LGO.LeagueClient.LocalGameReader\LGO.LeagueClient.LocalGameReader.csproj" />
+      <ProjectReference Include="..\LeagueClient\LGO.LeagueClient.Model\LGO.LeagueClient.Model.csproj" />
+      <ProjectReference Include="..\LeagueResource\LGO.LeagueResource.LocalResourceRepository\LGO.LeagueResource.LocalResourceRepository.csproj" />
+      <ProjectReference Include="..\LeagueResource\LGO.LeagueResource.Model\LGO.LeagueResource.Model.csproj" />
+      <ProjectReference Include="..\LGO.Backend.Core\LGO.Backend.Core.csproj" />
+      <ProjectReference Include="..\LGO.Backend.Model\LGO.Backend.Model.csproj" />
+    </ItemGroup>
+
+</Project>

@@ -18,7 +18,7 @@ namespace LGO.LeagueClient.LocalGameReader.Model.Game
 
         [JsonProperty("mapName")]
         [JsonConverter(typeof(MapConverter))]
-        public LeagueMap Map { get; set; } = LeagueMap.Undefined;
+        public LeagueMapType Map { get; set; } = LeagueMapType.Undefined;
 
         public static ILeagueClientGameStats Null => NullGameStats.Get;
     }

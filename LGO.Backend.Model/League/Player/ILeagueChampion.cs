@@ -6,12 +6,12 @@ namespace LGO.Backend.Model.League.Player
     {
         Guid Id { get; }
 
-        string Name { get; }
+        string? Name { get; }
         
-        string TileImage { get; }
+        string? TileImage { get; }
         
-        string SplashImage { get; }
+        string? SplashImage { get; }
         
-        string LoadingImage { get; }
+        string? LoadingImage { get; }
     }
 }

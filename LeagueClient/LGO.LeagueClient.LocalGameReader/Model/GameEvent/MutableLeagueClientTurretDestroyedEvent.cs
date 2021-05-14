@@ -7,7 +7,7 @@ namespace LGO.LeagueClient.LocalGameReader.Model.GameEvent
 {
     internal class MutableLeagueClientTurretDestroyedEvent : AbstractMutableLeagueClientKillerWithAssistersEvent, ILeagueClientTurretDestroyedEvent
     {
-        public ILeagueTurret Turret { get; set; } = MutableLeagueTurret.Null;
+        public ILeagueTurret Turret { get; set; } = NullLeagueTurret.Instance;
 
         [JsonProperty("TurretKilled")]
         public string TurretLeagueClientString { get; set; } = string.Empty;

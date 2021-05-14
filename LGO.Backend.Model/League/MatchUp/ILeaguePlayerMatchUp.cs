@@ -1,7 +1,6 @@
 ﻿using LGO.Backend.Core.Model.League.Enum;
-using LGO.Backend.Model.League.MatchUp;
 
-namespace LGO.Backend.Model.League.Player
+namespace LGO.Backend.Model.League.MatchUp
 {
     public interface ILeaguePlayerMatchUp : ILeagueMatchUp
     {

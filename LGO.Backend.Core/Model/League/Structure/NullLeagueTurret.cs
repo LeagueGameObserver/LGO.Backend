@@ -2,14 +2,14 @@
 
 namespace LGO.Backend.Core.Model.League.Structure
 {
-    internal sealed class NullLeagueTurret : ILeagueTurret
+    public sealed class NullLeagueTurret : ILeagueTurret
     {
         public LeagueTurretTierType Tier => LeagueTurretTierType.Undefined;
         public LeagueTeamType Team => LeagueTeamType.Undefined;
 
         private static NullLeagueTurret? _instance;
 
-        public static NullLeagueTurret Get => _instance ??= new NullLeagueTurret();
+        public static NullLeagueTurret Instance => _instance ??= new NullLeagueTurret();
         
         private NullLeagueTurret() { }
     }

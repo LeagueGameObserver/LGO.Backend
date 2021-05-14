@@ -2,11 +2,11 @@
 
 namespace LGO.LeagueClient.LocalGameReader.Converter
 {
-    internal class MapConverter : ReadonlyStringEnumConverter<LeagueMap>
+    internal class MapConverter : ReadonlyStringEnumConverter<LeagueMapType>
     {
-        public MapConverter() : base(LeagueMap.Undefined,
-                                     ("MAP11", LeagueMap.SummonersRift),
-                                     ("MAP12", LeagueMap.HowlingAbyss))
+        public MapConverter() : base(LeagueMapType.Undefined,
+                                     ("MAP11", LeagueMapType.SummonersRift),
+                                     ("MAP12", LeagueMapType.HowlingAbyss))
         {
         }
     }

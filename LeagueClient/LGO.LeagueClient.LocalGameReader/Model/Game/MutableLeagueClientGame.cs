@@ -26,5 +26,28 @@ namespace LGO.LeagueClient.LocalGameReader.Model.Game
         [JsonProperty("gameData")]
         [JsonConverter(typeof(ConcreteConverter<ILeagueClientGameStats, MutableLeagueClientGameStats>))]
         public ILeagueClientGameStats Stats { get; set; } = NullGameStats.Get;
+
+        public override bool Equals(object? obj)
+        {
+            if (ReferenceEquals(this, obj))
+            {
+                return true;
+            }
+
+            if (obj is not ILeagueClientGame other)
+            {
+                return false;
+            }
+
+            var mySummonersSorted = Players.OrderBy(p => p.SummonerName).Select(p => p.SummonerName);
+            var otherSummonersSorted = other.Players.OrderBy(p => p.SummonerName).Select(p => p.SummonerName);
+
+            return mySummonersSorted.SequenceEqual(otherSummonersSorted);
+        }
+
+        public override int GetHashCode()
+        {
+            return Players.OrderBy(p => p.SummonerName).Select(p => p.SummonerName).GetHashCode();
+        }
     }
 }

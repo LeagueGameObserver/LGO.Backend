@@ -18,18 +18,18 @@ namespace LGO.Backend.Model.League
         
         LeagueGameModeType Mode { get; }
         
-        double InGameTimeInSeconds { get; }
+        double? InGameTimeInSeconds { get; }
         
-        IEnumerable<ILeagueTeam> Teams { get; }
+        IEnumerable<ILeagueTeam>? Teams { get; }
         
-        IEnumerable<ILeaguePlayer> Players { get; }
+        IEnumerable<ILeaguePlayer>? Players { get; }
         
-        IEnumerable<ILeagueMatchUp> MatchUps { get; }
+        IEnumerable<ILeagueMatchUp>? MatchUps { get; }
         
-        IEnumerable<ILeagueTimer> Timers { get; }
+        IEnumerable<ILeagueTimer>? Timers { get; }
         
-        IEnumerable<ILeagueGameEvent> Events { get; }
+        IEnumerable<ILeagueGameEvent>? Events { get; }
         
-        IEnumerable<ILeagueGameEvent> EventsSinceLastUpdate { get; }
+        IEnumerable<ILeagueGameEvent>? EventsSinceLastUpdate { get; }
     }
 }

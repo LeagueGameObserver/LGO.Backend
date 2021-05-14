@@ -119,7 +119,7 @@ namespace LGO.LeagueClient.LocalGameReader.Test.Model
 
         private static ILeagueClientGame ReadGameFromFile(string fileName)
         {
-            return LocalLeagueClientGameReader.ParseTurrets(JsonConvert.DeserializeObject<MutableLeagueClientGame>(File.ReadAllText($"Resource/{fileName}.json")));
+            return LocalLeagueClientGameReader.ReadFromFile(new FileInfo($"Resource/{fileName}.json")).Result;
         }
 
         private static void AssertTurretDestructionOrder(ILeagueClientGame game, params ValueTuple<LeagueTeamType, LeagueTurretTierType>[] turrets)

@@ -20,6 +20,7 @@ namespace LGO.LeagueResource.LocalResourceRepository
         
         internal ConcurrentDictionary<Guid, MutableLeagueResourceChampion> ChampionById { get; } = new();
         internal ConcurrentDictionary<int, MutableLeagueResourceChampion> ChampionByKey { get; } = new();
+        internal ConcurrentDictionary<string, MutableLeagueResourceChampion> ChampionByName { get; } = new();
         internal ConcurrentDictionary<Guid, MutableLeagueResourceItem> ItemById { get; } = new();
         internal ConcurrentDictionary<int, MutableLeagueResourceItem> ItemByKey { get; } = new();
 
@@ -46,6 +47,12 @@ namespace LGO.LeagueResource.LocalResourceRepository
                     throw new ArgumentException($"Unable to add {nameof(MutableLeagueResourceChampion)} ({champion.Name}) to the {nameof(ChampionByKey)} index.");
                 }
                 Log.Debug($"Inserted champion ({champion.Name}) with key {champion.Key} into {nameof(ChampionByKey)} index.");
+
+                if (!ChampionByName.TryAdd(champion.Name, champion))
+                {
+                    throw new ArgumentException($"Unable to add {nameof(MutableLeagueResourceChampion)} ({champion.Name}) to the {nameof(ChampionByName)} index.");
+                }
+                Log.Debug($"Inserted champion with name {champion.Name} into {nameof(ChampionByName)} index.");
             }
             
             Log.Info($"Done creating champion indexes. {ChampionById.Count} champions inserted.");
@@ -101,6 +108,19 @@ namespace LGO.LeagueResource.LocalResourceRepository
             }
 
             Log.Warn($"Unable to find champion for key {championKey}.");
+            return Task.FromResult<ILeagueResourceChampion?>(null);
+        }
+
+        public Task<ILeagueResourceChampion?> ReadChampionByNameAsync(string championName)
+        {
+            Log.Debug($"Querying champion for name {championName}.");
+            if (ChampionByName.TryGetValue(championName, out var champion))
+            {
+                Log.Debug($"Champion for name {championName} found.");
+                return Task.FromResult<ILeagueResourceChampion?>(champion);
+            }
+            
+            Log.Warn($"Unable to find champion for name {championName}.");
             return Task.FromResult<ILeagueResourceChampion?>(null);
         }
 

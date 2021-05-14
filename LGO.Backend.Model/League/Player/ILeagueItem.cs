@@ -1,15 +1,15 @@
-﻿using System;
-
-namespace LGO.Backend.Model.League.Player
+﻿namespace LGO.Backend.Model.League.Player
 {
     public interface ILeagueItem
     {
-        Guid Id { get; }
+        int Id { get; }
         
-        string Name { get; }
+        string? Name { get; }
         
-        int Price { get; }
+        int? Amount { get; }
         
-        string Image { get; }
+        int? Price { get; }
+        
+        string? Image { get; }
     }
 }

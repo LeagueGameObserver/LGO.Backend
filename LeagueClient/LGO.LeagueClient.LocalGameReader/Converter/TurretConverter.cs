@@ -12,13 +12,13 @@ namespace LGO.LeagueClient.LocalGameReader.Converter
                                                                                              (LeagueTeamType.Blue, "T1"),
                                                                                              (LeagueTeamType.Red, "T2"));
 
-        public static ILeagueTurret CreateTurret(string clientTurretString, LeagueMap map)
+        public static ILeagueTurret CreateTurret(string clientTurretString, LeagueMapType map)
         {
             return map switch
                    {
-                       LeagueMap.SummonersRift => CreateTurretOnSummonersRift(clientTurretString),
-                       LeagueMap.HowlingAbyss => CreateTurretOnHowlingAbyss(clientTurretString),
-                       _ => MutableLeagueTurret.Null
+                       LeagueMapType.SummonersRift => CreateTurretOnSummonersRift(clientTurretString),
+                       LeagueMapType.HowlingAbyss => CreateTurretOnHowlingAbyss(clientTurretString),
+                       _ => NullLeagueTurret.Instance
                    };
         }
 
@@ -29,7 +29,7 @@ namespace LGO.LeagueClient.LocalGameReader.Converter
 
             if (team == LeagueTeamType.Undefined)
             {
-                return MutableLeagueTurret.Null;
+                return NullLeagueTurret.Instance;
             }
 
             var tier = string.Join(TokenSeparator, tokens[2], tokens[3]) switch
@@ -62,7 +62,7 @@ namespace LGO.LeagueClient.LocalGameReader.Converter
 
             if (team == LeagueTeamType.Undefined)
             {
-                return MutableLeagueTurret.Null;
+                return NullLeagueTurret.Instance;
             }
 
             var tierToken = string.Join(TokenSeparator, tokens[2], tokens[3]);
