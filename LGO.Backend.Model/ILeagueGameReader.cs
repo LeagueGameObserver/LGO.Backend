@@ -9,6 +9,8 @@ namespace LGO.Backend.Model
 {
     public interface ILeagueGameReader
     {
+        event EventHandler GameUpdated;
+        
         Guid GameId { get; }
         
         IEnumerable<ILeagueMatchUpDescriptor> MatchUpDescriptors { get; }

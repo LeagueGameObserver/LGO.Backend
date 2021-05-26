@@ -15,7 +15,7 @@ using NUnit.Framework;
 namespace LGO.Backend.Test.League
 {
     [TestFixture]
-    public class LgoLeagueGameTest
+    public class InternalLeagueGameTest
     {
         private const string ClientGame0 = "SummonersRift_Classic_00";
         private const string ClientGame1 = "SummonersRift_Classic_01";

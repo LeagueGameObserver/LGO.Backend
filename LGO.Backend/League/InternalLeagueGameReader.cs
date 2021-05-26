@@ -2,10 +2,8 @@
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Mime;
 using System.Threading.Tasks;
 using LGO.Backend.Core.Model.League.Enum;
-using LGO.Backend.League;
 using LGO.Backend.League.Snapshot;
 using LGO.Backend.League.Snapshot.Timer;
 using LGO.Backend.Model;
@@ -19,10 +17,12 @@ using LGO.Backend.Model.League.Timer;
 using LGO.LeagueResource.Model;
 using LGO.LeagueResource.Model.Item;
 
-namespace LGO.Backend
+namespace LGO.Backend.League
 {
     internal sealed class InternalLeagueGameReader : ILeagueGameReader
     {
+        public event EventHandler? GameUpdated;
+        
         public Guid GameId => Game.Id;
 
         public IEnumerable<ILeagueMatchUpDescriptor> MatchUpDescriptors => MutableMatchUpDescriptors.Values;
@@ -36,12 +36,18 @@ namespace LGO.Backend
         public InternalLeagueGameReader(InternalLeagueGame game, ILeagueResourceRepository resourceRepository)
         {
             Game = game;
+            Game.NewSnapshotAdded += Game_OnNewSnapshotAdded;
             ResourceRepository = resourceRepository;
             
             foreach (var initialMatchUpDescriptor in game.InitialMatchUpDescriptors)
             {
                 TryAddMatchUpDescriptor(initialMatchUpDescriptor);
             }
+        }
+
+        private void Game_OnNewSnapshotAdded(object? sender, InternalLeagueGameSnapshot e)
+        {
+            GameUpdated?.Invoke(this, EventArgs.Empty);
         }
 
         public bool TryRemoveMatchUpDescriptor(Guid matchUpId)
@@ -376,7 +382,7 @@ namespace LGO.Backend
 
             matchUp.BlueSideCompetitor = competitorBlueSide;
             matchUp.RedSideCompetitor = competitorRedSide;
-            matchUp.GoldDifference = goldDifference;
+            matchUp.GoldDifference = Math.Abs(goldDifference);
             matchUp.WinningTeam = winningTeam;
 
             return matchUp;
