@@ -8,6 +8,7 @@ using LGO.Backend.League.Snapshot;
 using LGO.Backend.League.Snapshot.Timer;
 using LGO.Backend.Model.League.Enum;
 using LGO.Backend.Model.League.GameEvent;
+using LGO.Backend.Model.League.MatchUp.Descriptor;
 using LGO.LeagueClient.Model.Game;
 using LGO.LeagueClient.Model.GameEvent;
 using LGO.LeagueClient.Model.Player;
@@ -16,7 +17,7 @@ using LGO.LeagueResource.Model.Item;
 
 namespace LGO.Backend.League
 {
-    internal sealed class LgoLeagueGame
+    internal sealed class InternalLeagueGame
     {
         public event EventHandler<InternalLeagueGameSnapshot>? NewSnapshotAdded;
 
@@ -33,6 +34,10 @@ namespace LGO.Backend.League
             }
         }
 
+        private List<ILeagueMatchUpDescriptor> _initialMatchUpDescriptors = new();
+
+        public IEnumerable<ILeagueMatchUpDescriptor> InitialMatchUpDescriptors => _initialMatchUpDescriptors;
+
         private object Lock { get; } = new();
         private ILeagueResourceRepository ResourceRepository { get; }
         private ILeagueGameConstants GameConstants { get; }
@@ -40,11 +45,20 @@ namespace LGO.Backend.League
         private InternalLeagueGameSnapshot? _previousGameSnapshot;
         private ILeagueClientGame _currentClientGame = null!;
 
-        public LgoLeagueGame(ILeagueResourceRepository resourceRepository, ILeagueGameConstants gameConstants, ILeagueClientGame clientGame)
+        public InternalLeagueGame(ILeagueResourceRepository resourceRepository, ILeagueGameConstants gameConstants, ILeagueClientGame clientGame)
         {
             ResourceRepository = resourceRepository;
             GameConstants = gameConstants;
             Update(clientGame);
+        }
+
+        public bool TryGetSnapshotForInGameTime(TimeSpan inGameTime, out InternalLeagueGameSnapshot snapshot)
+        {
+            lock (Lock)
+            {
+                snapshot = Snapshots.FirstOrDefault(s => s.InGameTime >= inGameTime)!;
+                return snapshot != null;
+            }
         }
 
         public void Update(ILeagueClientGame clientGame)
@@ -91,6 +105,11 @@ namespace LGO.Backend.League
                                    Events = allGameEvents
                                };
                 Snapshots.Add(snapshot);
+
+                if (Snapshots.Count == 1)
+                {
+                    _initialMatchUpDescriptors = CreateInitialMatchUpDescriptors();
+                }
 
                 NewSnapshotAdded?.Invoke(this, snapshot);
             }
@@ -551,6 +570,65 @@ namespace LGO.Backend.League
         private static bool PlayersAreEqual(InternalLeaguePlayerSnapshot playerSnapshot, ILeagueClientPlayer clientPlayer)
         {
             return playerSnapshot.SummonerName.Equals(clientPlayer.SummonerName) && playerSnapshot.Team == clientPlayer.Team;
+        }
+
+        private List<ILeagueMatchUpDescriptor> CreateInitialMatchUpDescriptors()
+        {
+            var result = new List<ILeagueMatchUpDescriptor>();
+
+            var playersBlueSide = _currentClientGame.Players.Where(p => p.Team == LeagueTeamType.Blue).ToList();
+            var playersRedSide = _currentClientGame.Players.Where(p => p.Team == LeagueTeamType.Red).ToList();
+
+            if (playersBlueSide.Count < 1 || playersRedSide.Count < 1)
+            {
+                // at least one team has no players, to we don't need to create any match ups
+                return result;
+            }
+
+            var teamBlueSide = CurrentSnapshot.Teams.FirstOrDefault(t => t.Side == LeagueTeamType.Blue) ?? throw new Exception($"Unable to extract the blue side team.");
+            var teamRedSide = CurrentSnapshot.Teams.FirstOrDefault(t => t.Side == LeagueTeamType.Red) ?? throw new Exception($"Unable to extract the red side team.");
+
+            result.Add(new MutableLeagueTeamMatchUpDescriptor
+                       {
+                           MatchUpId = Guid.NewGuid(),
+                           BlueSideCompetitorId = teamBlueSide.Id,
+                           RedSideCompetitorId = teamRedSide.Id
+                       });
+
+            var positions = new List<LeaguePositionType>
+                            {
+                                LeaguePositionType.Top,
+                                LeaguePositionType.Jungle,
+                                LeaguePositionType.Middle,
+                                LeaguePositionType.Bottom,
+                                LeaguePositionType.Support
+                            };
+
+            foreach (var position in positions)
+            {
+                var playerBlueSide = playersBlueSide.FirstOrDefault(p => p.Position == position) ?? playersBlueSide.FirstOrDefault();
+                var playerRedSide = playersRedSide.FirstOrDefault(p => p.Position == position) ?? playersRedSide.FirstOrDefault();
+
+                if (playerBlueSide == null || playerRedSide == null)
+                {
+                    break;
+                }
+
+                var playerBlueSideSnapshot = CurrentSnapshot.Players.FirstOrDefault(p => p.Team == playerBlueSide.Team && p.SummonerName.Equals(playerBlueSide.SummonerName)) ??
+                                             throw new Exception($"Unable to extract {nameof(InternalLeaguePlayerSnapshot)}.");
+                var playerRedSideSnapshot = CurrentSnapshot.Players.FirstOrDefault(p => p.Team == playerRedSide.Team && p.SummonerName.Equals(playerRedSide.SummonerName)) ??
+                                            throw new Exception($"Unable to extract {nameof(InternalLeaguePlayerSnapshot)}.");
+
+                result.Add(new MutableLeaguePlayerMatchUpDescriptor
+                           {
+                               MatchUpId = Guid.NewGuid(),
+                               Position = position,
+                               BlueSideCompetitorId = playerBlueSideSnapshot.Id,
+                               RedSideCompetitorId = playerRedSideSnapshot.Id
+                           });
+            }
+
+            return result;
         }
 
         private sealed record InternalItemChangedEvent

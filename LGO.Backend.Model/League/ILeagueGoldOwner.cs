@@ -1,7 +1,11 @@
-﻿namespace LGO.Backend.Model.League
+﻿using System;
+
+namespace LGO.Backend.Model.League
 {
     public interface ILeagueGoldOwner
     {
+        Guid Id { get; }
+        
         int TotalGoldOwned { get; }
         
         int UnspentKills { get; }

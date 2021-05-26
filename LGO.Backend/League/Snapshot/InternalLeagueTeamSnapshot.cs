@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using LGO.Backend.Core.Model.League.Enum;
 
 namespace LGO.Backend.League.Snapshot
 {
     internal sealed record InternalLeagueTeamSnapshot : InternalLeagueGoldOwnerSnapshot
     {
-        public Guid Id { get; init; }
-
         public LeagueTeamType Side { get; init; }
 
         public IEnumerable<LeagueDragonType> DragonsKilled { get; init; } = null!;

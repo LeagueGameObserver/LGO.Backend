@@ -1,4 +1,5 @@
-﻿using LGO.Backend.Model.League;
+﻿using System;
+using LGO.Backend.Model.League;
 
 namespace LGO.Backend.Model
 {
@@ -7,7 +8,8 @@ namespace LGO.Backend.Model
         private static NullLeagueGoldOwner? _instance;
 
         public static NullLeagueGoldOwner Instance => _instance ??= new NullLeagueGoldOwner();
-        
+
+        public Guid Id => Guid.Empty;
         public int TotalGoldOwned => 0;
         public int UnspentKills => 0;
         public int UnspentAssists => 0;
@@ -18,7 +20,6 @@ namespace LGO.Backend.Model
 
         private NullLeagueGoldOwner()
         {
-            
         }
     }
 }

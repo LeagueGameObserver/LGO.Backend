@@ -7,7 +7,7 @@ namespace LGO.Backend.Model.Retrieval
         public static MutableLeagueChampionRetrievalConfiguration IncludeNothing { get; } = new()
                                                                                                 {
                                                                                                     IncludeName = false,
-                                                                                                    IncludeTitleImage = false,
+                                                                                                    IncludeTileImage = false,
                                                                                                     IncludeSplashImage = false,
                                                                                                     IncludeLoadingImage = false,
                                                                                                 };
@@ -15,7 +15,7 @@ namespace LGO.Backend.Model.Retrieval
         public static MutableLeagueChampionRetrievalConfiguration IncludeEverything { get; } = new()
                                                                                                   {
                                                                                                       IncludeName = true,
-                                                                                                      IncludeTitleImage = true,
+                                                                                                      IncludeTileImage = true,
                                                                                                       IncludeSplashImage = true,
                                                                                                       IncludeLoadingImage = true,
                                                                                                   };
@@ -23,7 +23,7 @@ namespace LGO.Backend.Model.Retrieval
         [JsonProperty]
         public bool IncludeName { get; set; } = false;
         [JsonProperty]
-        public bool IncludeTitleImage { get; set; } = false;
+        public bool IncludeTileImage { get; set; } = false;
         [JsonProperty]
         public bool IncludeSplashImage { get; set; } = false;
         [JsonProperty]

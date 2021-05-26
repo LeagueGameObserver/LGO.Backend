@@ -1,6 +1,6 @@
 ﻿namespace LGO.Backend.Model.League.MatchUp
 {
-    internal sealed class MutableLeagueTeamMatchUp : MutableLeagueMatchUp, ILeagueTeamMatchUp
+    internal class MutableLeagueTeamMatchUp : MutableLeagueMatchUp, ILeagueTeamMatchUp
     {
         
     }

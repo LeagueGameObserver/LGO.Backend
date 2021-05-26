@@ -30,7 +30,7 @@ namespace LGO.Backend.Test.League
             
             var firstClientGame = await ReadGameFromFile(ClientGame0);
             var gameConstants = new DefaultLeagueGameConstantsFactory().ForMapAndMode(LeagueMapType.SummonersRift, LeagueGameModeType.Classic);
-            var game = new LgoLeagueGame(resourceRepository, gameConstants, firstClientGame);
+            var game = new InternalLeagueGame(resourceRepository, gameConstants, firstClientGame);
             
             Assert.IsNotNull(game);
 

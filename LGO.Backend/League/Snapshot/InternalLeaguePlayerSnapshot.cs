@@ -6,8 +6,6 @@ namespace LGO.Backend.League.Snapshot
 {
     internal sealed record InternalLeaguePlayerSnapshot : InternalLeagueGoldOwnerSnapshot
     {
-        public Guid Id { get; init; }
-
         public string SummonerName { get; init; } = null!;
 
         public string ChampionName { get; init; } = null!;
