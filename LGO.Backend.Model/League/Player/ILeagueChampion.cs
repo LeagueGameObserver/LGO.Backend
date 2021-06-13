@@ -8,10 +8,10 @@ namespace LGO.Backend.Model.League.Player
 
         string? Name { get; }
         
-        string? TileImage { get; }
+        string? TileImageUrl { get; }
         
-        string? SplashImage { get; }
+        string? SplashImageUrl { get; }
         
-        string? LoadingImage { get; }
+        string? LoadingImageUrl { get; }
     }
 }

@@ -1,14 +1,15 @@
-﻿using LGO.LeagueResource.Model;
+﻿using System;
+using LGO.LeagueResource.Model;
 using LGO.LeagueResource.Model.Champion;
 
 namespace LGO.LeagueResource.LocalResourceRepository.Model.Champion
 {
     internal class MutableLeagueResourceChampionImages : ILeagueResourceChampionImages
     {
-        public IImageReader SplashImage { get; set; } = NullImageReader.Instance;
-        
-        public IImageReader LoadingImage { get; set; } = NullImageReader.Instance;
-        
-        public IImageReader SquareImage { get; set; } = NullImageReader.Instance;
+        public Uri SplashImage { get; set; } = null!;
+
+        public Uri LoadingImage { get; set; } = null!;
+
+        public Uri SquareImage { get; set; } = null!;
     }
 }

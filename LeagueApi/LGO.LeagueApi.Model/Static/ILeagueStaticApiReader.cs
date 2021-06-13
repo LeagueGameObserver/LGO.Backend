@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
 using LGO.Backend.Core.Model;
@@ -23,20 +24,20 @@ namespace LGO.LeagueApi.Model.Static
         
         Task<FileInfo?> DownloadChampionSplashImageAsync(string championId, FileInfo destination, int skinIndex = 0);
         
-        string GetChampionSplashImageUrl(string championId, int skinIndex = 0);
+        Uri GetChampionSplashImageUrl(string championId, int skinIndex = 0);
 
         Task<FileInfo?> DownloadChampionLoadingImageAsync(string championId, FileInfo destination, int skinIndex = 0);
         
-        string GetChampionLoadingImageUrl(string championId, int skinIndex = 0);
+        Uri GetChampionLoadingImageUrl(string championId, int skinIndex = 0);
 
         Task<FileInfo?> DownloadChampionSquareImageAsync(MultiComponentVersion gameVersion, string championId, FileInfo destination);
         
-        string GetChampionSquareImageUrl(MultiComponentVersion gameVersion, string championId);
+        Uri GetChampionSquareImageUrl(MultiComponentVersion gameVersion, string championId);
         
         Task<FileInfo?> DownloadItemSquareImageAsync(MultiComponentVersion gameVersion, string itemId, FileInfo destination);
         
-        string GetItemSquareImageUrl(MultiComponentVersion gameVersion, string itemId);
+        Uri GetItemSquareImageUrl(MultiComponentVersion gameVersion, string itemId);
 
-        Task<FileInfo?> DownloadFileAsync(string url, FileInfo destination);
+        Task<FileInfo?> DownloadFileAsync(Uri url, FileInfo destination);
     }
 }

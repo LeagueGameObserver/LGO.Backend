@@ -1,11 +1,13 @@
-﻿namespace LGO.LeagueResource.Model.Champion
+﻿using System;
+
+namespace LGO.LeagueResource.Model.Champion
 {
     public interface ILeagueResourceChampionImages
     {
-        IImageReader SplashImage { get; }
+        Uri SplashImage { get; }
         
-        IImageReader LoadingImage { get; }
+        Uri LoadingImage { get; }
         
-        IImageReader SquareImage { get; }
+        Uri SquareImage { get; }
     }
 }

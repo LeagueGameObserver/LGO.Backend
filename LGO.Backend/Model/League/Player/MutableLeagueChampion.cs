@@ -6,8 +6,8 @@ namespace LGO.Backend.Model.League.Player
     {
         public Guid Id { get; set; } = Guid.Empty;
         public string? Name { get; set; } = null;
-        public string? TileImage { get; set; } = null;
-        public string? SplashImage { get; set; } = null;
-        public string? LoadingImage { get; set; } = null;
+        public string? TileImageUrl { get; set; } = null;
+        public string? SplashImageUrl { get; set; } = null;
+        public string? LoadingImageUrl { get; set; } = null;
     }
 }

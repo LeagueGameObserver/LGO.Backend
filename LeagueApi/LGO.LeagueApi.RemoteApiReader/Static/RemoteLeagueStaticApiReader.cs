@@ -73,9 +73,9 @@ namespace LGO.LeagueApi.RemoteApiReader.Static
             return await DownloadFileAsync(GetChampionSplashImageUrl(championId, skinIndex), destination);
         }
 
-        public string GetChampionSplashImageUrl(string championId, int skinIndex = 0)
+        public Uri GetChampionSplashImageUrl(string championId, int skinIndex = 0)
         {
-            return $"http://ddragon.leagueoflegends.com/cdn/img/champion/splash/{championId}_{skinIndex}.jpg";
+            return new($"http://ddragon.leagueoflegends.com/cdn/img/champion/splash/{championId}_{skinIndex}.jpg");
         }
 
         public async Task<FileInfo?> DownloadChampionLoadingImageAsync(string championId, FileInfo destination, int skinIndex = 0)
@@ -83,9 +83,9 @@ namespace LGO.LeagueApi.RemoteApiReader.Static
             return await DownloadFileAsync(GetChampionLoadingImageUrl(championId, skinIndex), destination);
         }
 
-        public string GetChampionLoadingImageUrl(string championId, int skinIndex = 0)
+        public Uri GetChampionLoadingImageUrl(string championId, int skinIndex = 0)
         {
-            return $"http://ddragon.leagueoflegends.com/cdn/img/champion/loading/{championId}_{skinIndex}.jpg";
+            return new($"http://ddragon.leagueoflegends.com/cdn/img/champion/loading/{championId}_{skinIndex}.jpg");
         }
 
         public async Task<FileInfo?> DownloadChampionSquareImageAsync(MultiComponentVersion gameVersion, string championId, FileInfo destination)
@@ -93,9 +93,9 @@ namespace LGO.LeagueApi.RemoteApiReader.Static
             return await DownloadFileAsync(GetChampionSquareImageUrl(gameVersion, championId), destination);
         }
 
-        public string GetChampionSquareImageUrl(MultiComponentVersion gameVersion, string championId)
+        public Uri GetChampionSquareImageUrl(MultiComponentVersion gameVersion, string championId)
         {
-            return $"http://ddragon.leagueoflegends.com/cdn/{gameVersion}/img/champion/{championId}.png";
+            return new($"http://ddragon.leagueoflegends.com/cdn/{gameVersion}/img/champion/{championId}.png");
         }
 
         public async Task<FileInfo?> DownloadItemSquareImageAsync(MultiComponentVersion gameVersion, string itemId, FileInfo destination)
@@ -103,12 +103,12 @@ namespace LGO.LeagueApi.RemoteApiReader.Static
             return await DownloadFileAsync(GetItemSquareImageUrl(gameVersion, itemId), destination);
         }
 
-        public string GetItemSquareImageUrl(MultiComponentVersion gameVersion, string itemId)
+        public Uri GetItemSquareImageUrl(MultiComponentVersion gameVersion, string itemId)
         {
-            return $"http://ddragon.leagueoflegends.com/cdn/{gameVersion}/img/item/{itemId}.png";
+            return new($"http://ddragon.leagueoflegends.com/cdn/{gameVersion}/img/item/{itemId}.png");
         }
 
-        public async Task<FileInfo?> DownloadFileAsync(string url, FileInfo destination)
+        public async Task<FileInfo?> DownloadFileAsync(Uri url, FileInfo destination)
         {
             if (File.Exists(destination.FullName))
             {

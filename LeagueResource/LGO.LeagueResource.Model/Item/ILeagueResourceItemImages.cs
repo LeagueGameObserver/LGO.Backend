@@ -1,7 +1,9 @@
-﻿namespace LGO.LeagueResource.Model.Item
+﻿using System;
+
+namespace LGO.LeagueResource.Model.Item
 {
     public interface ILeagueResourceItemImages
     {
-        IImageReader SquareImage { get; }
+        Uri SquareImage { get; }
     }
 }

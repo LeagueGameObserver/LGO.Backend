@@ -26,7 +26,7 @@ namespace LGO.Backend.Test.League
         public async Task TestInitializeNewGame()
         {
             var staticApiReader = new RemoteLeagueStaticApiReader();
-            var resourceRepository = await LeagueResourceRepositoryFactory.LoadOrCreate(staticApiReader, GameVersion);
+            var resourceRepository = await LeagueResourceRepositoryFactory.Create(staticApiReader, GameVersion);
             
             var firstClientGame = await ReadGameFromFile(ClientGame0);
             var gameConstants = new DefaultLeagueGameConstantsFactory().ForMapAndMode(LeagueMapType.SummonersRift, LeagueGameModeType.Classic);

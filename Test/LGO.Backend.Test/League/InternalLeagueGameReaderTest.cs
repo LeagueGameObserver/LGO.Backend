@@ -22,29 +22,13 @@ namespace LGO.Backend.Test.League
         private const string ClientGame2 = "SummonersRift_Classic_02";
         private static MultiComponentVersion GameVersion { get; } = new(11, 8, 1);
 
-        private static ILgoClientSettings ClientSettings { get; } = new MutableClientSettings
-                                                                    {
-                                                                        LeagueChampionRetrievalConfiguration = new MutableLeagueChampionRetrievalConfiguration
-                                                                                                               {
-                                                                                                                   IncludeName = true,
-                                                                                                                   IncludeLoadingImage = false,
-                                                                                                                   IncludeSplashImage = false,
-                                                                                                                   IncludeTileImage = false
-                                                                                                               },
-                                                                        LeagueItemRetrievalConfiguration = new MutableLeagueItemRetrievalConfiguration
-                                                                                                           {
-                                                                                                               IncludeAmount = true,
-                                                                                                               IncludeImage = false,
-                                                                                                               IncludeName = true,
-                                                                                                               IncludePrice = true
-                                                                                                           }
-                                                                    };
+        private static ILgoClientSettings ClientSettings { get; } = new MutableClientSettings();
 
         [Test]
         public async Task TestReadGame()
         {
             var staticApiReader = new RemoteLeagueStaticApiReader();
-            var resourceRepository = await LeagueResourceRepositoryFactory.LoadOrCreate(staticApiReader, GameVersion);
+            var resourceRepository = await LeagueResourceRepositoryFactory.Create(staticApiReader, GameVersion);
             var gameConstants = new DefaultLeagueGameConstantsFactory().ForMapAndMode(LeagueMapType.SummonersRift, LeagueGameModeType.Classic);
 
             var firstClientGame = await ReadGameFromFile(ClientGame0);

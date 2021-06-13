@@ -10,6 +10,6 @@
         
         int? Price { get; }
         
-        string? Image { get; }
+        string? ImageUrl { get; }
     }
 }

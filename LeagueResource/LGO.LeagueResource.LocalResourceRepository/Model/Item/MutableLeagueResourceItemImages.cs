@@ -1,10 +1,10 @@
-﻿using LGO.LeagueResource.Model;
+﻿using System;
 using LGO.LeagueResource.Model.Item;
 
 namespace LGO.LeagueResource.LocalResourceRepository.Model.Item
 {
     internal class MutableLeagueResourceItemImages : ILeagueResourceItemImages
     {
-        public IImageReader SquareImage { get; set; } = NullImageReader.Instance;
+        public Uri SquareImage { get; set; } = null!;
     }
 }

@@ -212,20 +212,17 @@ namespace LGO.Backend.League
 
             if (retrievalConfiguration.IncludeTileImage)
             {
-                mutableChampion.TileImage = await resourceChampion.Images.SquareImage.ReadContentAsBase64Async() ??
-                                            throw new Exception($"Unable to retrieve {nameof(ILeagueChampion)}.{nameof(ILeagueChampion.TileImage)}.");
+                mutableChampion.TileImageUrl = resourceChampion.Images.SquareImage.AbsoluteUri;
             }
 
             if (retrievalConfiguration.IncludeSplashImage)
             {
-                mutableChampion.SplashImage = await resourceChampion.Images.SplashImage.ReadContentAsBase64Async() ??
-                                              throw new Exception($"Unable to retrieve {nameof(ILeagueChampion)}.{nameof(ILeagueChampion.SplashImage)}.");
+                mutableChampion.SplashImageUrl = resourceChampion.Images.SplashImage.AbsoluteUri;
             }
 
             if (retrievalConfiguration.IncludeLoadingImage)
             {
-                mutableChampion.LoadingImage = await resourceChampion.Images.LoadingImage.ReadContentAsBase64Async() ??
-                                               throw new Exception($"Unable to retrieve {nameof(ILeagueChampion)}.{nameof(ILeagueChampion.LoadingImage)}.");
+                mutableChampion.LoadingImageUrl = resourceChampion.Images.LoadingImage.AbsoluteUri;
             }
 
             return mutableChampion;
@@ -261,7 +258,7 @@ namespace LGO.Backend.League
                 if (retrievalConfiguration.IncludeImage)
                 {
                     resourceItem ??= await ResourceRepository.ReadItemByKeyAsync(mutableItem.Id);
-                    mutableItem.Image = await resourceItem!.Images.SquareImage.ReadContentAsBase64Async() ?? throw new Exception($"Unable to retrieve {nameof(ILeagueItem.Image)}.");
+                    mutableItem.ImageUrl = resourceItem!.Images.SquareImage.AbsoluteUri;
                 }
 
                 items.Add(mutableItem);
