@@ -6,6 +6,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\LeagueApi\LGO.LeagueApi.Model\LGO.LeagueApi.Model.csproj" />
       <ProjectReference Include="..\..\LGO.Backend.Core\LGO.Backend.Core.csproj" />
     </ItemGroup>
 

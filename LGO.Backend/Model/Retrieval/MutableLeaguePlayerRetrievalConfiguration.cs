@@ -7,6 +7,7 @@ namespace LGO.Backend.Model.Retrieval
         public static MutableLeaguePlayerRetrievalConfiguration IncludeNothing { get; } = new()
                                                                                        {
                                                                                            IncludeSummonerName = false,
+                                                                                           IncludeIsActivePlayer = false,
                                                                                            IncludeTeam = false,
                                                                                            IncludeChampion = false,
                                                                                            IncludeItems = false,
@@ -15,6 +16,7 @@ namespace LGO.Backend.Model.Retrieval
         public static MutableLeaguePlayerRetrievalConfiguration IncludeEverything { get; } = new()
                                                                                        {
                                                                                            IncludeSummonerName = true,
+                                                                                           IncludeIsActivePlayer = true,
                                                                                            IncludeTeam = true,
                                                                                            IncludeChampion = true,
                                                                                            IncludeItems = true,
@@ -22,6 +24,9 @@ namespace LGO.Backend.Model.Retrieval
         
         [JsonProperty]
         public bool IncludeSummonerName { get; set; } = false;
+
+        [JsonProperty]
+        public bool IncludeIsActivePlayer { get; set; } = false;
         [JsonProperty]
         public bool IncludeTeam { get; set; } = false;
         [JsonProperty]

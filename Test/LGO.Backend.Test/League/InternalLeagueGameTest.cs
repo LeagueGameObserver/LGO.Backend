@@ -26,16 +26,16 @@ namespace LGO.Backend.Test.League
         public async Task TestInitializeNewGame()
         {
             var staticApiReader = new RemoteLeagueStaticApiReader();
-            var resourceRepository = await LeagueResourceRepositoryFactory.Create(staticApiReader, GameVersion);
-            
+            var resourceRepository = await new LocalLeagueResourceRepositoryFactory().GetOrCreateAsync(staticApiReader, GameVersion);
+
             var firstClientGame = await ReadGameFromFile(ClientGame0);
-            var gameConstants = new DefaultLeagueGameConstantsFactory().ForMapAndMode(LeagueMapType.SummonersRift, LeagueGameModeType.Classic);
+            var gameConstants = new DefaultLeagueGameConstantsFactory().Of(LeagueMapType.SummonersRift, LeagueGameModeType.Classic, GameVersion);
             var game = new InternalLeagueGame(resourceRepository, gameConstants, firstClientGame);
-            
+
             Assert.IsNotNull(game);
 
             var firstSnapshot = game.CurrentSnapshot;
-            
+
             Assert.AreEqual(LeagueGameModeType.Classic, game.CurrentSnapshot.Mode);
             Assert.AreEqual(LeagueGameStateType.InProgress, game.CurrentSnapshot.State);
             Assert.AreEqual(20, game.CurrentSnapshot.Events.Count());
@@ -47,7 +47,7 @@ namespace LGO.Backend.Test.League
             game.Update(secondClientGame);
 
             var secondSnapshot = game.CurrentSnapshot;
-            
+
             Assert.False(ReferenceEquals(firstSnapshot, secondSnapshot));
             Assert.AreEqual(LeagueGameModeType.Classic, game.CurrentSnapshot.Mode);
             Assert.AreEqual(LeagueGameStateType.InProgress, game.CurrentSnapshot.State);
@@ -63,16 +63,16 @@ namespace LGO.Backend.Test.League
             game.Update(thirdClientGame);
 
             var thirdSnapshot = game.CurrentSnapshot;
-            
+
             Assert.False(ReferenceEquals(secondSnapshot, thirdSnapshot));
             Assert.AreEqual(56, game.CurrentSnapshot.Events.Count());
             Assert.AreEqual(2, game.CurrentSnapshot.Timers.Count());
             CollectionAssert.AreEqual(new[] {LeagueTimerType.BaronNashorRespawn, LeagueTimerType.DragonRespawn}, game.CurrentSnapshot.Timers.Select(t => t.Type));
         }
-        
+
         private static async Task<ILeagueClientGame> ReadGameFromFile(string fileName)
         {
-            return await LocalLeagueClientGameReader.ReadFromFile(new FileInfo($"Resource/{fileName}.json"));
+            return await LocalLeagueClientGameReader.ReadRawGameSnapshotFromFile(new FileInfo($"Resource/{fileName}.json"));
         }
     }
 }

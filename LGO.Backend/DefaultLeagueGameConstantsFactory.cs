@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using LGO.Backend.Core.Model;
 using LGO.Backend.Core.Model.League.Enum;
+using LGO.Backend.Model;
 
 namespace LGO.Backend
 {
@@ -55,7 +57,7 @@ namespace LGO.Backend
             modeConstants.Add(LeagueGameModeType.Aram, constants);
         }
 
-        public ILeagueGameConstants ForMapAndMode(LeagueMapType map, LeagueGameModeType gameMode)
+        public ILeagueGameConstants Of(LeagueMapType map, LeagueGameModeType gameMode, MultiComponentVersion gameVersion)
         {
             if (!GameConstants.TryGetValue(map, out var modeConstants))
             {

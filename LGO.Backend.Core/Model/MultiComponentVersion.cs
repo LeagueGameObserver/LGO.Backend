@@ -1,13 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using LGO.Backend.Core.Model.Converter;
+using Newtonsoft.Json;
 
 namespace LGO.Backend.Core.Model
 {
+    [JsonConverter(typeof(MultiComponentVersionConverter))]
     public sealed class MultiComponentVersion : IEquatable<MultiComponentVersion>, IComparable<MultiComponentVersion>, IComparable
     {
         private const string ComponentDelimiter = ".";
-        
+
         private int[] Components { get; }
 
         public static bool TryParse(string value, out MultiComponentVersion multiComponentVersion)
@@ -28,14 +31,14 @@ namespace LGO.Backend.Core.Model
         {
             var tokens = value.Split(ComponentDelimiter);
             var components = new List<int>();
-            
+
             foreach (var token in tokens)
             {
                 if (!int.TryParse(token, out var component))
                 {
                     throw new ArgumentException($"Unable to parse {value}.");
                 }
-                
+
                 components.Add(component);
             }
 
@@ -50,7 +53,7 @@ namespace LGO.Backend.Core.Model
         public MultiComponentVersion(params int[] components)
         {
             Components = components;
-            
+
             if (Components.Length < 1)
             {
                 throw new ArgumentException($"{nameof(components)} must not be empty.");
@@ -134,7 +137,7 @@ namespace LGO.Backend.Core.Model
             {
                 return false;
             }
-            
+
             if (ReferenceEquals(this, other))
             {
                 return true;
@@ -153,7 +156,7 @@ namespace LGO.Backend.Core.Model
 
             return true;
         }
-        
+
 
         public static bool operator ==(MultiComponentVersion? a, MultiComponentVersion? b)
         {

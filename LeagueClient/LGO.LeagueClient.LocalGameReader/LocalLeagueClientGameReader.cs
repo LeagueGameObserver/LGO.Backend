@@ -12,19 +12,20 @@ using LGO.LeagueClient.LocalGameReader.Model.Game;
 using LGO.LeagueClient.LocalGameReader.Model.GameEvent;
 using LGO.LeagueClient.Model;
 using LGO.LeagueClient.Model.Game;
-using LGO.LeagueClient.Model.GameEvent;
 using Newtonsoft.Json;
 
 namespace LGO.LeagueClient.LocalGameReader
 {
     public sealed class LocalLeagueClientGameReader : ILeagueClientGameReader
     {
-        private static TimeSpan RequestTimeout { get; } = TimeSpan.FromMilliseconds(500);
+        private static TimeSpan DefaultRequestTimeout { get; } = TimeSpan.FromMilliseconds(500);
 
         private const string ClientCertificateThumbprint = "8259aafd8f71a809d2b154dd1cdb492981e448bd";
         private const string Host = "https://127.0.0.1:2999/liveclientdata";
 
-        private static string GameDataUrl => Host + "/allgamedata";
+        public const string GameDataUrl = Host + "/allgamedata";
+
+        public static JsonHttpClient DefaultClient { get; } = new(DefaultRequestTimeout, new HttpClientHandler {ServerCertificateCustomValidationCallback = ValidateServerCertificate});
 
         private static LocalLeagueClientGameReader? _instance;
 
@@ -39,10 +40,10 @@ namespace LGO.LeagueClient.LocalGameReader
 
         public LocalLeagueClientGameReader()
         {
-            Client = new JsonHttpClient(RequestTimeout, new HttpClientHandler
-                                                        {
-                                                            ServerCertificateCustomValidationCallback = ValidateServerCertificate,
-                                                        });
+            Client = new JsonHttpClient(DefaultRequestTimeout, new HttpClientHandler
+                                                               {
+                                                                   ServerCertificateCustomValidationCallback = ValidateServerCertificate,
+                                                               });
         }
 
         private static bool ValidateServerCertificate(HttpRequestMessage message, X509Certificate2? certificate, X509Chain? chain, SslPolicyErrors errors)
@@ -65,7 +66,7 @@ namespace LGO.LeagueClient.LocalGameReader
             return ParseTurrets(await Client.GetAsync<MutableLeagueClientGame>(GameDataUrl));
         }
 
-        public static async Task<ILeagueClientGame?> ReadFromFile(FileInfo file)
+        public static async Task<ILeagueClientGame?> ReadRawGameSnapshotFromFile(FileInfo file)
         {
             var fileContent = await File.ReadAllTextAsync(file.FullName, Encoding.UTF8);
             return ParseTurrets(JsonConvert.DeserializeObject<MutableLeagueClientGame>(fileContent));

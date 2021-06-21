@@ -5,11 +5,11 @@ using LGO.Backend.Core.Model;
 using LGO.Backend.Core.Model.League.Enum;
 using LGO.Backend.League;
 using LGO.Backend.Model;
-using LGO.Backend.Model.Retrieval;
 using LGO.LeagueApi.RemoteApiReader.Static;
 using LGO.LeagueClient.LocalGameReader;
 using LGO.LeagueClient.Model.Game;
 using LGO.LeagueResource.LocalResourceRepository;
+using Newtonsoft.Json;
 using NUnit.Framework;
 
 namespace LGO.Backend.Test.League
@@ -28,8 +28,8 @@ namespace LGO.Backend.Test.League
         public async Task TestReadGame()
         {
             var staticApiReader = new RemoteLeagueStaticApiReader();
-            var resourceRepository = await LeagueResourceRepositoryFactory.Create(staticApiReader, GameVersion);
-            var gameConstants = new DefaultLeagueGameConstantsFactory().ForMapAndMode(LeagueMapType.SummonersRift, LeagueGameModeType.Classic);
+            var resourceRepository = await new LocalLeagueResourceRepositoryFactory().GetOrCreateAsync(staticApiReader, GameVersion);
+            var gameConstants = new DefaultLeagueGameConstantsFactory().Of(LeagueMapType.SummonersRift, LeagueGameModeType.Classic, GameVersion);
 
             var firstClientGame = await ReadGameFromFile(ClientGame0);
             var game = new InternalLeagueGame(resourceRepository, gameConstants, firstClientGame);
@@ -59,7 +59,7 @@ namespace LGO.Backend.Test.League
 
         private static async Task<ILeagueClientGame> ReadGameFromFile(string fileName)
         {
-            return await LocalLeagueClientGameReader.ReadFromFile(new FileInfo($"Resource/{fileName}.json"));
+            return await LocalLeagueClientGameReader.ReadRawGameSnapshotFromFile(new FileInfo($"Resource/{fileName}.json"));
         }
     }
 }

@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\LeagueApi\LGO.LeagueApi.RemoteApiReader\LGO.LeagueApi.RemoteApiReader.csproj" />
+      <ProjectReference Include="..\..\..\LeagueClient\LGO.LeagueClient.LocalGameReader\LGO.LeagueClient.LocalGameReader.csproj" />
+      <ProjectReference Include="..\..\..\LGO.Backend.Model\LGO.Backend.Model.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="log4net" Version="2.0.12" />
+    </ItemGroup>
+
+</Project>

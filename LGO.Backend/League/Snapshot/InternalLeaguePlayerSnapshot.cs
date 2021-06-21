@@ -8,6 +8,8 @@ namespace LGO.Backend.League.Snapshot
     {
         public string SummonerName { get; init; } = null!;
 
+        public bool IsActivePlayer { get; init; } = false;
+
         public string ChampionName { get; init; } = null!;
 
         public LeagueTeamType Team { get; init; }

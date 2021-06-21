@@ -6,6 +6,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\LeagueClient\LGO.LeagueClient.Model\LGO.LeagueClient.Model.csproj" />
       <ProjectReference Include="..\LGO.Backend.Core\LGO.Backend.Core.csproj" />
     </ItemGroup>
 

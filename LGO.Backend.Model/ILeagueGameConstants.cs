@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LGO.Backend
+namespace LGO.Backend.Model
 {
     public interface ILeagueGameConstants
     {

@@ -19,6 +19,7 @@ namespace LGO.Backend.Model.League.Player
         public int TotalDeaths  => 0;
         public Guid Id => Guid.Empty;
         public string? SummonerName => null;
+        public bool? IsActivePlayer => null;
         public LeagueTeamType? Team => null;
         public ILeagueChampion? Champion => null;
         public IEnumerable<ILeagueItem>? Items => null;

@@ -6,6 +6,7 @@ using LGO.Backend.Core.Model.League.Enum;
 using LGO.Backend.Core.Utility;
 using LGO.Backend.League.Snapshot;
 using LGO.Backend.League.Snapshot.Timer;
+using LGO.Backend.Model;
 using LGO.Backend.Model.League.Enum;
 using LGO.Backend.Model.League.GameEvent;
 using LGO.Backend.Model.League.MatchUp.Descriptor;
@@ -23,6 +24,8 @@ namespace LGO.Backend.League
 
         public Guid Id { get; } = Guid.NewGuid();
 
+        public ILeagueResourceRepository ResourceRepository { get; }
+
         public InternalLeagueGameSnapshot CurrentSnapshot
         {
             get
@@ -39,7 +42,6 @@ namespace LGO.Backend.League
         public IEnumerable<ILeagueMatchUpDescriptor> InitialMatchUpDescriptors => _initialMatchUpDescriptors;
 
         private object Lock { get; } = new();
-        private ILeagueResourceRepository ResourceRepository { get; }
         private ILeagueGameConstants GameConstants { get; }
         private List<InternalLeagueGameSnapshot> Snapshots { get; } = new();
         private InternalLeagueGameSnapshot? _previousGameSnapshot;
@@ -206,6 +208,7 @@ namespace LGO.Backend.League
                                Team = clientPlayer.Team,
                                ChampionName = clientPlayer.ChampionName,
                                SummonerName = clientPlayer.SummonerName,
+                               IsActivePlayer = _currentClientGame.ActivePlayer.SummonerName.Equals(clientPlayer.SummonerName),
                                IsDead = clientPlayer.IsDead,
                                RespawnTime = clientPlayer.RespawnTime,
                                TotalAssists = clientPlayer.Score.Assists,

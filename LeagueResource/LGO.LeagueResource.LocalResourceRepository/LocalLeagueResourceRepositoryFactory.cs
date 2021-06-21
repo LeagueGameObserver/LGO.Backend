@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using LGO.Backend.Core.Model;
@@ -13,26 +12,26 @@ using log4net;
 
 namespace LGO.LeagueResource.LocalResourceRepository
 {
-    public static class LeagueResourceRepositoryFactory
+    public sealed class LocalLeagueResourceRepositoryFactory : ILeagueResourceRepositoryFactory
     {
-        private static ILog Log { get; } = LogManager.GetLogger(typeof(LeagueResourceRepositoryFactory));
+        private static ILog Log { get; } = LogManager.GetLogger(typeof(LocalLeagueResourceRepositoryFactory));
 
-        public static async Task<ILeagueResourceRepository> Create(ILeagueStaticApiReader staticApiReader,
-                                                                   MultiComponentVersion gameVersion,
-                                                                   LeagueLocalization localization = LeagueLocalization.EnglishUnitedStates)
+        public async Task<ILeagueResourceRepository> GetOrCreateAsync(ILeagueStaticApiReader staticApiReader,
+                                                                      MultiComponentVersion gameVersion,
+                                                                      LeagueLocalizationType localizationType = LeagueLocalizationType.EnglishUnitedStates)
         {
-            Log.Info($"Creating new {nameof(LocalLeagueResourceRepository)} instance for game version {gameVersion} and localization {localization}.");
-            var champions = await ReadChampionsAsync(staticApiReader, gameVersion, localization);
-            var items = await ReadItemsAsync(staticApiReader, gameVersion, localization);
+            Log.Info($"Creating new {nameof(LocalLeagueResourceRepository)} instance for game version {gameVersion} and localization {localizationType}.");
+            var champions = await ReadChampionsAsync(staticApiReader, gameVersion, localizationType);
+            var items = await ReadItemsAsync(staticApiReader, gameVersion, localizationType);
 
             return new LocalLeagueResourceRepository(gameVersion, champions, items);
         }
 
         private static async Task<IEnumerable<MutableLeagueResourceChampion>> ReadChampionsAsync(ILeagueStaticApiReader staticApiReader,
                                                                                                  MultiComponentVersion gameVersion,
-                                                                                                 LeagueLocalization localization)
+                                                                                                 LeagueLocalizationType localizationType)
         {
-            var staticChampions = await staticApiReader.ReadAllChampionsAsync(gameVersion, localization);
+            var staticChampions = await staticApiReader.ReadAllChampionsAsync(gameVersion, localizationType);
             if (staticChampions == null)
             {
                 throw new Exception($"Unable to read all static champions from the given {nameof(ILeagueStaticApiReader)}.");
@@ -57,9 +56,9 @@ namespace LGO.LeagueResource.LocalResourceRepository
 
         private static async Task<IEnumerable<MutableLeagueResourceItem>> ReadItemsAsync(ILeagueStaticApiReader staticApiReader,
                                                                                          MultiComponentVersion gameVersion,
-                                                                                         LeagueLocalization localization)
+                                                                                         LeagueLocalizationType localizationType)
         {
-            var staticItems = await staticApiReader.ReadAllItemsAsync(gameVersion, localization);
+            var staticItems = await staticApiReader.ReadAllItemsAsync(gameVersion, localizationType);
             if (staticItems == null)
             {
                 throw new Exception($"Unable to read all static items from the given {nameof(ILeagueStaticApiReader)}.");

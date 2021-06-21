@@ -2,6 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 using LGO.Backend.Core.Http;
+using LGO.Backend.Model;
 using LGO.LeagueClient.LocalGameReader;
 using LGO.LeagueClient.Model.Game;
 using log4net;
@@ -12,29 +13,26 @@ namespace LGO.Backend
     {
         private static ILog Log { get; } = LogManager.GetLogger(typeof(LocalLeagueClientGamePollService));
 
+        public event EventHandler<ILeagueClientGame>? GameDataReceived;
+
         public Guid Id { get; } = Guid.NewGuid();
+        
+        public ILeagueClientGameRetrievalMetadata RetrievalMetadata { get; }
         
         private static TimeSpan DefaultPollDelay { get; } = TimeSpan.FromMilliseconds(500);
         private static TimeSpan DefaultRequestTimeout { get; } = TimeSpan.FromSeconds(1);
-
-        public event EventHandler<ILeagueClientGame>? GameDataReceived;
-
+        
         public bool IsRunning { get; private set; } = false;
 
         private object Lock { get; } = new();
-        private TimeSpan PollDelay { get; }
         private LocalLeagueClientGameReader GameReader { get; }
         private Task? _pollingTask;
-        private CancellationTokenSource? _pollingTaskCancellationTokenSource = new();
+        private CancellationTokenSource _pollingTaskCancellationTokenSource = new();
 
-        public LocalLeagueClientGamePollService() : this(DefaultPollDelay, DefaultRequestTimeout)
+        public LocalLeagueClientGamePollService(ILeagueClientGameRetrievalMetadata retrievalMetadata, TimeSpan? httpRequestTimeout = null)
         {
-        }
-
-        public LocalLeagueClientGamePollService(TimeSpan pollDelay, TimeSpan requestTimeout)
-        {
-            PollDelay = pollDelay;
-            GameReader = new LocalLeagueClientGameReader(new JsonHttpClient(requestTimeout));
+            RetrievalMetadata = retrievalMetadata;
+            GameReader = new LocalLeagueClientGameReader(new JsonHttpClient(httpRequestTimeout ?? DefaultRequestTimeout));
         }
 
         public void Start()
@@ -66,10 +64,8 @@ namespace LGO.Backend
                 Log.Info($"Stopping {nameof(LocalLeagueClientGamePollService)}.");
 
                 IsRunning = false;
-                _pollingTaskCancellationTokenSource?.Cancel();
+                _pollingTaskCancellationTokenSource.Cancel();
                 _pollingTask?.Wait();
-                _pollingTask = null;
-                _pollingTaskCancellationTokenSource = null;
             }
         }
 
@@ -94,11 +90,11 @@ namespace LGO.Backend
                 {
                     if (_pollingTaskCancellationTokenSource != null)
                     {
-                        await Task.Delay(PollDelay, _pollingTaskCancellationTokenSource.Token);
+                        await Task.Delay(RetrievalMetadata.PollingInterval ?? DefaultPollDelay, _pollingTaskCancellationTokenSource.Token);
                     }
                     else
                     {
-                        await Task.Delay(PollDelay);
+                        await Task.Delay(RetrievalMetadata.PollingInterval ?? DefaultPollDelay);
                     }
                 }
                 catch (Exception)

@@ -1,9 +1,13 @@
 ﻿using System;
 using System.Collections.Concurrent;
+using System.Collections.Generic;
 using System.Linq;
+using LGO.Backend.Core.Model.League.Enum;
 using LGO.Backend.League;
 using LGO.Backend.Model;
+using LGO.Backend.Model.League;
 using LGO.Backend.Model.League.Enum;
+using LGO.LeagueApi.Model.Static;
 using LGO.LeagueClient.Model.Game;
 using LGO.LeagueClient.Model.GameEvent;
 using LGO.LeagueResource.Model;
@@ -17,16 +21,37 @@ namespace LGO.Backend
 
         public event EventHandler<Guid>? GameCreated;
 
-        private ILeagueResourceRepository ResourceRepository { get; }
+        public IEnumerable<ILeagueGameSummary> GameSummaries
+        {
+            get
+            {
+                return from game in GamesBySummonerNamesHash.Values
+                       let summonerNamesBlueSide = game.CurrentSnapshot.Players.Where(p => p.Team == LeagueTeamType.Blue).Select(p => p.SummonerName)
+                       let summonerNamesRedSide = game.CurrentSnapshot.Players.Where(p => p.Team == LeagueTeamType.Red).Select(p => p.SummonerName)
+                       select new MutableLeagueGameSummary
+                              {
+                                  Id = game.Id,
+                                  Mode = game.CurrentSnapshot.Mode,
+                                  State = game.CurrentSnapshot.State,
+                                  InGameTimeInSeconds = game.CurrentSnapshot.InGameTime.TotalSeconds,
+                                  SummonerNamesBlueTeam = summonerNamesBlueSide,
+                                  SummonerNamesRedSide = summonerNamesRedSide
+                              };
+            }
+        }
+
+        private ILeagueResourceRepositoryFactory ResourceRepositoryFactory { get; }
         private ILeagueGameConstantsFactory GameConstantsFactory { get; }
+        private ILeagueStaticApiReader StaticApiReader { get; }
         private ConcurrentDictionary<Guid, ILeagueClientGameService> GameServices { get; } = new();
         private ConcurrentDictionary<int, InternalLeagueGame> GamesBySummonerNamesHash { get; } = new();
         private ConcurrentDictionary<Guid, int> GameIdToSummonerNamesHashIndex { get; } = new();
 
-        public LgoBackend(ILeagueResourceRepository resourceRepository, ILeagueGameConstantsFactory gameConstantsFactory)
+        public LgoBackend(ILeagueResourceRepositoryFactory resourceRepositoryFactory, ILeagueGameConstantsFactory gameConstantsFactory, ILeagueStaticApiReader staticApiReader)
         {
-            ResourceRepository = resourceRepository;
+            ResourceRepositoryFactory = resourceRepositoryFactory;
             GameConstantsFactory = gameConstantsFactory;
+            StaticApiReader = staticApiReader;
         }
 
         public bool TryCreateGameReader(Guid gameId, out ILeagueGameReader gameReader)
@@ -42,7 +67,7 @@ namespace LGO.Backend
                 return false;
             }
 
-            gameReader = new InternalLeagueGameReader(game, ResourceRepository);
+            gameReader = new InternalLeagueGameReader(game, game.ResourceRepository);
             return true;
         }
 
@@ -92,10 +117,13 @@ namespace LGO.Backend
             var game = GamesBySummonerNamesHash.GetOrAdd(gameHashCode, _ =>
                                                                        {
                                                                            newGameCreated = true;
-                                                                           var gameConstants = GameConstantsFactory.ForMapAndMode(e.Stats.Map, e.Stats.GameMode);
-                                                                           var newGame = new InternalLeagueGame(ResourceRepository, gameConstants, e);
+                                                                           var resourceRepository = ResourceRepositoryFactory.GetOrCreateAsync(StaticApiReader,
+                                                                                                                                               gameService.RetrievalMetadata.GameVersion,
+                                                                                                                                               gameService.RetrievalMetadata.GameLocalization).Result;
+                                                                           var gameConstants = GameConstantsFactory.Of(e.Stats.Map, e.Stats.GameMode, gameService.RetrievalMetadata.GameVersion);
+                                                                           var newGame = new InternalLeagueGame(resourceRepository, gameConstants, e);
+                                                                           
                                                                            GameIdToSummonerNamesHashIndex.TryAdd(newGame.Id, gameHashCode);
-
                                                                            Log.Info($"Created new {nameof(InternalLeagueGame)} (id = {newGame.Id})");
 
                                                                            return newGame;

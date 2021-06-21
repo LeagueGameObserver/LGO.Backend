@@ -27,6 +27,24 @@ namespace LGO.Backend.Core.Http
 
         public async Task<TResultType?> GetAsync<TResultType>(string url)
         {
+            var rawResponse = await GetRawAsync(url);
+            if (string.IsNullOrEmpty(rawResponse))
+            {
+                return default!;
+            }
+
+            try
+            {
+                return JsonConvert.DeserializeObject<TResultType>(rawResponse);
+            }
+            catch (Exception)
+            {
+                return default!;
+            }
+        }
+
+        public async Task<string?> GetRawAsync(string url)
+        {
             try
             {
                 var response = await Client.GetAsync(url).ConfigureAwait(false);
@@ -35,12 +53,11 @@ namespace LGO.Backend.Core.Http
                     return default!;
                 }
 
-                var json = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-                return JsonConvert.DeserializeObject<TResultType>(json);
+                return await response.Content.ReadAsStringAsync().ConfigureAwait(false);
             }
             catch (TaskCanceledException)
             {
-                return default!;
+                return null;
             }
         }
     }

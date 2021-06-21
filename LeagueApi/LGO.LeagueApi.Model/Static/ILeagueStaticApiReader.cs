@@ -18,9 +18,9 @@ namespace LGO.LeagueApi.Model.Static
         
         Task<IEnumerable<MultiComponentVersion>?> ReadGameVersionsAsync();
 
-        Task<ILeagueStaticChampionCollection?> ReadAllChampionsAsync(MultiComponentVersion gameVersion, LeagueLocalization localization = LeagueLocalization.EnglishUnitedStates);
+        Task<ILeagueStaticChampionCollection?> ReadAllChampionsAsync(MultiComponentVersion gameVersion, LeagueLocalizationType localizationType = LeagueLocalizationType.EnglishUnitedStates);
 
-        Task<ILeagueStaticItemCollection?> ReadAllItemsAsync(MultiComponentVersion gameVersion, LeagueLocalization localization = LeagueLocalization.EnglishUnitedStates);
+        Task<ILeagueStaticItemCollection?> ReadAllItemsAsync(MultiComponentVersion gameVersion, LeagueLocalizationType localizationType = LeagueLocalizationType.EnglishUnitedStates);
         
         Task<FileInfo?> DownloadChampionSplashImageAsync(string championId, FileInfo destination, int skinIndex = 0);
         

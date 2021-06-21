@@ -8,17 +8,18 @@ using NUnit.Framework;
 namespace LGO.LeagueResource.LocalResourceRepository.Test
 {
     [TestFixture]
-    public class LeagueResourceRepositoryFactoryTest
+    public class LocalLeagueResourceRepositoryFactoryTest
     {
         private static MultiComponentVersion GameVersion { get; } = new(11, 8, 1);
-        private static LeagueLocalization Localization => LeagueLocalization.EnglishUnitedStates;
+        private static LeagueLocalizationType LocalizationType => LeagueLocalizationType.EnglishUnitedStates;
 
         [Test]
         public async Task TestParseStaticApiResponses()
         {
             var apiReader = new RemoteLeagueStaticApiReader();
 
-            var repository = await LeagueResourceRepositoryFactory.Create(apiReader, GameVersion, Localization);
+            var factory = new LocalLeagueResourceRepositoryFactory();
+            var repository = await factory.GetOrCreateAsync(apiReader, GameVersion, LocalizationType);
             Assert.IsNotNull(repository);
 
             var allChampions = await repository.ReadAllChampionsAsync();
@@ -38,7 +39,6 @@ namespace LGO.LeagueResource.LocalResourceRepository.Test
             Assert.AreEqual("Boots", boots.Name);
             Assert.AreEqual(300, boots.Costs.TotalCosts);
             Assert.AreEqual(300, boots.Costs.RecipeCosts);
-
         }
     }
 }

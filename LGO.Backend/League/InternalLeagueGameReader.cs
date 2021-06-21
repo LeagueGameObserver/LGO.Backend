@@ -22,7 +22,7 @@ namespace LGO.Backend.League
     internal sealed class InternalLeagueGameReader : ILeagueGameReader
     {
         public event EventHandler? GameUpdated;
-        
+
         public Guid GameId => Game.Id;
 
         public IEnumerable<ILeagueMatchUpDescriptor> MatchUpDescriptors => MutableMatchUpDescriptors.Values;
@@ -38,7 +38,7 @@ namespace LGO.Backend.League
             Game = game;
             Game.NewSnapshotAdded += Game_OnNewSnapshotAdded;
             ResourceRepository = resourceRepository;
-            
+
             foreach (var initialMatchUpDescriptor in game.InitialMatchUpDescriptors)
             {
                 TryAddMatchUpDescriptor(initialMatchUpDescriptor);

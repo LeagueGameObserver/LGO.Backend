@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 
 namespace LGO.Backend
 {
-    public class MutableClientSettings : ILgoClientSettings
+    public sealed class MutableClientSettings : ILgoClientSettings
     {
         [JsonProperty]
         [JsonConverter(typeof(ConcreteConverter<ILgoLeagueChampionRetrievalConfiguration, MutableLeagueChampionRetrievalConfiguration>))]

@@ -7,6 +7,8 @@ namespace LGO.Backend.Model.Retrieval
         LgoDataRetrievalConfigurationType ILgoDataRetrievalConfiguration.Type => LgoDataRetrievalConfigurationType.LeaguePlayer;
 
         bool IncludeSummonerName { get; }
+        
+        bool IncludeIsActivePlayer { get; }
 
         bool IncludeTeam { get; }
 

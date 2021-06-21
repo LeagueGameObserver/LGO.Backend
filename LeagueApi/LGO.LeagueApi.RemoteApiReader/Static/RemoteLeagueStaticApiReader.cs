@@ -56,15 +56,15 @@ namespace LGO.LeagueApi.RemoteApiReader.Static
             return versions;
         }
 
-        public async Task<ILeagueStaticChampionCollection?> ReadAllChampionsAsync(MultiComponentVersion gameVersion, LeagueLocalization localization = LeagueLocalization.EnglishUnitedStates)
+        public async Task<ILeagueStaticChampionCollection?> ReadAllChampionsAsync(MultiComponentVersion gameVersion, LeagueLocalizationType localizationType = LeagueLocalizationType.EnglishUnitedStates)
         {
-            var url = $"http://ddragon.leagueoflegends.com/cdn/{gameVersion}/data/{localization.ToCountryCode()}/champion.json";
+            var url = $"http://ddragon.leagueoflegends.com/cdn/{gameVersion}/data/{localizationType.ToCountryCode()}/champion.json";
             return await Client.GetAsync<MutableLeagueStaticChampionCollection>(url);
         }
 
-        public async Task<ILeagueStaticItemCollection?> ReadAllItemsAsync(MultiComponentVersion gameVersion, LeagueLocalization localization = LeagueLocalization.EnglishUnitedStates)
+        public async Task<ILeagueStaticItemCollection?> ReadAllItemsAsync(MultiComponentVersion gameVersion, LeagueLocalizationType localizationType = LeagueLocalizationType.EnglishUnitedStates)
         {
-            var url = $"http://ddragon.leagueoflegends.com/cdn/{gameVersion}/data/{localization.ToCountryCode()}/item.json";
+            var url = $"http://ddragon.leagueoflegends.com/cdn/{gameVersion}/data/{localizationType.ToCountryCode()}/item.json";
             return await Client.GetAsync<MutableLeagueStaticItemCollection>(url);
         }
 

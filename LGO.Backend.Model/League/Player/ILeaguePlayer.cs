@@ -6,6 +6,8 @@ namespace LGO.Backend.Model.League.Player
     public interface ILeaguePlayer : ILeagueGoldOwner
     {
         string? SummonerName { get; }
+        
+        bool? IsActivePlayer { get; }
 
         LeagueTeamType? Team { get; }
 
