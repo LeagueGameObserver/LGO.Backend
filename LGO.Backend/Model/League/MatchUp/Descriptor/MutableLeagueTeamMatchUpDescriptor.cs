@@ -1,4 +1,6 @@
-﻿namespace LGO.Backend.Model.League.MatchUp.Descriptor
+﻿using LGO.Backend.Model.League.Enum;
+
+namespace LGO.Backend.Model.League.MatchUp.Descriptor
 {
     internal sealed class MutableLeagueTeamMatchUpDescriptor : MutableLeagueMatchUpDescriptor, ILeagueTeamMatchUpDescriptor
     {

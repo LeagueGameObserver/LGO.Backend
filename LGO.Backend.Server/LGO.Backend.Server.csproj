@@ -11,6 +11,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\LGO.Backend.Server.Model\LGO.Backend.Server.Model.csproj" />
       <ProjectReference Include="..\LGO.Backend\LGO.Backend.csproj" />
     </ItemGroup>
 

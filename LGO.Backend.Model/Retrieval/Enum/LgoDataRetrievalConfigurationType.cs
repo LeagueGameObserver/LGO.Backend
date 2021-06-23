@@ -1,5 +1,9 @@
-﻿namespace LGO.Backend.Model.Retrieval.Enum
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+
+namespace LGO.Backend.Model.Retrieval.Enum
 {
+    [JsonConverter(typeof(StringEnumConverter))]
     public enum LgoDataRetrievalConfigurationType
     {
         Undefined,

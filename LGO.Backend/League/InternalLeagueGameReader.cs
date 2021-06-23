@@ -131,27 +131,55 @@ namespace LGO.Backend.League
         public async Task<ILeagueGame> ReadGameAsync(ILgoClientSettings clientSettings)
         {
             var gameSnapshot = Game.CurrentSnapshot;
-            var players = await ExtractPlayers(gameSnapshot, clientSettings);
-            var teams = ExtractTeams(gameSnapshot, clientSettings);
-            var matchUps = ExtractMatchUps(gameSnapshot);
-            var timers = ExtractTimers(gameSnapshot, clientSettings);
-            var events = gameSnapshot.Events;
-            var eventsSinceLastUpdate = gameSnapshot.Events.Skip(_numberOfEventsAtLastRead);
-            _numberOfEventsAtLastRead = gameSnapshot.Events.Count();
+            var game = new MutableLeagueGame
+                       {
+                           Id = Game.Id,
+                           State = gameSnapshot.State
+                       };
+            var retrievalConfiguration = clientSettings.LeagueGameRetrievalConfiguration;
 
-            return new MutableLeagueGame
-                   {
-                       Id = Game.Id,
-                       State = gameSnapshot.State,
-                       Mode = gameSnapshot.Mode,
-                       InGameTimeInSeconds = gameSnapshot.InGameTime.TotalSeconds,
-                       Teams = teams,
-                       Players = players,
-                       MatchUps = matchUps,
-                       Timers = timers,
-                       Events = events,
-                       EventsSinceLastUpdate = eventsSinceLastUpdate
-                   };
+            if (retrievalConfiguration.IncludeMode)
+            {
+                game.Mode = gameSnapshot.Mode;
+            }
+
+            if (retrievalConfiguration.IncludeInGameTimeInSeconds)
+            {
+                game.InGameTimeInSeconds = gameSnapshot.InGameTime.TotalSeconds;
+            }
+
+            if (retrievalConfiguration.IncludePlayers)
+            {
+                game.Players = await ExtractPlayers(gameSnapshot, clientSettings);
+            }
+
+            if (retrievalConfiguration.IncludeTeams)
+            {
+                game.Teams = ExtractTeams(gameSnapshot, clientSettings);
+            }
+
+            if (retrievalConfiguration.IncludeMatchUps)
+            {
+                game.MatchUps = ExtractMatchUps(gameSnapshot);
+            }
+
+            if (retrievalConfiguration.IncludeTimers)
+            {
+                game.Timers = ExtractTimers(gameSnapshot, clientSettings);
+            }
+
+            if (retrievalConfiguration.IncludeEvents)
+            {
+                game.Events = gameSnapshot.Events;
+            }
+
+            if (retrievalConfiguration.IncludeEventsSinceLastUpdate)
+            {
+                game.EventsSinceLastUpdate = gameSnapshot.Events.Skip(_numberOfEventsAtLastRead);
+            }
+
+            _numberOfEventsAtLastRead = gameSnapshot.Events.Count();
+            return game;
         }
 
         private async Task<IEnumerable<ILeaguePlayer>> ExtractPlayers(InternalLeagueGameSnapshot snapshot, ILgoClientSettings clientSettings)
@@ -176,6 +204,11 @@ namespace LGO.Backend.League
                 if (retrievalConfiguration.IncludeSummonerName)
                 {
                     mutablePlayer.SummonerName = playerSnapshot.SummonerName;
+                }
+
+                if (retrievalConfiguration.IncludeIsActivePlayer)
+                {
+                    mutablePlayer.IsActivePlayer = playerSnapshot.IsActivePlayer;
                 }
 
                 if (retrievalConfiguration.IncludeTeam)

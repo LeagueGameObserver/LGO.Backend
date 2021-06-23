@@ -1,13 +1,13 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
-namespace LGO.Backend.Core.Model.League.Enum
+namespace LGO.Backend.Server.Model.Response.WebSocket
 {
     [JsonConverter(typeof(StringEnumConverter))]
-    public enum LeagueMapType
+    public enum WebSocketResponseType
     {
         Undefined,
-        SummonersRift,
-        HowlingAbyss,
+        
+        Ping,
     }
 }

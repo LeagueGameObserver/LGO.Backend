@@ -1,5 +1,9 @@
-﻿namespace LGO.Backend.Model.League.Enum
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+
+namespace LGO.Backend.Model.League.Enum
 {
+    [JsonConverter(typeof(StringEnumConverter))]
     public enum LeagueTimerType
     {
         Undefined,
